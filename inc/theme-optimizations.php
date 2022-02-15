@@ -5,8 +5,8 @@
 */
 function shs_theme_disable_self_pingbacks( &$links ) {
 	foreach ( $links as $l => $link )
-				if ( 0 === strpos( $link, get_option( 'home' ) ) )
-						unset($links[$l]);
+		if ( 0 === strpos( $link, get_option( 'home' ) ) )
+			unset($links[$l]);
 }
 
 add_action( 'pre_ping', 'shs_theme_disable_self_pingbacks' );
@@ -16,8 +16,8 @@ add_action( 'pre_ping', 'shs_theme_disable_self_pingbacks' );
  */
 function remove_query_strings() {
 	if ( ! is_admin() ) {
-			add_filter( 'script_loader_src', 'remove_query_strings_split', 15 );
-			add_filter( 'style_loader_src', 'remove_query_strings_split', 15 );
+		add_filter( 'script_loader_src', 'remove_query_strings_split', 15 );
+		add_filter( 'style_loader_src', 'remove_query_strings_split', 15 );
 	}
 }
 
