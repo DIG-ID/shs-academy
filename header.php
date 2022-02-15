@@ -35,7 +35,7 @@
 						?>
 					</div>
 				</nav>
-				<nav class="navbar navbar-expand-xl navbar-light">
+				<nav class="navbar navbar-expand-xl navbar-light navbar-main">
 					<div class="container">
 							<!-- Your site title as branding in the menu -->
 							<?php if ( ! has_custom_logo() ) { ?>
