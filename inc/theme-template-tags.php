@@ -55,7 +55,7 @@ add_action( 'after_main_sidebar', 'shs_theme_after_main_sidebar' );
 /**
  * This function opens the wrapper of all the content. px-md-0
  */
-function shs_theme_open_wrapper() {
+function shs_theme_site_wrapper_open() {
 	?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
@@ -64,12 +64,12 @@ function shs_theme_open_wrapper() {
 	<?php
 }
 
-add_action( 'wrapper_open', 'shs_theme_open_wrapper' );
+add_action( 'site_wrapper_open', 'shs_theme_site_wrapper_open' );
 
 /**
  * This function closes the wrapper of all the content.
  */
-function shs_theme_close_wrapper() {
+function shs_theme_site_wrapper_close() {
 	?>
 					</div><!-- .row -->
 			</div><!-- .container -->
@@ -78,4 +78,4 @@ function shs_theme_close_wrapper() {
 	<?php
 }
 
-add_action( 'wrapper_close', 'shs_theme_close_wrapper' );
+add_action( 'site_wrapper_close', ' shs_theme_site_wrapper_close' );
