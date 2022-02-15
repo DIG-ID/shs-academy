@@ -1,0 +1,31 @@
+#wrapper-navbar
+  width: 100%
+  z-index: 999
+
+.custom-logo
+  width: 95px
+  height: 95px
+
+.navbar
+  background-color: $bg-primary
+  .menu-item
+    display: block
+  .menu-item > a
+    display: block
+    outline: 0
+    font-family: $primary-font
+    text-decoration: none
+    color: #555555
+    font-size: 18px
+    letter-spacing: 0
+    line-height: 80px
+    font-weight: 400
+    padding: 0 20px
+    &:hover
+      text-decoration: none
+    &:focus
+      outline: 0
+
+.navbar-expand-xl
+  .navbar-collapse
+    justify-content: flex-end
