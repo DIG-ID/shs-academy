@@ -16,6 +16,25 @@
 		<?php do_action( 'wp_body_open' ); ?>
 
 		<div id="wrapper-navbar" itemscope itemtype="http://schema.org/WebSite">
+				<nav class="navbar navbar-expand-xl navbar-light navbar-toparea">
+					<div class="container">
+						<a href="mailto:email@email.com" class="custom-menu-link" rel="home" aria-current="page">email@email.com</a>
+						<?php
+						wp_nav_menu(
+							array(
+								'theme_location'  => 'toparea',
+								'container_class' => 'collapse navbar-collapse',
+								'container_id'    => 'navbarNavDropdown',
+								'menu_class'      => 'navbar-nav ml-auto',
+								'fallback_cb'     => '',
+								'menu_id'         => 'toparea-menu',
+								'depth'           => 2,
+								'walker'          => '',
+							)
+						);
+						?>
+					</div>
+				</nav>
 				<nav class="navbar navbar-expand-xl navbar-light">
 					<div class="container">
 							<!-- Your site title as branding in the menu -->
