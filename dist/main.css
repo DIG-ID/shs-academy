@@ -12878,6 +12878,7 @@ body:not(.is-using-mouse) .fancybox__container :focus {
   display: block;
 }
 
+/*Menus*/
 #wrapper-navbar {
   width: 100%;
   z-index: 999;
@@ -12943,12 +12944,31 @@ body:not(.is-using-mouse) .fancybox__container :focus {
   border-bottom: 2px solid #EBEBEB;
 }
 .navbar-toparea .menu-item a {
+  padding: 0 18px;
   line-height: 42px;
   font-size: 14px;
+}
+.navbar-toparea .menu-item:last-child a {
+  padding-right: 0;
 }
 
 .navbar-expand-xl .navbar-collapse {
   justify-content: flex-end;
+}
+
+/*Banner Section*/
+#wrapper-banner {
+  background-color: #27273B;
+}
+
+.page__title {
+  font-family: "roboto", sans-serif;
+  font-size: 100px;
+  letter-spacing: -0.3px;
+  line-height: 100px;
+  color: #F5FAFF;
+  text-align: center;
+  padding: 218px 0;
 }
 
 @media (min-width: 1400px) {

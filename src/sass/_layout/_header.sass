@@ -1,3 +1,4 @@
+/*Menus*/
 #wrapper-navbar
   width: 100%
   z-index: 999
@@ -56,9 +57,27 @@
     border-bottom: 2px solid #EBEBEB
     .menu-item
       a
+        padding: 0 18px
         line-height: 42px
         font-size: 14px
+      &:last-child
+        a
+          padding-right: 0
 
 .navbar-expand-xl
   .navbar-collapse
     justify-content: flex-end
+
+/*Banner Section*/
+#wrapper-banner
+  background-color: $primary-color
+
+.page
+  &__title
+    font-family: $primary-font
+    font-size: 100px
+    letter-spacing: -0.3px
+    line-height: 100px
+    color: $bg-color-blue
+    text-align: center
+    padding: 218px 0
