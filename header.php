@@ -16,7 +16,7 @@
 		<?php do_action( 'wp_body_open' ); ?>
 		<header>
 			<div id="wrapper-navbar" itemscope itemtype="http://schema.org/WebSite">
-					<nav class="navbar navbar-expand-xl navbar-light navbar-toparea">
+					<nav class="navbar navbar-expand-lg navbar-light navbar-toparea">
 						<div class="container">
 							<a href="mailto:email@email.com" class="custom-menu-link" rel="home" aria-current="page">email@email.com</a>
 							<?php
@@ -35,7 +35,7 @@
 							?>
 						</div>
 					</nav>
-					<nav class="navbar navbar-expand-xl navbar-light navbar-main">
+					<nav class="navbar navbar-expand-lg navbar-light navbar-main">
 						<div class="container">
 								<!-- Your site title as branding in the menu -->
 								<?php if ( ! has_custom_logo() ) { ?>
@@ -47,6 +47,7 @@
 								<?php } else {
 									the_custom_logo();
 								} ?><!-- end custom logo -->
+								<?php get_template_part( 'template-parts/header-mobile' ); ?>
 							<!-- The WordPress Menu goes here -->
 							<?php
 							wp_nav_menu(
@@ -66,4 +67,5 @@
 					</nav><!-- .site-navigation -->
 				</div><!-- #wrapper-navbar end -->
 				<?php get_template_part( 'template-parts/page-title' ); ?>
+				<?php get_template_part( 'template-parts/menu-mobile' ); ?>
 			</header>

@@ -1,6 +1,19 @@
 @import 'header'
 
+.only
+  &__responsive
+    display: none
+  &__desktop
+    display: block
+
 @media (min-width: $xxl)
   .container
       max-width: 1440px
       padding: 0
+
+@media (max-width: $lg)
+  .only
+    &__responsive
+      display: block
+    &__desktop
+      display: none

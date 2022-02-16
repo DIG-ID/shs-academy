@@ -21,22 +21,23 @@
   background-color: $bg-primary
   .menu-item
     display: block
-  .menu-item > a
-    display: block
-    outline: 0
-    font-family: $primary-font
-    text-decoration: none
-    color: #555555
-    font-size: 18px
-    letter-spacing: 0
-    line-height: 55px
-    font-weight: 400
-    padding: 0 20px
-    &:hover
-      color: $color-red-dark
-      text-decoration: none
-    &:focus
+  .menu-item
+    a
+      display: block
       outline: 0
+      font-family: $primary-font
+      text-decoration: none
+      color: #555555
+      font-size: 18px
+      letter-spacing: 0
+      line-height: 55px
+      font-weight: 400
+      padding: 0 20px
+      &:hover
+        color: $color-red-dark
+        text-decoration: none
+      &:focus
+        outline: 0
   &-main
     .menu-item
       &:first-child
@@ -64,7 +65,7 @@
         a
           padding-right: 0
 
-.navbar-expand-xl
+.navbar-expand-lg
   .navbar-collapse
     justify-content: flex-end
 
@@ -81,3 +82,53 @@
     color: $bg-color-blue
     text-align: center
     padding: 218px 0
+
+@media (max-width: $lg)
+  #opener
+      outline: 0
+      background-color: transparent
+      position: relative
+      padding: 11px 18px
+      border: none
+      &__menu
+        min-height: calc(99vh - 60px)
+        margin-top: 8px
+        flex-basis: 100%
+        flex-grow: 1
+        align-items: center
+        background-color: #ebf0f0
+
+  .navbar
+    padding: 0
+    .menu-item
+      margin: 0
+      padding: 0 20px 0 15px
+      a
+        color: #000
+        font-family: $primary-font
+        font-size: 28px
+        font-weight: 400
+        line-height: 36px
+        letter-spacing: 0px
+        padding: 10px 0
+        border-bottom: 1px solid $color-red-dark
+        outline: 0
+        &:hover
+          border-bottom: 1px solid $color-red-dark
+    &-toggle
+      .icon-bar
+        display: block
+        width: 25px
+        height: 2px
+        margin-top: 4px
+        border-radius: 1px
+        background-color: $color-red-dark
+    &-toparea
+      display: none
+
+  .custom-logo-link
+    padding: 15px 0
+
+  .menu
+    &__rightside
+      display: flex
