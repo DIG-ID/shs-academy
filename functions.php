@@ -7,9 +7,9 @@ function shs_theme_setup() {
 
 	register_nav_menus(
 		array(
-			'primary' => __( 'Primary Menu', 'shs-a' ),
-			'toparea' => __( 'Top Area Menu', 'shs-a' ),
-			'copyright-menu' => __( 'Copyright Menu', 'shs-a' ),
+			'primary'   => __( 'Primary Menu', 'shs-a' ),
+			'toparea'   => __( 'Top Area Menu', 'shs-a' ),
+			'copyright' => __( 'Copyright Menu', 'shs-a' ),
 		)
 	);
 
@@ -57,7 +57,7 @@ function shs_theme_enqueue_styles() {
 	//wp_enqueue_style( 'style', get_template_directory_uri() . '/style.css', false, $theme_version, 'all' );
 	wp_enqueue_style( 'theme-styles', get_stylesheet_directory_uri() . '/dist/main.css', array(), $theme_version );
 	wp_enqueue_script( 'jquery' );
-	wp_enqueue_script( 'theme-scripts', get_stylesheet_directory_uri() . '/dist/main.js', array( 'jquery' ), $theme_version, true );
+	wp_enqueue_script( 'theme-scripts', get_stylesheet_directory_uri() . '/dist/main.js', array( 'jquery' ), $theme_version, false );
 }
 add_action( 'wp_enqueue_scripts', 'shs_theme_enqueue_styles' );
 

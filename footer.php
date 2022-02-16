@@ -5,6 +5,18 @@
 						<?php dynamic_sidebar( 'footer' ); ?>
 					</div>
 				</div>
+				<div class="row">
+					<div class="col-12 copyright-wrapper">
+						<?php
+						wp_nav_menu(
+							array(
+								'theme_location' => 'copyright',
+								'menu_id'        => 'copyright-menu',
+							)
+						);
+						?>
+					</div>
+				</div>
 			</div>
 		</footer>
 		<?php wp_footer(); ?>

@@ -5,12 +5,13 @@ let mix = require('laravel-mix');
 mix
   .setPublicPath('dist')
   .setResourceRoot('./')
-  .disableNotifications()
   .autoload({
     jquery: ['$', 'window.jQuery']
   })
-  .js('src/js/main.js', 'dist').setPublicPath('dist')
+  .js('src/js/main.js', 'dist')
   .sass('src/sass/main.sass', 'dist')
+
+  .disableNotifications()
   .browserSync({
     proxy: "localhost/shs-academy",
     files: ["./**/*.php", "./dist/*.js", "./dist/*.css"]

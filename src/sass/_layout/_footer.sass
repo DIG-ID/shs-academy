@@ -4,8 +4,9 @@
   .main-footer-wrapper
     display: flex
     justify-content: space-between
+    flex-wrap: wrap
     padding-top: 120px
-    padding-bottom: 120px
+    padding-bottom: 80px
     border-bottom: 1px solid transparentize(#fff, 0.8)
     .widget
       margin-right: 120px
@@ -26,6 +27,12 @@
         line-height: 26px
         &:last-of-type
           margin-bottom: 0px
+        strong
+          opacity: 0.8
+          font-size: 20px
+          font-weight: normal
+          line-height: 36px
+
       figure
         display: inline-block
         margin: 0px 40px 0px 0px
@@ -45,12 +52,58 @@
         column-count: 2
         li
           margin-bottom: 40px
-          &:nth-child(even)
-            margin-bottom: 0
           a
             color: $text-color-blue
             font-family: $primary-font
             font-size: 16px
             text-decoration: none
             line-height: 26px
-            
+            transition: all .4s ease-in-out
+            opacity: .8
+            &:hover
+              color: $color-red-dark
+  .copyright-wrapper
+    .menu-copyright-menu-container
+      display: flex
+      justify-content: center
+      #copyright-menu
+        margin: 0
+        padding: 0
+        list-style-type: none
+        display: flex
+        justify-content: center
+        .menu-item
+          margin-right: 40px
+          padding: 20px 0px
+          &:last-child
+            margin-right: 0px
+          a
+            color: transparentize($text-color-blue, 0.2)
+            font-family: $primary-font
+            font-size: 16px
+            text-decoration: none
+            transition: all .4s ease-in-out
+            &:hover
+              color: $color-red-dark
+
+@media (max-width: $lg)
+  #main-footer
+    .main-footer-wrapper
+      padding-top: 100px
+      padding-bottom: 60px
+      .widget
+        margin: 0px 0px 40px 0px
+        &:first-child
+          flex-grow: 2
+          width: 60%
+          max-width: 60%
+          margin-bottom: 100px
+        &:nth-child(2)
+          flex-grow: 1
+          width: 50%
+          max-width: 50%
+        &:last-child
+          flex-grow: 1
+          width: 50%
+          max-width: 50%
+
