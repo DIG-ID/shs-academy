@@ -45,4 +45,4 @@ require get_template_directory() . '/inc/theme-optimizations.php';
 require get_template_directory() . '/inc/theme-template-tags.php';
 
 // Theme customizer options.
-//require get_template_directory() . '/inc/customizer.php';
+require get_template_directory() . '/inc/customizer.php';
