@@ -1,0 +1,56 @@
+#main-footer
+  margin-top: 100px
+  background-color: $primary-color
+  .main-footer-wrapper
+    display: flex
+    justify-content: space-between
+    padding-top: 120px
+    padding-bottom: 120px
+    border-bottom: 1px solid transparentize(#fff, 0.8)
+    .widget
+      margin-right: 120px
+      color: $text-color-blue
+      max-width: 380px
+      &:last-child
+        margin-right: 0px
+      .widget-title
+        color: #fff
+        font-family: $primary-font
+        font-size: 34px
+        font-weight: 400
+        margin-bottom: 40px
+      p
+        color: $text-color-blue
+        font-family: $primary-font
+        font-size: 16px
+        line-height: 26px
+        &:last-of-type
+          margin-bottom: 0px
+      figure
+        display: inline-block
+        margin: 0px 40px 0px 0px
+        float: left
+        &:last-of-type
+          margin: 0px
+          img
+            mix-blend-mode: screen
+      img
+        max-width: 210px
+        display: inline-block
+
+      .menu
+        margin: 0
+        padding: 0
+        list-style-type: none
+        column-count: 2
+        li
+          margin-bottom: 40px
+          &:nth-child(even)
+            margin-bottom: 0
+          a
+            color: $text-color-blue
+            font-family: $primary-font
+            font-size: 16px
+            text-decoration: none
+            line-height: 26px
+            

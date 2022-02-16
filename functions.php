@@ -1,14 +1,15 @@
 <?php
 
-add_action( 'after_setup_theme', 'shs_theme_setup' );
-
-// Setup theme
+/**
+ * Setup theme
+ */
 function shs_theme_setup() {
 
 	register_nav_menus(
 		array(
 			'primary' => __( 'Primary Menu', 'shs-a' ),
 			'toparea' => __( 'Top Area Menu', 'shs-a' ),
+			'copyright-menu' => __( 'Copyright Menu', 'shs-a' ),
 		)
 	);
 
@@ -24,11 +25,33 @@ function shs_theme_setup() {
 
 }
 
-// Enqueue styles and scripts
-add_action( 'wp_enqueue_scripts', 'shs_theme_enqueue_styles' );
+add_action( 'after_setup_theme', 'shs_theme_setup' );
+
+/**
+ * Register our sidebars and widgetized areas.
+ */
+function shs_theme_footer_widgets_init() {
+
+	register_sidebar(
+		array(
+			'name'          => 'Footer',
+			'id'            => 'footer',
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h3 class="widget-title">',
+			'after_title'   => '</h3>',
+		),
+	);
+
+}
+add_action( 'widgets_init', 'shs_theme_footer_widgets_init' );
+
+/**
+ * Enqueue styles and scripts
+ */
 function shs_theme_enqueue_styles() {
 
-	// Get the theme data
+	//Get the theme data
 	$the_theme     = wp_get_theme();
 	$theme_version = $the_theme->get( 'Version' );
 	//wp_enqueue_style( 'style', get_template_directory_uri() . '/style.css', false, $theme_version, 'all' );
@@ -36,7 +59,7 @@ function shs_theme_enqueue_styles() {
 	wp_enqueue_script( 'jquery' );
 	wp_enqueue_script( 'theme-scripts', get_stylesheet_directory_uri() . '/dist/main.js', array( 'jquery' ), $theme_version, true );
 }
-
+add_action( 'wp_enqueue_scripts', 'shs_theme_enqueue_styles' );
 
 // Theme otimizations.
 require get_template_directory() . '/inc/theme-optimizations.php';
