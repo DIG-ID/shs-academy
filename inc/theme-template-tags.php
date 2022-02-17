@@ -8,8 +8,9 @@
  */
 function shs_theme_before_main_content() {
 	?>
-	<div id="main-content" class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-9 px-15">
-		<section id="main-content__wrapper">
+	<main id="main-content">
+		<div class="container">
+			<div class="row">
 	<?php
 }
 
@@ -20,8 +21,9 @@ add_action( 'before_main_content', 'shs_theme_before_main_content' );
  */
 function shs_theme_after_main_content() {
 	?>
-		</section><!-- #main-content__wrapper -->
-	</div><!-- #main-content-->
+			</div>
+		</div>
+	</main><!-- #main-content-->
 	<?php
 }
 
