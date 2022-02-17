@@ -1,0 +1,32 @@
+.countdown-section
+  position: absolute
+  bottom: -170px
+  width: 100%
+#countdown
+  list-style-type: none
+  padding: 0px
+  margin: 0px
+  display: flex
+  justify-content: center
+  align-items: center
+  li
+    background-color: $color-red-light
+    font-family: $primary-font
+    font-size: 18
+    font-weight: bold
+    color: #fff
+    width: 270px
+    height: 270px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    align-content: center
+    margin-right: 30px
+    &:last-of-type
+      margin-right: 0px
+    span
+      display: block
+      font-size: 100px
+      font-weight: bold
+      color: $secondary-color

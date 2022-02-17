@@ -6,7 +6,7 @@
 $banner = get_field( 'home_page_settings' );
 if ( $banner ) : ?>
 	<section id="section-banner" class="section-banner" style="background:url(<?php echo esc_url( get_field( 'home_page_settings_banner_background_image' ) ); ?>);background-position:center;background-repeat:no-repeat;background-size:cover;background-attachment: fixed;">
-		<div class="section-banner__content rellax" data-rellax-speed="-3">
+		<div class="section-banner__content rellax" data-rellax-speed="2">
 			<div class="container">
 				<div class="row align-items-center">
 					<div class="col-12 col-sm-12 col-md-10 col-lg-8">
@@ -19,5 +19,6 @@ if ( $banner ) : ?>
 				</div>
 			</div>
 		</div>
+		<?php get_template_part( 'template-parts/home/countdown' ); ?>
 	</section>
 <?php endif;
