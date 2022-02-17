@@ -1,0 +1,27 @@
+.section
+  &__title
+    font-family: $primary-font
+    font-size: 60px
+    font-weight: normal
+    line-height: 70px
+    letter-spacing: -3px
+    color: $secondary-color
+    margin-bottom: 30px
+  &__subtitle
+    font-family: $primary-font
+    font-size: 16px
+    font-weight: bold
+    line-height: 50px
+    color: $color-red-light
+    position: relative
+    display: inline-block
+    &::after
+      position: absolute
+      display: inline-block
+      top: 50%
+      transform: translateY(-50%)
+      content: ''
+      width: 70px
+      height: 2px
+      background-color: $color-red-light
+      margin-left: 15px
