@@ -3,15 +3,6 @@
   width: 100%
   z-index: 999
 
-#opener
-  &__menu
-    display: none
-  &__eventsmenu
-    display: none
-    background-color: #27273B
-    width: 100%
-    padding: 70px 140px
-
 .custom
   &-logo
     width: 95px
@@ -30,7 +21,6 @@
   background-color: $bg-primary
   .menu-item
     display: block
-  .menu-item
     a
       display: block
       outline: 0
@@ -47,11 +37,11 @@
         text-decoration: none
       &:focus
         outline: 0
+  .current-menu-item
+    a
+      color: $color-red-dark
   &-main
     .menu-item
-      &:first-child
-        a
-          color: $color-red-dark
       &:nth-last-child(2)
         a
           padding-right: 70px
@@ -78,11 +68,54 @@
   .navbar-collapse
     justify-content: flex-end
 
+
+#opener
+  &__menu
+    display: none
+  &__eventsmenu
+    display: none
+    position: absolute
+    z-index: 999
+    background-color: $primary-color
+    width: 100%
+    padding: 50px 140px
+
 .menu
+  &__event-link
+    text-decoration: none
+    &:hover
+      .menu__event-title
+        border-bottom-width: 8px
+        padding-bottom: 0
+    &:active
   &__event-title
     font-family: $primary-font
     font-size: 38px
-    color: #FFFFFF
+    line-height: 80px
+    color: $bg-primary
+    border-bottom: 1px solid $color-red-dark
+    padding-bottom: 7px
+    max-width: 400px
+  &__event-text
+    font-family: $primary-font
+    font-size: 19px
+    line-height: 28px
+    color: $bg-primary
+    max-width: 400px
+  &__event-button
+    font-family: $primary-font
+    font-size: 19px
+    line-height: 28px
+    text-transform: uppercase
+    color: $text-color-blue
+    max-width: 400px
+    margin-bottom: 70px
+  &__event-footer
+    padding-top: 50px
+    border-top: 1px solid $color-red-dark
+  &__event-img
+    margin-right: 40px
+    mix-blend-mode: screen
 
 /*Banner Section*/
 #wrapper-banner

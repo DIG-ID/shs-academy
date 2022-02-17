@@ -30,10 +30,12 @@ $(function() {
       x.style.display = "none";
       x.classList.toggle("closed");
       x.classList.toggle("open");
+      $('.opener__events').removeClass('current-menu-item');
     } else {
       x.style.display = "block";
       x.classList.toggle("open");
       x.classList.toggle("closed");
+      $('.opener__events').addClass('current-menu-item');
     }
   });
 });
