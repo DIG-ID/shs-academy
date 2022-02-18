@@ -1,12 +1,12 @@
 <?php ?>
 
-<section id="speakers-section" class="section section__speakers">
-	<span class="bg-img-1 rellax" data-rellax-speed="6" data-rellax-percentage="0.5"></span>	
-	<span class="bg-img-2 rellax" data-rellax-speed="-4" data-rellax-percentage="0.5"></span>
+<section id="section-speakers" class="section section-speakers">
+	<span class="section-speakers__bg-img-1 rellax" data-rellax-speed="6" data-rellax-percentage="0.5"></span>	
+	<span class="section-speakers__bg-img-2 rellax" data-rellax-speed="-4" data-rellax-percentage="0.5"></span>
 	<div class="container container__inside">
 		<div class="row">
 			<div class="col-12 text-center">
-				<h2 class="speakers-section-title"><?php esc_html_e( 'Die Speaker', 'shs-a' ); ?></h2>
+				<h2 class="section-speakers__title"><?php esc_html_e( 'Die Speaker', 'shs-a' ); ?></h2>
 			</div>
 		</div>
 		<div class="row align-items-center justify-content-center">

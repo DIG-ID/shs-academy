@@ -1,12 +1,12 @@
 <?php ?>
 
-<section id="program-section" class="section section__program">
+<section id="section-program" class="section section-program">
 	<div class="container">
 		<div class="row align-items-center justify-content-center">
 			<div class="col-12 col-sm-12 col-md-12 col-lg-12">
-				<div class="program__content">
-					<h2 class="program__title"><?php the_field( 'home_page_settings_program_title' ); ?></h2>
-					<p class="program__description"><?php the_field( 'home_page_settings_program_description' ); ?></p>
+				<div class="section-program__content">
+					<h2 class="section-program__title"><?php the_field( 'home_page_settings_program_title' ); ?></h2>
+					<p class="section-program__description"><?php the_field( 'home_page_settings_program_description' ); ?></p>
 					<?php
 					$event_program = get_field( 'event_program' );
 					if ( $event_program ) :
@@ -20,7 +20,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="thumbnails-section">
+	<div class="section-program__thumbnails">
 		<div class="container">
 			<div class="row justify-space-between">
 				<?php

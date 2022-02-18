@@ -1,4 +1,4 @@
-.section__about-us
+.section-about-us
   padding-top: 390px
   padding-bottom: 220px
   background-color: $bg-color-blue
@@ -7,7 +7,33 @@
   img
     position: relative
     z-index: 2
-  .bg-img-1
+  &__title
+    font-family: $primary-font
+    font-size: 60px
+    font-weight: normal
+    line-height: 70px
+    letter-spacing: -3px
+    color: $secondary-color
+    margin-bottom: 30px
+  &__subtitle
+    font-family: $primary-font
+    font-size: 16px
+    font-weight: bold
+    line-height: 50px
+    color: $color-red-light
+    position: relative
+    display: inline-block
+    &::after
+      position: absolute
+      display: inline-block
+      top: 50%
+      transform: translateY(-50%)
+      content: ''
+      width: 70px
+      height: 2px
+      background-color: $color-red-light
+      margin-left: 15px
+  &__bg-img-1
     display: block
     z-index: 1
     position: absolute
@@ -17,7 +43,7 @@
     background-image: url('../../../images/Bg_cross.svg')
     background-repeat: no-repeat
     background-size: cover
-  .bg-img-2
+  &__bg-img-2
     display: block
     z-index: 1
     position: absolute
@@ -28,7 +54,7 @@
     background-image: url('../../../images/Bg_triangle.svg')
     background-repeat: no-repeat
     background-size: cover
-  .section__content
+  &__content
     font-family: $primary-font
     font-weight: normal
     margin-bottom: 20px
