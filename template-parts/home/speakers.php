@@ -13,25 +13,25 @@
 			<?php
 			$speaker_posts = get_field( 'event_speakers' );
 			if ( $speaker_posts ) :
-				foreach ( $speaker_posts as $post ) :
+				foreach ( $speaker_posts as $speaker_post ) :
+					$speaker_title        = get_the_title( $speaker_post->ID );
+					$speaker_position     = get_field( 'speaker_position', $speaker_post->ID );
+					$speaker_showon_front = get_field( 'speaker_show_on_the_home_page', $speaker_post->ID );
 					// Setup this post for WP functions (variable must be named $post).
-					setup_postdata( $post );
-					if ( get_field( 'speaker_show_on_the_home_page', $post->ID ) ) :
+					if ( $speaker_showon_front ) :
 						?>
 						<div class="col-12 col-sm-12 col-md-4 col-lg-4">
 							<figure class="speaker-card">
-								<?php the_post_thumbnail( 'full' ); ?>
+								<?php echo get_the_post_thumbnail( $speaker_post->ID, 'full' ); ?>
 								<figcaption class="speaker-card__content">
-									<p class="speaker-card__title"><?php the_title(); ?></p>
-									<p class="speaker-card__position"><?php the_field( 'speaker_position' ); ?></p>
+									<p class="speaker-card__title"><?php echo $speaker_title; ?></p>
+									<p class="speaker-card__position"><?php echo $speaker_position; ?></p>
 								</figcaption>
 							</figure>
 						</div>
 						<?php
 					endif;
 				endforeach;
-				// Reset the global post object so that the rest of the page works correctly.
-				wp_reset_postdata();
 			endif; ?>
 		</div>
 		<div class="row">
