@@ -17,7 +17,7 @@
 					if ( $partners_showon_front ) :
 						?>
 						<figure class="col-12 col-sm-12 col-md-2 col-lg-2 swiper-slide partner-card">
-							<?php echo get_the_post_thumbnail( $partners_posteem qut->ID, 'full' ); ?>
+							<?php echo get_the_post_thumbnail( $partners_post->ID, 'full' ); ?>
 						</figure>
 						<?php
 					endif;
