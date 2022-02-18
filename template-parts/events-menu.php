@@ -1,5 +1,5 @@
 <div id="opener__eventsmenu" class="closed">
-	<div class="container">
+	<div class="container menu__event-container">
 		<div class="row">
 			<a class="col-6 col-md-6 col-sm-12 px-15 menu__event-link" href="<?php echo get_permalink( get_page_by_path( 'tickets' ) ) ?>">
 					<p class="menu__event-title"><?php  echo get_the_title( get_page_by_path( 'tickets' ) ); ?></p>

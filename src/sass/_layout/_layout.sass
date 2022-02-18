@@ -1,6 +1,8 @@
 @import 'header'
 @import 'footer'
+@import 'partners'
 @import '_home/_home'
+
 
 .only
   &__responsive
@@ -10,8 +12,10 @@
 
 @media (min-width: $xxl)
   .container
-      max-width: 1440px
-      padding: 0
+    max-width: 1440px
+    padding: 0
+    &__inside
+      max-width: 1160px
 
 @media (max-width: $lg)
   .only

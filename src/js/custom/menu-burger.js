@@ -23,7 +23,7 @@ $(function() {
     }
   });
 
-  /*Open Menu Mobile*/
+  /*Open Menu Events*/
   $( ".opener__events" ).on('click',function() {
     var x = document.getElementById("opener__eventsmenu");
     if (x.style.display === "block") {

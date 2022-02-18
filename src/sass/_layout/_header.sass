@@ -82,6 +82,8 @@
     padding: 50px 140px
 
 .menu
+  &__event-container
+    max-width: 1160px!important
   &__event-link
     text-decoration: none
     &:hover
@@ -146,7 +148,10 @@
         flex-basis: 100%
         flex-grow: 1
         align-items: center
-        background-color: #27273B
+        background-color: $primary-color
+        position: absolute
+        z-index: 999
+        width: 100%
 
   .navbar
     padding: 0

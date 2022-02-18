@@ -66,7 +66,8 @@
 						</div>
 					</nav><!-- .site-navigation -->
 				</div><!-- #wrapper-navbar end -->
-				<?php get_template_part( 'template-parts/page-title' ); ?>
+
 				<?php get_template_part( 'template-parts/events-menu' ); ?>
+				<?php get_template_part( 'template-parts/page-title' ); ?>
 				<?php get_template_part( 'template-parts/menu-mobile' ); ?>
 			</header>
