@@ -1,13 +1,14 @@
 <section id="page-partners-section" class="section section__partners">
   <div class="container container__inside">
+    <p class="partners__topsection-title">Partners</p>
     <div class="row">
-      <div class="col-6 col-md-6 col-sm-12 px-15 partners__col">
-        <p>Institutional Partner</p>
+      <div class="col-6 col-md-6 col-sm-12 px-15 partners__column">
+        <p class="partners__catTitle">Institutional Partner</p>
         <?php
         $institutional_query_args = array(
     			'post_type' => 'partners',
     			'nopaging'  => true,
-    			'order'     => 'DESC',
+    			'order'     => 'ASC',
     			'orderby'   => 'date',
           'category_name'  => 'institutional',
     		);
@@ -16,20 +17,20 @@
     			while ( $institutional_query->have_posts() ) :
     				$institutional_query->the_post();
     				?>
-            <a href="#"><?php the_post_thumbnail('thumbnail'); ?></a>
+            <a href="#" target="_blank"><?php the_post_thumbnail('full'); ?></a>
             <?php
             endwhile;
            endif;
           wp_reset_postdata();
          ?>
       </div>
-      <div class="col-6 col-md-6 col-sm-12 px-15 partners__col">
-        <p>Culinary Partner</p>
+      <div class="col-6 col-md-6 col-sm-12 px-15 partners__column">
+        <p class="partners__catTitle">Culinary Partner</p>
         <?php
         $culinary_query_args = array(
     			'post_type' => 'partners',
     			'nopaging'  => true,
-    			'order'     => 'DESC',
+    			'order'     => 'ASC',
     			'orderby'   => 'date',
           'category_name'  => 'culinary',
     		);
@@ -38,7 +39,7 @@
     			while ( $culinary_query->have_posts() ) :
     				$culinary_query->the_post();
     				?>
-              <a href="#"><?php the_post_thumbnail('thumbnail'); ?></a>
+              <a href="#" target="_blank"><?php the_post_thumbnail('full'); ?></a>
             <?php
             endwhile;
            endif;
@@ -47,13 +48,13 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-12 col-md-12 col-sm-12 px-15 partners__col">
-        <p>Innovation Partner</p>
+      <p class="partners__catTitle">Innovation Partner</p>
+      <div class="col-12 col-md-12 col-sm-12 px-15 partners__column">
         <?php
         $innovation_query_args = array(
           'post_type' => 'partners',
           'nopaging'  => true,
-          'order'     => 'DESC',
+          'order'     => 'ASC',
           'orderby'   => 'date',
           'category_name'  => 'innovation',
         );
@@ -62,7 +63,7 @@
           while ( $innovation_query->have_posts() ) :
             $innovation_query->the_post();
             ?>
-              <a href="#"><?php the_post_thumbnail('thumbnail'); ?></a>
+              <a href="#" target="_blank"><?php the_post_thumbnail('full'); ?></a>
             <?php
             endwhile;
            endif;
