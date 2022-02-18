@@ -28,17 +28,13 @@
 }());
 </script>
 
-<section class="countdown-section">
-	<div class="container">
-		<div class="row">
-			<div class="col-12">
-				<ul id="countdown">
-					<li><span id="days"></span>Days</li>
-					<li><span id="hours"></span>Hours</li>
-					<li><span id="minutes"></span>Minutes</li>
-					<li><span id="seconds"></span>Seconds</li>
-				</ul>
-			</div>
-		</div>
+<div class="countdown-section">
+	<div class="container container__inside">
+		<ul id="row countdown">
+			<li class="col-3"><span id="days"></span>Days</li>
+			<li class="col-3"><span id="hours"></span>Hours</li>
+			<li class="col-3"><span id="minutes"></span>Minutes</li>
+			<li class="col-3"><span id="seconds"></span>Seconds</li>
+		</ul>
 	</div>
-</section>
+</div>

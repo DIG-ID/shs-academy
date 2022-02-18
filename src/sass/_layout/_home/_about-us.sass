@@ -31,6 +31,7 @@
   .section__content
     font-family: $primary-font
     font-weight: normal
+    margin-bottom: 20px
     ul
       margin-bottom: 30px
       li
@@ -41,3 +42,27 @@
       font-size: 16px
       line-height: 28px
       color: #838383
+  .visitors-number
+    display: block
+    font-family: $primary-font
+    font-weight: normal
+    font-size: 100px
+    letter-spacing: -3px
+    line-height: 1
+    margin-bottom: 40px
+    color: $secondary-color
+    span
+      color: $color-red-light
+      position: relative
+      &::before
+        position: absolute
+        top: 19px
+        left: -26px
+        display: block
+        content: ''
+        width: 23px
+        height: 23px
+        border-bottom: solid 11px transparent
+        border-left: solid 11px $color-red-light
+        border-right: solid 12px transparent
+        border-top: solid 12px $color-red-light

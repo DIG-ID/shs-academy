@@ -26,6 +26,8 @@ if ( $current_event_query->have_posts() ) :
 
 		get_template_part( 'template-parts/home/banner' );
 		get_template_part( 'template-parts/home/about-us' );
+		get_template_part( 'template-parts/home/program' );
+		get_template_part( 'template-parts/home/speakers' );
 
 		$event_status = get_field( 'event_status' );
 		if ( 'before' === $event_status ) :
