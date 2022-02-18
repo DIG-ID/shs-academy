@@ -30,11 +30,36 @@
 
 <div class="countdown-section">
 	<div class="container container__inside">
-		<ul id="row countdown">
-			<li class="col-3"><span id="days"></span>Days</li>
-			<li class="col-3"><span id="hours"></span>Hours</li>
-			<li class="col-3"><span id="minutes"></span>Minutes</li>
-			<li class="col-3"><span id="seconds"></span>Seconds</li>
-		</ul>
+		<div class="row">
+
+			<div class="col-3">
+				<div class="countdown-section__box">
+					<span id="days"></span>
+					Days
+				</div>
+			</div>
+
+			<div class="col-3">
+				<div class="countdown-section__box">
+					<span id="hours"></span>
+					Hours
+				</div>
+			</div>
+
+			<div class="col-3">
+				<div class="countdown-section__box">
+					<span id="minutes"></span>
+					Minutes
+				</div>
+			</div>
+
+			<div class="col-3">
+				<div class="countdown-section__box">
+					<span id="seconds"></span>
+					Seconds
+				</div>
+			</div>
+
+</div>
 	</div>
 </div>
