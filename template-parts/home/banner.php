@@ -10,7 +10,7 @@ if ( $banner ) : ?>
 		<div class="section-banner__content rellax" data-rellax-speed="3" data-rellax-percentage="0.5">
 			<div class="container">
 				<div class="row align-items-center">
-					<div class="col-12 col-sm-12 col-md-10 col-lg-8">
+					<div class="col-12 col-sm-12 col-md-11 col-lg-8">
 						<p class="section-banner__subtitle"><?php the_field( 'home_page_settings_banner_subtitle' ); ?></p>
 						<h1 class="section-banner__title "><?php the_field( 'home_page_settings_banner_title' ); ?></h1>
 						<div class="section-banner__description"><?php the_field( 'home_page_settings_banner_content' ); ?></div>

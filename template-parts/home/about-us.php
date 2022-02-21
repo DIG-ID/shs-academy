@@ -3,10 +3,10 @@
 	<span class="section-about-us__bg-img-2 rellax" data-rellax-speed="-4" data-rellax-percentage="0.5"></span>
 	<div class="container container__inside">
 		<div class="row align-items-center justify-content-center">
-			<div class="col-12 col-sm-12 col-md-5 col-lg-6">
+			<div class="col-12 col-sm-12 col-md-10 col-lg-6">
 				<?php echo wp_get_attachment_image( get_field( 'home_page_settings_about_us_image' ), 'full' ); ?>
 			</div>
-			<div class="col-12 col-sm-12 col-md-5 col-lg-6">
+			<div class="col-12 col-sm-12 col-md-12 col-lg-6">
 				<p class="section-about-us__subtitle"><?php the_field( 'home_page_settings_about_us_subtitle' ); ?></p>
 				<h2 class="section-about-us__title"><?php the_field( 'home_page_settings_about_us_title' ); ?></h2>
 				<div class="section-about-us__content">

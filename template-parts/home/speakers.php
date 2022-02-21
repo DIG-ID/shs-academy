@@ -20,7 +20,7 @@
 					// Setup this post for WP functions (variable must be named $post).
 					if ( $speaker_showon_front ) :
 						?>
-						<div class="col-12 col-sm-12 col-md-4 col-lg-4">
+						<div class="col-12 col-sm-12 col-md-8 col-lg-4">
 							<figure class="speaker-card">
 								<?php echo get_the_post_thumbnail( $speaker_post->ID, 'full' ); ?>
 								<figcaption class="speaker-card__content">
