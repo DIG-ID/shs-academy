@@ -2,7 +2,7 @@
   <div class="container container__inside">
     <p class="partners__topsection-title">Partners</p>
     <div class="row">
-      <div class="col-6 col-md-6 col-sm-12 px-15 partners__column">
+      <div class="col-md-6 col-sm-12 px-15 partners__column">
         <p class="partners__catTitle">Institutional Partner</p>
         <?php
         $institutional_query_args = array(
@@ -24,7 +24,7 @@
           wp_reset_postdata();
          ?>
       </div>
-      <div class="col-6 col-md-6 col-sm-12 px-15 partners__column">
+      <div class="col-md-6 col-sm-12 px-15 partners__column">
         <p class="partners__catTitle">Culinary Partner</p>
         <?php
         $culinary_query_args = array(
@@ -49,7 +49,7 @@
     </div>
     <div class="row">
       <p class="partners__catTitle">Innovation Partner</p>
-      <div class="col-12 col-md-12 col-sm-12 px-15 partners__column">
+      <div class="col-md-12 col-sm-12 px-15 partners__column">
         <?php
         $innovation_query_args = array(
           'post_type' => 'partners',

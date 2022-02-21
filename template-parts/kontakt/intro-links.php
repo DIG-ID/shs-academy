@@ -4,25 +4,25 @@
     <div class="row links__row">
       <?php $contactDetails = get_field('contact_details');
       if( $contactDetails ): ?>
-        <div class="col-3 col-md-3 col-sm-12 px-15 links__col">
+        <div class="col-md-3 col-sm-12 px-15 links__col">
           <?php $phone_svg= wp_get_attachment_image_src(456, 'full');  ?>
           <img src="<?php echo $phone_svg[0]; ?>" alt="phone icon">
           <p class="links__title">Phone Number</p>
           <p class="links__details"><?php echo $contactDetails['phone_number']; ?></p>
         </div>
-        <div class="col-3 col-md-3 col-sm-12 px-15 links__col">
+        <div class="col-md-3 col-sm-12 px-15 links__col">
           <?php $email_svg= wp_get_attachment_image_src(454, 'full');  ?>
           <img src="<?php echo $email_svg[0]; ?>" alt="email icon">
           <p class="links__title">Email Address</p>
           <p class="links__details"><?php echo $contactDetails['email_address']; ?></p>
         </div>
-        <div class="col-3 col-md-3 col-sm-12 px-15 links__col">
+        <div class="col-md-3 col-sm-12 px-15 links__col">
           <?php $location_svg= wp_get_attachment_image_src(455, 'full');  ?>
           <img src="<?php echo $location_svg[0]; ?>" alt="location icon">
           <p class="links__title">Location</p>
           <p class="links__details"><?php echo $contactDetails['location']; ?></p>
         </div>
-        <div class="col-3 col-md-3 col-sm-12 px-15 links__col">
+        <div class="col-md-3 col-sm-12 px-15 links__col">
           <?php $socials_svg= wp_get_attachment_image_src(457, 'full');  ?>
           <img src="<?php echo $socials_svg[0]; ?>" alt="socials icon">
           <p class="links__title">Social Network</p>
