@@ -24,21 +24,29 @@ if ( $current_event_query->have_posts() ) :
 	while ( $current_event_query->have_posts() ) :
 		$current_event_query->the_post();
 
-		get_template_part( 'template-parts/home/banner' );
-		get_template_part( 'template-parts/home/about-us' );
-		get_template_part( 'template-parts/home/program' );
-		get_template_part( 'template-parts/home/speakers' );
-		get_template_part( 'template-parts/home/partners' );
-		get_template_part( 'template-parts/home/past-events' );
-		get_template_part( 'template-parts/home/testimonials' );
+		$_SESSION['event-status'] = get_field( 'event_status' );
 
-		$event_status = get_field( 'event_status' );
-		if ( 'before' === $event_status ) :
-			echo 'BEFORE THE EVENT';
-		elseif ( 'during' === $event_status ) :
-			echo 'DURING THE EVENT';
+		if ( 'before' === $_SESSION['event-status'] ) :
+			get_template_part( 'template-parts/home/banner' );
+			get_template_part( 'template-parts/home/about-us' );
+			get_template_part( 'template-parts/home/program' );
+			get_template_part( 'template-parts/home/speakers' );
+			get_template_part( 'template-parts/home/partners' );
+			get_template_part( 'template-parts/home/past-events' );
+			get_template_part( 'template-parts/home/testimonials' );
+		elseif ( 'during' === $_SESSION['event-status'] ) :
+			get_template_part( 'template-parts/home/banner' );
+			get_template_part( 'template-parts/home/about-us' );
+			get_template_part( 'template-parts/home/program' );
+			get_template_part( 'template-parts/home/speakers' );
+			get_template_part( 'template-parts/home/partners' );
+			get_template_part( 'template-parts/home/past-events' );
 		else :
-			echo 'AFTER THE EVENT';
+			get_template_part( 'template-parts/home/banner' );
+			get_template_part( 'template-parts/home/about-us' );
+			get_template_part( 'template-parts/home/partners' );
+			get_template_part( 'template-parts/home/past-events' );
+			get_template_part( 'template-parts/home/testimonials' );
 		endif;
 	endwhile;
 endif;
