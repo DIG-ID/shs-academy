@@ -1,6 +1,3 @@
-<?php
-
-?>
 <section id="section-about-us" class="section section-about-us">
 	<span class="section-about-us__bg-img-1 rellax" data-rellax-speed="4" data-rellax-percentage="0.5"></span>
 	<span class="section-about-us__bg-img-2 rellax" data-rellax-speed="-4" data-rellax-percentage="0.5"></span>

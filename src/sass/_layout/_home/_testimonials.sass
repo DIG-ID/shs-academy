@@ -1,0 +1,29 @@
+.section-testimonials
+  padding: 100px 0px
+  &__title
+    font-weight: normal
+    font-size: 55px
+    letter-spacing: -3px
+    color: $secondary-color
+    margin-bottom: 100px
+
+  .testimonials-swiper
+    width: 100%
+    overflow: hidden
+    position: relative
+  .testimonials-button-next,
+  .testimonials-button-prev
+    &::after
+      //font-family: $primary-font
+      //font-size: 51px
+      //letter-spacing: -0.3px
+      //line-height: 93px
+      color: $secondary-color
+  .testimonials-button-prev
+    left: -50px
+    &::after
+      //content: '<'
+  .testimonials-button-next
+    right: -50px
+    &::after
+      //content: '>'

@@ -1,0 +1,74 @@
+.section-past-events
+  padding-top: 220px
+  padding-bottom: 220px
+  background-color: $bg-color-blue
+  overflow: hidden
+  position: relative
+  img
+    position: relative
+    z-index: 2
+  &__title
+    font-family: $primary-font
+    font-size: 60px
+    font-weight: normal
+    line-height: 70px
+    letter-spacing: -3px
+    color: $secondary-color
+    margin-bottom: 30px
+  &__subtitle
+    font-family: $primary-font
+    font-size: 16px
+    font-weight: bold
+    line-height: 50px
+    color: $color-red-light
+    position: relative
+    display: inline-block
+    &::after
+      position: absolute
+      display: inline-block
+      top: 50%
+      transform: translateY(-50%)
+      content: ''
+      width: 70px
+      height: 2px
+      background-color: $color-red-light
+      margin-left: 15px
+  &__imgs-wrapper
+    position: relative
+    height: 675px
+    min-height: 675px
+    margin-right: 50px
+    img
+      &:last-child
+        position: absolute
+        bottom: 0
+        right: 0
+        border: 10px solid #fff
+        border-radius: 10px
+      
+  &__bg-img-1
+    display: block
+    z-index: 1
+    position: absolute
+    top: 200px
+    right: 0px
+    width: 210px
+    height: 773px
+    background-image: url('../../../images/Bg_past_events_trianlges.svg')
+    background-repeat: no-repeat
+    background-size: cover
+    opacity: 0.1
+  &__content
+    font-family: $primary-font
+    font-weight: normal
+    margin-bottom: 60px
+    ul
+      margin-bottom: 30px
+      li
+        font-size: 30px
+        line-height: 41px
+        color: $secondary-color
+    p
+      font-size: 16px
+      line-height: 28px
+      color: #838383
