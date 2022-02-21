@@ -18,15 +18,7 @@ $current_event_query_args = array(
 	),
 );
 
-$current_event_query = new WP_Query( $current_event_query_args );
-
-if ( $current_event_query->have_posts() ) :
-	while ( $current_event_query->have_posts() ) :
-		$current_event_query->the_post();
-
-		get_template_part( 'template-parts/home/about-us' );
-
-	endwhile;
-endif;
+get_template_part( 'template-parts/kontakt/intro-links' );
+get_template_part( 'template-parts/kontakt/get-in-touch' );
 
 get_footer();
