@@ -2,7 +2,7 @@
 /**
  * Template Name: Partner Page Template
  *
- * The template for displaying all content of the home page
+ * The template for displaying all content of the partner page
  */
 
 get_header();
