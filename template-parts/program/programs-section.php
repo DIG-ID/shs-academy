@@ -79,7 +79,7 @@
               endif;
               ?>
             </div>
-            <a class="main-btn main-btn__red programs__dl-btn" href="<?php echo get_field('program_file')['url']; ?>">Download Program</a>
+            <a class="main-btn main-btn__red programs__dl-btn" href="<?php echo get_field('program_file'); ?>"><?php esc_html_e( 'Download Program', 'shs-a' ); ?></a>
           </div>
           <?php $e++;
           endwhile;

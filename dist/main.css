@@ -13762,6 +13762,92 @@ body:not(.is-using-mouse) .fancybox__container :focus {
   top: -70px;
 }
 
+.section__tickets-intro {
+  padding: 0 0 160px 0;
+  position: relative;
+  background-color: #F5FAFF;
+}
+.section__tickets-intro .section-about-us__bg-img-2 {
+  top: -70px;
+}
+.section__tickets-offers {
+  padding: 160px 0;
+  position: relative;
+  background-color: #FFFFFF;
+}
+
+.tickets__title {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  letter-spacing: 0px;
+  color: #C50013;
+  text-transform: uppercase;
+}
+.tickets__price {
+  font-family: "Roboto", sans-serif;
+  font-size: 70px;
+  font-weight: 500;
+  line-height: 70px;
+  letter-spacing: 0px;
+  margin-bottom: 5px;
+  color: #002249;
+}
+.tickets__price span {
+  font-size: 16px;
+}
+.tickets__price-desc {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  letter-spacing: 0px;
+  color: #A0B6D0;
+}
+.tickets__desc {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  letter-spacing: 0px;
+  color: #838383;
+}
+.tickets__sep-line {
+  width: 42px;
+  height: 2px;
+  border-top: 2px solid #A0B6D0;
+  margin: 0 auto 16px auto;
+}
+.tickets__block {
+  max-width: 270px;
+  padding: 55px 40px;
+  background-color: #FFFFFF;
+  text-align: center;
+  margin-top: -110px;
+}
+.tickets__block:not(:last-child) {
+  margin-right: 30px;
+}
+.tickets__block:hover {
+  background-color: #C50013;
+  cursor: pointer;
+}
+.tickets__block:hover .button__tickets {
+  background-color: #27273B;
+  color: #FFFFFF;
+  border-color: #27273B;
+}
+.tickets__block:hover .tickets__title {
+  color: #FFFFFF;
+}
+.tickets__block:hover .tickets__price {
+  color: #FFFFFF;
+}
+.tickets__block:hover .tickets__price-desc {
+  color: #FFFFFF;
+}
+.tickets__block:hover .tickets__desc {
+  color: #FFFFFF;
+}
+.tickets__block:hover .tickets__sep-line {
+  border-color: #FFFFFF;
+}
+
 .section-banner {
   min-height: 925px;
   max-height: 925px;
@@ -14361,6 +14447,24 @@ body {
   background: #C50013;
   text-decoration: none;
   margin-right: 17px;
+}
+.button__tickets {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  letter-spacing: 0px;
+  font-weight: 600;
+  padding: 17px 47px;
+  color: #C50013;
+  background-color: #FFFFFF;
+  border: 1px solid #96ADC9;
+  border-radius: 0;
+  margin-top: 35px;
+  transition: none;
+}
+.button__tickets:hover {
+  background-color: #27273B;
+  color: #FFFFFF;
+  border-color: #27273B;
 }
 
 .main-btn {

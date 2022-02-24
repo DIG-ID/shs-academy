@@ -2,7 +2,7 @@
 /**
  * Template Name: Program Page Template
  *
- * The template for displaying all content of the home page
+ * The template for displaying all content of the program page
  */
 
 get_header();

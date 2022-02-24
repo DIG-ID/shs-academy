@@ -2,7 +2,7 @@
 /**
  * Template Name: Location Page Template
  *
- * The template for displaying all content of the home page
+ * The template for displaying all content of the location page
  */
 
 get_header();

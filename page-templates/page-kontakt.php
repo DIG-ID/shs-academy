@@ -2,7 +2,7 @@
 /**
  * Template Name: Kontakt Page Template
  *
- * The template for displaying all content of the home page
+ * The template for displaying all content of the kontakt page
  */
 
 get_header();
