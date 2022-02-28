@@ -4,7 +4,7 @@
       <?php
         if( have_rows('tickets') ):
             while( have_rows('tickets') ) : the_row(); ?>
-                <div class="col-md-6 col-sm-12 col-lg-3 tickets__block">
+                <div class="col-md-6 col-sm-12 col-lg-3 block__tickets">
                   <p class="tickets__title"><?php echo get_sub_field('ticket_title'); ?></p>
                   <p class="tickets__price"><span>€</span><?php echo get_sub_field('ticket_price'); ?></p>
                   <p class="tickets__price-desc"><?php echo get_sub_field('ticket_price_description'); ?></p>
