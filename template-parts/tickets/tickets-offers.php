@@ -1,4 +1,5 @@
 <section id="tickets-offers" class="section section__tickets-offers">
+  <span class="section-about-us__bg-img-2"></span>
   <div class="container container__inside container__offers">
     <div class="row align-items-center justify-content-center">
       <p class="offers__section-title"><?php esc_html_e( 'Hotel Offers', 'shs-a' ); ?></p>
