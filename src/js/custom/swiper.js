@@ -26,4 +26,23 @@ $(function() {
       prevEl: '.testimonials-button-prev',
     },
   });
+
+  const eventGalleryThumbs = new Swiper(".gallerySwiperThumbs", {
+    loop: true,
+    spaceBetween: 10,
+    slidesPerView: 4,
+    freeMode: true,
+    watchSlidesProgress: true,
+  });
+  const eventGallery = new Swiper(".gallerySwiper", {
+    loop: true,
+    spaceBetween: 10,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    thumbs: {
+      swiper: eventGalleryThumbs,
+    },
+  });
 });

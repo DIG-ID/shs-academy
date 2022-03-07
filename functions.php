@@ -23,6 +23,10 @@ function shs_theme_setup() {
 
 	add_theme_support( 'html5', array( 'comment-list', 'comment-form', 'search-form', 'gallery', 'caption', 'style', 'script' ) );
 
+	add_image_size( 'event-gallery-full', 1920, 900, array( 'center', 'center' ) );
+
+	add_image_size( 'event-gallery-thumb', 350, 350, array( 'center', 'center' ) );
+
 }
 
 add_action( 'after_setup_theme', 'shs_theme_setup' );
