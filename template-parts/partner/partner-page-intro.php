@@ -1,7 +1,7 @@
 <section id="page-intro-section" class="section section__pageintro">
   <div class="container container__inside">
     <div class="row">
-      <div class="col-md-6 col-sm-12 px-15">
+      <div class="col-12 col-md-6 col-sm-12 col-lg-6 col-xl-6 px-15">
         <?php $partnerTopSection = get_field('partners_top_section');
         if( $partnerTopSection ): ?>
           <p class="partners__topsection-title"><?php echo $partnerTopSection['partners_top_section_title']; ?></p>
