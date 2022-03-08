@@ -21,9 +21,10 @@ if ( $gallery ) :
 							</div>
 						<?php endforeach; ?>
 					</div>
-					<div class="swiper-button-next"></div>
-					<div class="swiper-button-prev"></div>
+					
 				</div><!-- .gallerySwiper -->
+				<div class="swiper-button-next gallery-swiper-button-next"></div>
+				<div class="swiper-button-prev gallery-swiper-button-prev"></div>
 				<div thumbsSlider="" class="swiper gallerySwiperThumbs">
 					<div class="swiper-wrapper">
 						<?php foreach( $gallery as $image_id ): ?>

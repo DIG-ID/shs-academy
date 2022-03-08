@@ -29,7 +29,7 @@ $(function() {
 
   const eventGalleryThumbs = new Swiper(".gallerySwiperThumbs", {
     loop: true,
-    spaceBetween: 10,
+    spaceBetween: 30,
     slidesPerView: 4,
     freeMode: true,
     watchSlidesProgress: true,
@@ -38,8 +38,8 @@ $(function() {
     loop: true,
     spaceBetween: 10,
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+      nextEl: ".gallery-swiper-button-next",
+      prevEl: ".gallery-swiper-button-prev",
     },
     thumbs: {
       swiper: eventGalleryThumbs,

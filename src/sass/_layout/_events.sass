@@ -1,7 +1,7 @@
 #events-section
-  position: relative
   background-color: $bg-color-blue
   padding: 130px 0px 
+  overflow: hidden
   .events-links
     padding: 0
     margin: 0
@@ -27,6 +27,103 @@
         color: #fff
 
 .type-events
+  position: relative
+  z-index: 1
   padding: 200px 0px
   &:nth-child(odd)
     background-color: #fff
+    .event-background
+      top: -100px
+      left: -445px
+  .event-title
+    font-size: 80px
+    font-weight: bold
+    letter-spacing: -.3px
+    line-height: 90px
+    color: $secondary-color
+    margin-bottom: 35px
+  .event-subtitle
+    color: $color-red-light 
+
+  .event-description
+    line-height: 28px
+    color: $text-color-grey
+    margin-bottom: 70px
+
+  .section-event-testimonials
+    margin-bottom: 100px
+    &__title
+      font-size: 55px
+      font-weight: bold
+      letter-spacing: -0.3px
+      line-height: 90px
+      color: $secondary-color
+      margin-bottom: 50px
+    .testimonials-swiper
+      width: 100%
+      overflow: hidden
+      position: relative
+    .testimonials-button-next,
+    .testimonials-button-prev
+      &::after
+        color: $secondary-color
+    .testimonials-button-prev
+      left: -50px
+    .testimonials-button-next
+      right: -50px
+
+  .section-event-gallery
+    position: relative
+    &__title
+      font-size: 55px
+      font-weight: bold
+      letter-spacing: -0.3px
+      line-height: 90px
+      color: $secondary-color
+      margin-bottom: 50px
+    .gallerySwiper
+      margin-bottom: 30px
+      .swiper-slide
+        img
+          max-width:100%
+          width: 100%
+          height: 890px
+          object-fit: cover
+          object-position: center
+    .gallery-swiper-button-next,
+    .gallery-swiper-button-prev
+      bottom: 155px
+      top: auto
+      &::after
+        color: $secondary-color
+    .gallery-swiper-button-next
+      right: 150px
+    .gallery-swiper-button-prev
+      left: 150px
+    .gallerySwiperThumbs
+      .swiper-slide
+        transition: all .3s ease-in-out
+        border: 5px solid transparent
+        &:hover
+          cursor: pointer
+        img
+          max-width:100%
+          width: 100%
+          height: 350px
+          object-fit: cover
+          object-position: center
+      .swiper-slide-thumb-active
+        border-color: $color-red-dark
+
+
+  .event-background
+    display: block
+    z-index: 2
+    position: absolute
+    top: 50px
+    right: -445px
+    width: 890px
+    height: 890px
+    background-image: url('../../images/event-background.svg')
+    background-repeat: no-repeat
+    background-size: cover

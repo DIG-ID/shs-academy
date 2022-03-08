@@ -7,7 +7,7 @@ if ( $testimonials_posts ) :
 		<div class="container container__inside">
 			<div class="row">
 				<div class="col-12">
-					<h3 class="section-testimonials__title"><?php esc_html_e( 'Testimonials', 'shs-a' ); ?></h3>
+					<h3 class="section-event-testimonials__title"><?php esc_html_e( 'Testimonials', 'shs-a' ); ?></h3>
 				</div>
 			</div>
 		</div>
