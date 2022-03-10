@@ -4,18 +4,26 @@
     <div class="row align-items-center justify-content-center">
       <?php $i = 1; ?>
 			<?php
-			$speaker_posts = get_field( 'event_speakers' );
-			if ( $speaker_posts ) :
-				foreach ( $speaker_posts as $speaker_post ) :
-					$speaker_title        = get_the_title( $speaker_post->ID );
-					$speaker_position     = get_field( 'speaker_position', $speaker_post->ID );
-					$speaker_showon_front = get_field( 'speaker_show_on_the_home_page', $speaker_post->ID );
-					if ( $speaker_showon_front ) :
+      $speaker_query_args = array(
+        'post_type' => 'speakers',
+        'nopaging'  => true,
+        'order'     => 'ASC',
+        'orderby'   => 'date',
+      );
+      $speaker_query = new WP_Query( $speaker_query_args );
+      if ( $speaker_query->have_posts() ) :
+        while ( $speaker_query->have_posts() ) :
+          $speaker_query->the_post();
+
+					$speaker_title        = get_the_title();
+          $speaker_content      = get_the_content();
+					$speaker_position     = get_field( 'speaker_position' );
+          $speaker_logo         = get_field( 'speaker_logo' );
 						?>
 						<div class="col-sm-12 col-md-4 col-lg-4">
               <a type="button" id="speakerTrigger" data-bs-toggle="modal" data-bs-target="#speakerDetails<?php echo $i; ?>">
   							<figure class="speaker-card">
-  								<?php echo get_the_post_thumbnail( $speaker_post->ID, 'full' ); ?>
+  								<?php echo get_the_post_thumbnail( $speaker_query->ID, 'full' ); ?>
   								<figcaption class="speaker-card__content">
   									<p class="speaker-card__title"><?php echo $speaker_title; ?></p>
   									<p class="speaker-card__position"><?php echo $speaker_position; ?></p>
@@ -35,11 +43,21 @@
                     <div class="container-fluid">
                       <div class="row no-gutters">
                         <div class="col-sm-12 col-md-4 col-lg-4">
-                          <?php echo get_the_post_thumbnail( $speaker_post->ID, 'full' ); ?>
+                          <?php echo get_the_post_thumbnail( $speaker_query->ID, 'full' ); ?>
                         </div>
                         <div class="col-sm-12 col-md-8 col-lg-8">
-                          <p class="speaker-card__title"><?php echo $speaker_title; ?></p>
-        									<p class="speaker-card__position"><?php echo $speaker_position; ?></p>
+                          <div class="row">
+                            <div class="col-sm-12 col-md-6 col-lg-6">
+                              <p class="speakersModal__name"><?php echo $speaker_title; ?></p>
+            									<p class="speakersModal__position"><?php echo $speaker_position; ?></p>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-6">
+                              <img src="<?php echo $speaker_logo; ?>" alt="">
+                            </div>
+                          </div>
+                          <div class="row speakersModal__desc-text">
+                            <?php echo $speaker_content; ?>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -51,9 +69,9 @@
               </div>
             </div>
 						<?php
-					endif;
-				endforeach;
-			endif; ?>
+          endwhile;
+         endif;
+        wp_reset_postdata(); ?>
 		</div>
   </div>
 </section>
