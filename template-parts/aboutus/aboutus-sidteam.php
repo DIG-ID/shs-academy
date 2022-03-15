@@ -14,7 +14,7 @@
           <img src="<?php echo get_sub_field('team_member_image'); ?>">
           <p class="aboutus__title-team"><?php echo get_sub_field('team_member_name'); ?></p>
           <p class="aboutus__position-team"><?php echo get_sub_field('team_member_position'); ?></p>
-          <a class="aboutus__social-team" href="<?php echo get_sub_field('team_member_link'); ?>"><img src="/shs-academy/wp-content/uploads/2022/03/In-Blue-72.png"></a>
+          <a class="aboutus__social-team" href="<?php echo get_sub_field('team_member_link'); ?>"><img src="/wp-content/uploads/In-Blue-72.png"></a>
         </div>
       <?php endwhile;endif; ?>
     </div>
