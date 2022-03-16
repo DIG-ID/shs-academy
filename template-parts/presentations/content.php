@@ -13,7 +13,7 @@
 	<section class="presentation-cards">
 		<div class="container container__inside">
 			<div class="row">
-				<article class="presentation-card col-12 col-sm-12 col-md-6 col-xl-4 col-xxl-4">
+				<article class="presentation-card col-12 col-sm-12 col-md-6 col-xl-4 col-xxl-4 px-15">
 					<header class="">
 						<img src="https://picsum.photos/370/370" alt="image">
 						<span class="presentation-card__category">Category</span>
@@ -31,7 +31,7 @@
 						<a href="" target="_blank" class="presentation-card__pdf main-btn main-btn__red">Download PDF</a>
 					</footer>
 				</article>
-				<article class="presentation-card col-12 col-sm-12 col-md-6 col-xl-4 col-xxl-4">
+				<article class="presentation-card col-12 col-sm-12 col-md-6 col-xl-4 col-xxl-4 px-15">
 					<header class="">
 						<img src="https://picsum.photos/370/370" alt="image">
 						<span class="presentation-card__category">Category</span>
@@ -49,7 +49,7 @@
 						<a href="" target="_blank" class="presentation-card__pdf main-btn main-btn__red">Download PDF</a>
 					</footer>
 				</article>
-				<article class="presentation-card col-12 col-sm-12 col-md-6 col-xl-4 col-xxl-4">
+				<article class="presentation-card col-12 col-sm-12 col-md-6 col-xl-4 col-xxl-4 px-15">
 					<header class="">
 						<img src="https://picsum.photos/370/370" alt="image">
 						<span class="presentation-card__category">Category</span>
@@ -67,7 +67,7 @@
 						<a href="" target="_blank" class="presentation-card__pdf main-btn main-btn__red">Download PDF</a>
 					</footer>
 				</article>
-				<article class="presentation-card col-12 col-sm-12 col-md-6 col-xl-4 col-xxl-4">
+				<article class="presentation-card col-12 col-sm-12 col-md-6 col-xl-4 col-xxl-4 px-15">
 					<header class="">
 						<img src="https://picsum.photos/370/370" alt="image">
 						<span class="presentation-card__category">Category</span>
@@ -85,7 +85,7 @@
 						<a href="" target="_blank" class="presentation-card__pdf main-btn main-btn__red">Download PDF</a>
 					</footer>
 				</article>
-				<article class="presentation-card col-12 col-sm-12 col-md-6 col-xl-4 col-xxl-4">
+				<article class="presentation-card col-12 col-sm-12 col-md-6 col-xl-4 col-xxl-4 px-15">
 					<header class="">
 						<img src="https://picsum.photos/370/370" alt="image">
 						<span class="presentation-card__category">Category</span>
@@ -103,7 +103,7 @@
 						<a href="" target="_blank" class="presentation-card__pdf main-btn main-btn__red">Download PDF</a>
 					</footer>
 				</article>
-				<article class="presentation-card col-12 col-sm-12 col-md-6 col-xl-4 col-xxl-4">
+				<article class="presentation-card col-12 col-sm-12 col-md-6 col-xl-4 col-xxl-4 px-15">
 					<header class="">
 						<img src="https://picsum.photos/370/370" alt="image">
 						<span class="presentation-card__category">Category</span>
