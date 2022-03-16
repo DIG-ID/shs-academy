@@ -4,6 +4,22 @@
   z-index: 999
   position: relative
 
+#main-menu
+  li:first-child
+    a::after
+      content: ""
+      position: relative
+      top: 18px
+      right: 0
+      width: 15px
+      height: 10px
+      margin-left: 5px
+      margin-right: 10px
+      border-bottom: solid 4px transparent
+      border-left: solid 6px transparent
+      border-right: solid 5px transparent
+      border-top: solid 10px #D91818
+
 .custom
   &-logo
     width: 95px
@@ -24,6 +40,7 @@
     display: block
     a
       display: block
+      position: relative
       outline: 0
       font-family: $primary-font
       text-decoration: none
