@@ -48,11 +48,11 @@
                         </div>
                         <div class="col-sm-12 col-md-8 col-lg-8">
                           <div class="row">
-                            <div class="col-sm-12 col-md-6 col-lg-6">
+                            <div class="col-sm-12 col-md-6 col-lg-5">
                               <p class="speakersModal__name"><?php echo $speaker_title; ?></p>
             									<p class="speakersModal__position"><?php echo $speaker_position; ?></p>
                             </div>
-                            <div class="col-sm-12 col-md-6 col-lg-6">
+                            <div class="col-sm-12 col-md-6 col-lg-7">
                               <img src="<?php echo $speaker_logo; ?>" alt="">
                             </div>
                           </div>
