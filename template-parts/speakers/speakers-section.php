@@ -38,6 +38,7 @@
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                       <span aria-hidden="true">&times;</span>
                     </button>
+                    <a class="speakersModal__social-logo" href="<?php echo get_sub_field('team_member_link'); ?>"><img src="/wp-content/uploads/In-Blue-72.png"></a>
                   </div>
                   <div class="modal-body">
                     <div class="container-fluid">
@@ -63,7 +64,22 @@
                     </div>
                   </div>
                   <div class="modal-footer">
-
+                    <div class="container-fluid">
+                      <div class="row no-gutters">
+                        <div class="col-sm-12 col-md-4 col-lg-4">
+                        </div>
+                        <div class="col-sm-12 col-md-8 col-lg-8">
+                          <?php
+                          if( have_rows('links') ):
+                            while( have_rows('links') ) : the_row(); ?>
+                                <a class="speakersModal__links" href="<?php echo the_sub_field('speaker_links'); ?>"><?php echo the_sub_field('speaker_links_title'); ?></a>
+                            <?php
+                            endwhile;
+                          endif;
+                          ?>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
