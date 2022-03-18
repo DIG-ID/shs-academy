@@ -33,7 +33,7 @@
 		</div>
 		<div class="row">
 			<div class="col-12 text-center">
-				<a  class="main-btn main-btn__red" href="/partners"><?php esc_html_e( 'See all Partners', 'shs-a' ); ?></a>
+				<a  class="main-btn main-btn__red" href="/partners"><?php esc_html_e( 'Alle Partner', 'shs-a' ); ?></a>
 				<a class="main-btn main-btn__white" href="<?php esc_url( the_field( 'home_page_settings_about_us_button_2_link' ) ); ?>"><?php esc_html_e( 'Become a Partner', 'shs-a' ); ?></a>
 			</div>
 		</div>

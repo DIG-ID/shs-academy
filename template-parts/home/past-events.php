@@ -14,7 +14,7 @@
 				<div class="section-past-events__content">
 						<?php the_field( 'home_page_settings_last_events_content' ); ?>
 				</div>
-				<a  class="main-btn main-btn__red" href="<?php esc_url( the_field( 'home_page_settings_past_events_button_1_link' ) ); ?>"><?php esc_html_e( 'View Past Events', 'shs-a' ); ?></a>
+				<a  class="main-btn main-btn__red" href="<?php esc_url( the_field( 'home_page_settings_past_events_button_1_link' ) ); ?>"><?php esc_html_e( 'Unsere Event Historie', 'shs-a' ); ?></a>
 			</div>
 		</div>
 	</div>

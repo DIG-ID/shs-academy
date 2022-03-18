@@ -37,28 +37,28 @@
 			<div class="col-3">
 				<div class="countdown-section__box">
 					<span id="days"></span>
-					Days
+					Tage
 				</div>
 			</div>
 
 			<div class="col-3">
 				<div class="countdown-section__box">
 					<span id="hours"></span>
-					Hours
+					Stunden
 				</div>
 			</div>
 
 			<div class="col-3">
 				<div class="countdown-section__box">
 					<span id="minutes"></span>
-					Minutes
+					Minuten
 				</div>
 			</div>
 
 			<div class="col-3">
 				<div class="countdown-section__box">
 					<span id="seconds"></span>
-					Seconds
+					Sekunden
 				</div>
 			</div>
 
