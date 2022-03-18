@@ -17,7 +17,7 @@
           while ( $presenting_query->have_posts() ) :
             $presenting_query->the_post();
             ?>
-              <a href="<?php echo the_field('partner_link'); ?>" target="_blank"><?php the_post_thumbnail('full'); ?></a>
+              <a href="<?php echo get_field('partner_link'); ?>" target="_blank"><?php the_post_thumbnail('full'); ?></a>
             <?php
             endwhile;
            endif;

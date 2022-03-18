@@ -30,7 +30,7 @@
                   'post_type'      => 'partners',
                   'posts_per_page' => '9',
                   'nopaging'       => false,
-                  'order'          => 'ASC',
+                  'order'          => 'DESC',
                   'orderby'        => 'date',
                 );
                 $partners_query = new WP_Query( $partners_query_args );
@@ -38,7 +38,7 @@
                   while ( $partners_query->have_posts() ) :
                     $partners_query->the_post();
                     ?>
-                      <a class="partners__right-list-item" href="<?php echo the_field('partner_link'); ?>" target="_blank"><?php the_title(); ?></a>
+                      <a class="partners__right-list-item" href="<?php echo get_field('partner_link'); ?>" target="_blank"><?php the_title(); ?></a>
                     <?php
                     endwhile;
                    endif;
