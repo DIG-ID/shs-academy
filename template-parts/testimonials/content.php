@@ -1,4 +1,5 @@
 <main id="testimonials-section" class="section section__testimonials">
+	<span class="section-about-us__bg-img-2 rellax" data-rellax-speed="-4" data-rellax-percentage="0.5"></span>
 	<div class="container">
 		<div class="row">
 			<?php

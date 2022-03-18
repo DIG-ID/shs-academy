@@ -1,6 +1,17 @@
 .section
   &__pageintro
-    padding: 160px 0 0 0
+    padding: 0
+    .accordion-button
+      outline: 0
+      border: 0
+      padding: 0
+      &:after
+        position: absolute
+        right: 25%
+    .accordion-body
+      padding: 0
+    .accordion-flush
+      padding: 0
   &__partners
     padding: 160px 0 0 0
     .row
@@ -15,6 +26,11 @@
     border-bottom: 1px solid #FFFFFF
 
 .partners
+  &__left-bg
+    background-color: $color-red-light
+  &__left-tab
+    display: flex
+    justify-content: flex-end
   &__column
     text-align: center
     a
@@ -26,6 +42,14 @@
       &:nth-child(5n)
         img
           margin-right: 0
+  &__market-content
+    max-width: 570px
+  &__left-content
+    display: flex
+    justify-content: flex-end
+    padding-right: 50px
+    padding-bottom: 80px
+    padding-top: 30px
   &__catTitle
     text-align: center
     font-family: $primary-font
@@ -38,14 +62,16 @@
     font-size: 55px
     line-height: 70px
     letter-spacing: -0.3px
-    color: $primary-color
-    margin-bottom: 50px
+    color: $bg-primary
+    margin-bottom: 0px
+    padding: 30px 0
+    min-width: 620px
   &__topsection-text
     font-family: $primary-font
     font-size: 19px
     line-height: 36px
     letter-spacing: 0
-    color: $secondary-color
+    color: $bg-primary
     max-width: 460px
     margin: 50px 0
   &__become-title
