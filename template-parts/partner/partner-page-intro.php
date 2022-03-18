@@ -24,20 +24,21 @@
                   <a class="main-btn main-btn__white" target="_blank" href="<?php echo $partnerTopSection['partners_top_section_button_link']; ?>"><?php esc_html_e( 'Mehr erfahren', 'shs-a' ); ?></a>
                 </div>
               </div>
-              <div class="col-md-6 col-sm-12 px-15">
+              <div class="col-md-6 col-sm-12 col-lg-6 col-xl-6 px-15 partners__right-content">
                 <?php
                 $partners_query_args = array(
-                  'post_type' => 'partners',
-                  'nopaging'  => true,
-                  'order'     => 'ASC',
-                  'orderby'   => 'date',
+                  'post_type'      => 'partners',
+                  'posts_per_page' => '9',
+                  'nopaging'       => false,
+                  'order'          => 'ASC',
+                  'orderby'        => 'date',
                 );
                 $partners_query = new WP_Query( $partners_query_args );
                 if ( $partners_query->have_posts() ) :
                   while ( $partners_query->have_posts() ) :
                     $partners_query->the_post();
                     ?>
-                      <a href="#" target="_blank"><?php the_post_thumbnail('full'); ?></a>
+                      <a class="partners__right-list-item" href="<?php echo the_field('partner_link'); ?>" target="_blank"><?php the_title(); ?></a>
                     <?php
                     endwhile;
                    endif;

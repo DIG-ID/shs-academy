@@ -2,7 +2,7 @@
   <div class="container container__inside">
     <div class="row">
       <div class="col-md-12 col-sm-12 px-15">
-        <p class="getintouch__ante-title"><span>Get in Touch</span></p>
+        <p class="getintouch__ante-title"><span>Schreib uns</span></p>
       </div>
     </div>
     <div class="row">

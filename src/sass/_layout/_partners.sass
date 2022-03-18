@@ -2,6 +2,7 @@
   &__pageintro
     padding: 0
     .accordion-button
+      background-color: $bg-color-blue !important
       outline: 0
       border: 0
       padding: 0
@@ -12,6 +13,7 @@
     .accordion-body
       padding: 0
     .accordion-flush
+      background-color: $bg-color-blue
       padding: 0
   &__partners
     padding: 0
@@ -27,6 +29,20 @@
     border-bottom: 1px solid #FFFFFF
 
 .partners
+  &__right-list-item
+    display: block
+    width: 100%
+    background: $bg-primary
+    max-width: 485px
+    padding: 27px 40px
+    border: 1px solid #D9F0FF
+    margin-bottom: 20px
+    font-family: $primary-font
+    font-size: 16px
+    font-weight: 500
+    letter-spacing: -0.30px
+    color: $secondary-color
+    text-decoration: none
   &__topsection-open
     text-align: center
     color: $text-color-grey
@@ -56,6 +72,10 @@
     padding-right: 50px
     padding-bottom: 80px
     padding-top: 30px
+    float: left
+  &__right-content
+    float: left
+    padding: 40px
   &__catTitle
     text-align: center
     font-family: $primary-font
