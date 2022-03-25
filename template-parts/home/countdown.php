@@ -34,28 +34,28 @@
 	<div class="container container__inside">
 		<div class="row">
 
-			<div class="col-3">
+			<div class="col-3 col-md-3 col-sm-3 col-lg-3 col-xl-3">
 				<div class="countdown-section__box">
 					<span id="days"></span>
 					Tage
 				</div>
 			</div>
 
-			<div class="col-3">
+			<div class="col-3 col-md-3 col-sm-3 col-lg-3 col-xl-3">
 				<div class="countdown-section__box">
 					<span id="hours"></span>
 					Stunden
 				</div>
 			</div>
 
-			<div class="col-3">
+			<div class="col-3 col-md-3 col-sm-3 col-lg-3 col-xl-3">
 				<div class="countdown-section__box">
 					<span id="minutes"></span>
 					Minuten
 				</div>
 			</div>
 
-			<div class="col-3">
+			<div class="col-3 col-md-3 col-sm-3 col-lg-3 col-xl-3">
 				<div class="countdown-section__box">
 					<span id="seconds"></span>
 					Sekunden
