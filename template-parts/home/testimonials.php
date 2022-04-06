@@ -39,6 +39,7 @@
 				<div class="swiper-button-next testimonials-button-next"></div>
 				<div class="swiper-button-prev testimonials-button-prev"></div>
 			</div>
+			<a  class="main-btn main-btn__red" href="/testimonials/"><?php esc_html_e( 'See all testimonials', 'shs-a' ); ?></a>
 		</div>
 	</div>
 </section>

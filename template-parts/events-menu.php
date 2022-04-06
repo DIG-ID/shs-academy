@@ -26,7 +26,7 @@
 		</div>
 		<div class="row menu__event-footer">
 			<div class="col-6 col-md-6 col-sm-12 px-15">
-				<img class="menu__event-img" src="/wp-content/uploads/FooterMenu_SHS.svg" width="210" height="64"><img class="menu__event-img" src="/wp-content/uploads/footer-logo-1.svg" width="123" height="64">
+				<img class="menu__event-img" src="/wp-content/uploads/FooterMenu_SHS.svg" width="210" height="64">
 			</div>
 		</div>
 	</div>
