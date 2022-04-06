@@ -8,6 +8,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" >
 		<link rel="profile" href="https://gmpg.org/xfn/11">
 		<link rel="stylesheet" href="https://use.typekit.net/usk0vgb.css">
+		<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri() . '/src/images/favicon.ico' ?>" type="image/x-icon"/>
 		<?php wp_head(); ?>
 
 	</head>
@@ -18,7 +19,7 @@
 			<div id="wrapper-navbar" itemscope itemtype="http://schema.org/WebSite">
 					<nav class="navbar navbar-expand-lg navbar-light navbar-toparea">
 						<div class="container">
-							<a href="mailto:email@email.com" class="custom-menu-link" rel="home" aria-current="page">email@email.com</a>
+							<a href="mailto:info@shsacademy.ch" class="custom-menu-link" rel="home" aria-current="page">info@shsacademy.ch</a>
 							<?php
 							wp_nav_menu(
 								array(

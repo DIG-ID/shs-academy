@@ -26,7 +26,7 @@
           <?php $socials_svg= wp_get_attachment_image_src(464, 'full');  ?>
           <img src="<?php echo $socials_svg[0]; ?>" alt="socials icon">
           <p class="links__title">Social Network</p>
-          <p class="links__details">fb.com/example</p>
+          <p class="links__details"><?php echo $contactDetails['social_network']; ?></p>
         </div>
       <?php endif; ?>
     </div>

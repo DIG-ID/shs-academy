@@ -22,7 +22,7 @@
                 while( have_rows('days') ) : the_row();
                 ?>
               <li class="nav-item" role="presentation">
-                <button class="nav-link<?php if($i == 1){echo ' active';} ?>" data-bs-toggle="pill" data-bs-target="#programs__acc-<?php echo $i; ?>" type="button" role="tab" aria-controls="programs__acc-<?php echo $i; ?>" aria-selected="true">Day <?php echo $i; ?>
+                <button class="nav-link<?php if($i == 1){echo ' active';} ?>" data-bs-toggle="pill" data-bs-target="#programs__acc-<?php echo $i; ?>" type="button" role="tab" aria-controls="programs__acc-<?php echo $i; ?>" aria-selected="true"><?php echo the_sub_field('tab_title'); ?>
                 </button>
               </li>
               <?php $i++;
@@ -36,10 +36,9 @@
             while( have_rows('days') ) : the_row();
           ?>
           <div class="tab-pane fade <?php if($e == 1){echo ' active show';} ?>" id="programs__acc-<?php echo $e; ?>" role="tabpanel">
-            <p class="timeofday__title"><?php esc_html_e( 'Morning Schedule', 'shs-a' ); ?></p>
+            <p class="timeofday__title"><?php esc_html_e( 'Block Title', 'shs-a' ); ?></p>
             <div class="accordion accordion-flush" id="programs__accordion">
               <?php $c = 1;
-
                   if( have_rows('day_morning') ):
                       while( have_rows('day_morning') ) : the_row(); ?>
                       <div class="accordion-item">
@@ -58,7 +57,7 @@
               ?>
             </div>
             <div class="accordion accordion-flush" id="programs__accordion-afternoon">
-              <p class="timeofday__title"><?php esc_html_e( 'Afternoon Schedule', 'shs-a' ); ?></p>
+              <p class="timeofday__title"><?php esc_html_e( 'Block Title', 'shs-a' ); ?></p>
               <?php $d = 1;
 
                   if( have_rows('day_afternoon') ):
