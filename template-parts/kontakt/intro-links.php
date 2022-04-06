@@ -8,13 +8,13 @@
           <?php $phone_svg= wp_get_attachment_image_src(463, 'full');  ?>
           <img src="<?php echo $phone_svg[0]; ?>" alt="phone icon">
           <p class="links__title">Phone Number</p>
-          <p class="links__details"><?php echo $contactDetails['phone_number']; ?></p>
+          <p class="links__details"><a href="tel:<?php echo $contactDetails['phone_number']; ?>"><?php echo $contactDetails['phone_number']; ?></a></p>
         </div>
         <div class="col-md-3 col-sm-12 px-15 links__col">
           <?php $email_svg= wp_get_attachment_image_src(461, 'full');  ?>
           <img src="<?php echo $email_svg[0]; ?>" alt="email icon">
           <p class="links__title">Email Address</p>
-          <p class="links__details"><?php echo $contactDetails['email_address']; ?></p>
+          <p class="links__details"><a href="mailto:<?php echo $contactDetails['email_address']; ?>"><?php echo $contactDetails['email_address']; ?></a></p>
         </div>
         <div class="col-md-3 col-sm-12 px-15 links__col">
           <?php $location_svg= wp_get_attachment_image_src(462, 'full');  ?>
@@ -26,7 +26,7 @@
           <?php $socials_svg= wp_get_attachment_image_src(464, 'full');  ?>
           <img src="<?php echo $socials_svg[0]; ?>" alt="socials icon">
           <p class="links__title">Social Network</p>
-          <p class="links__details"><?php echo $contactDetails['social_network']; ?></p>
+          <p class="links__details"><a href="https://www.linkedin.com/company/shs-academy-switzerland/"><?php echo $contactDetails['social_network']; ?></a></p>
         </div>
       <?php endif; ?>
     </div>
