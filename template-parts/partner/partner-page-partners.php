@@ -10,7 +10,7 @@
           'nopaging'  => true,
           'order'     => 'ASC',
           'orderby'   => 'date',
-          'category_name'  => 'presenting',
+          'category_name'  => 'presenting-partner',
         );
         $presenting_query = new WP_Query( $presenting_query_args );
         if ( $presenting_query->have_posts() ) :
