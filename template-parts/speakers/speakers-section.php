@@ -35,7 +35,7 @@
               <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
                       <span aria-hidden="true">&times;</span>
                     </button>
                     <a class="speakersModal__social-logo" href="<?php echo get_sub_field('team_member_link'); ?>"><img src="/wp-content/uploads/In-Blue-72.png"></a>
