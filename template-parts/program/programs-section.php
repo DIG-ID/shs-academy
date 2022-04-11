@@ -39,7 +39,7 @@
             <p class="timeofday__title"><?php esc_html_e( 'Block Title', 'shs-a' ); ?></p>
             <div class="accordion accordion-flush" id="programs__accordion">
               <?php $c = 1;
-                  if( have_rows('day_morning') ):
+                  if( have_rows('day_morning') ): 
                       while( have_rows('day_morning') ) : the_row(); ?>
                       <div class="accordion-item">
                         <h2 class="accordion-header" id="flush-heading-<?php echo $c; ?>">

@@ -2,7 +2,7 @@
   <span class="section-about-us__bg-img-2 rellax" data-rellax-speed="-4" data-rellax-percentage="0.5"></span>
   <div class="container container__inside">
     <div class="row location__row">
-      <div class="col-md-6 col-sm-12 px-15">
+      <div class="col-md-6 col-sm-12 px-15 location__block-img-top">
         <?php $top_block_image = get_field('location_block_image'); $top_block_image_size = 'full'; ?>
         <?php if( $top_block_image ) {
           echo wp_get_attachment_image( $top_block_image, $top_block_image_size );
