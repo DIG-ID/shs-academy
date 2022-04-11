@@ -31,11 +31,11 @@
   							</figure>
               </a>
 						</div>
-            <div class="modal fade" id="speakerDetails<?php echo $i;$i++; ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal fade" id="speakerDetails<?php echo $i;$i++; ?>" tabindex="-1" role="dialog" aria-labelledby="Speakersmodalwindow" aria-hidden="true">
               <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                    <button type="button" class="close" data-bs-ydismiss="modal" aria-label="Close">
                       <span aria-hidden="true">&times;</span>
                     </button>
                     <a class="speakersModal__social-logo" href="<?php echo get_sub_field('team_member_link'); ?>"><img src="/wp-content/uploads/In-Blue-72.png"></a>
@@ -43,7 +43,7 @@
                   <div class="modal-body">
                     <div class="container-fluid">
                       <div class="row no-gutters">
-                        <div class="col-sm-12 col-md-4 col-lg-4">
+                        <div class="col-sm-12 col-md-4 col-lg-4 speakersModal__col-img">
                           <?php echo get_the_post_thumbnail( $speaker_query->ID, 'full' ); ?>
                         </div>
                         <div class="col-sm-12 col-md-8 col-lg-8">
@@ -52,7 +52,7 @@
                               <p class="speakersModal__name"><?php echo $speaker_title; ?></p>
             									<p class="speakersModal__position"><?php echo $speaker_position; ?></p>
                             </div>
-                            <div class="col-sm-12 col-md-6 col-lg-7">
+                            <div class="col-sm-12 col-md-6 col-lg-7 speakersModal__col-logo">
                               <img src="<?php echo $speaker_logo; ?>" alt="">
                             </div>
                           </div>
