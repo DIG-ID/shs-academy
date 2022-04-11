@@ -9,7 +9,7 @@ $events_query = new WP_Query( $events_query_args );
 <main id="events-section" class="section section__events">
 	<?php if ( $events_query->have_posts() ) :
 		?>
-		<div class="container container__inside">
+		<div class="container container__inside container__events-links">
 			<div class="row">
 				<div class="col-12">
 					<ul class="events-links">
