@@ -2,7 +2,7 @@
   <div class="container container__inside">
     <div class="row align-items-center justify-content-center">
       <div class="col-md-12 col-sm-12 col-lg-12 aboutus__titleCol">
-        <p class="aboutus__title-intro">SID Team</p>
+        <p class="aboutus__title-intro" style="display:none;">SID Team</p>
         <p class="aboutus__text-intro">Von links nach rechts:</p>
       </div>
     </div>
