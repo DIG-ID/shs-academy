@@ -96,12 +96,17 @@
   &__menu
     display: none
   &__eventsmenu
-    display: none
+    display: block!important
     position: absolute
     z-index: 999
     background-color: $primary-color
     width: 100%
     padding: 50px 140px
+    transform-origin: top center
+    transition: all .3s ease-in-out
+    transform: scaleY(0)
+  &__eventsmenu.open
+    transform: scale(1)
 
 .menu
   &__event-container
