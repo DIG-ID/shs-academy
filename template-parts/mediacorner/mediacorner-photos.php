@@ -12,10 +12,11 @@
       <?php
         $photosImages = get_field('photos');
         if( $photosImages ): ?>
-          <?php foreach( $photosImages as $photosImage ): ?>
-            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3">
-              <a href="<?php echo esc_url($photosImage); ?>" data-fancybox="photos">
-                <img src="<?php echo esc_url($photosImage); ?>" alt="" />
+          <?php foreach( $photosImages as $photoImage ): ?>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3 d-flex align-items-center">
+              <?php $photo_url = wp_get_attachment_image_url( $photoImage, 'full' ); ?>
+              <a href="<?php echo esc_url($photo_url); ?>" data-fancybox="photos">
+                <?php echo wp_get_attachment_image( $photoImage, 'media-corner-photos-thumb' ); ?>
               </a>
             </div>
           <?php endforeach; ?>
