@@ -5,7 +5,7 @@
         <p class="mediacorner__title"><?php echo get_field('photos_title'); ?></p>
       </div>
       <div class="d-flex col-12 col-sm-12 col-md-6 col-lg-12 col-xl-6 px-15 justify-content-xl-end">
-        <p class="text-xl-left"><a class="main-btn main-btn__red" href="<?php echo get_field('download_all_photos_link'); ?>"><?php esc_html_e( 'Download all fotos', 'shs-a' ); ?></a></p>
+        <p class="text-xl-left"><a class="main-btn main-btn__red" href="<?php echo get_field('download_all_photos_link'); ?>"><?php esc_html_e( 'Alle Fotos herunterladen', 'shs-a' ); ?></a></p>
       </div>
     </div>
     <div class="row row__photos">

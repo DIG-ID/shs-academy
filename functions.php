@@ -27,6 +27,8 @@ function shs_theme_setup() {
 
 	add_image_size( 'event-gallery-thumb', 350, 350, array( 'center', 'center' ) );
 
+	add_image_size( 'media-corner-logos-thumb', 170, 170, array( 'center', 'center' ) );
+
 }
 
 add_action( 'after_setup_theme', 'shs_theme_setup' );
