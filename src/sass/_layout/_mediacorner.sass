@@ -15,18 +15,20 @@
           background-color: #e5e5e5
           padding: 20px
           margin-bottom: 20px
-      &__photos
-        a
-          margin-bottom: 20px
-          img
-            max-width: 100%
-            height: auto
-            object-fit: cover
   &__pagephotos
     padding: 160px 0 0 0
     position: relative
     overflow: hidden
     background-color: $bg-color-blue
+    .row
+      &__photos
+        a
+          margin-bottom: 20px
+          display: inline-block
+          img
+            max-width: 100%
+            height: auto
+            object-fit: cover
   &__pagevideos
     padding: 160px 0 0 0
     position: relative
