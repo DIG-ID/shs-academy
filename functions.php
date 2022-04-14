@@ -62,6 +62,10 @@ function shs_theme_enqueue_styles() {
 	wp_enqueue_style( 'theme-styles', get_stylesheet_directory_uri() . '/dist/main.css', array(), $theme_version );
 	wp_enqueue_script( 'jquery' );
 	wp_enqueue_script( 'theme-scripts', get_stylesheet_directory_uri() . '/dist/main.js', array( 'jquery' ), $theme_version, false );
+	if ( is_page_template( 'page-templates/page-ticket-system.php' ) ) :
+		wp_enqueue_script( 'incert-api', 'https://myincert.com/public/api/incertClient.js', array(), $theme_version, true );
+		wp_enqueue_script( 'incert-settings', get_stylesheet_directory_uri() . '/dist/incert.js', array( 'jquery' ), $theme_version, true );
+	endif;
 }
 add_action( 'wp_enqueue_scripts', 'shs_theme_enqueue_styles' );
 

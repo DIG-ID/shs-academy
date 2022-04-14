@@ -9,6 +9,7 @@ mix
     jquery: ['$', 'window.jQuery']
   })
   .js('src/js/main.js', 'dist')
+  .js('src/js/incert.js', 'dist')
   .sass('src/sass/main.sass', 'dist')
 
   .disableNotifications()
