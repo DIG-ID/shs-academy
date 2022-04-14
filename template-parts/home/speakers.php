@@ -36,7 +36,7 @@
 		</div>
 		<div class="row">
 			<div class="col-12 text-center">
-				<a class="main-btn main-btn__red" href="/speakers"><?php esc_html_e( 'See All Speakers', 'shs-a' ); ?></a>
+				<a class="main-btn main-btn__red" href="/speakers"><?php esc_html_e( 'Alle Speakers', 'shs-a' ); ?></a>
 			</div>
 		</div>
 	</div>
