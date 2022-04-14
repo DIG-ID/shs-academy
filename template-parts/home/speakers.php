@@ -17,6 +17,7 @@
 					$speaker_title        = get_the_title( $speaker_post->ID );
 					$speaker_position     = get_field( 'speaker_position', $speaker_post->ID );
 					$speaker_showon_front = get_field( 'speaker_show_on_the_home_page', $speaker_post->ID );
+					$speaker_is_mod       = get_field( 'speaker_is_moderator', $speaker_post->ID );
 					// Setup this post for WP functions (variable must be named $post).
 					if ( $speaker_showon_front ) :
 						?>
@@ -24,6 +25,11 @@
 							<figure class="speaker-card">
 								<?php echo get_the_post_thumbnail( $speaker_post->ID, 'full' ); ?>
 								<figcaption class="speaker-card__content">
+									<?php
+									if ( $speaker_is_mod ) :
+										echo '<span class="speaker-card__is-mod">' . esc_html__( 'Moderator', 'shs-a' ) . '</span>';
+									endif;
+									?>
 									<p class="speaker-card__title"><?php echo $speaker_title; ?></p>
 									<p class="speaker-card__position"><?php echo $speaker_position; ?></p>
 								</figcaption>
