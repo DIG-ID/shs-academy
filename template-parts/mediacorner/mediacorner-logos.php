@@ -13,7 +13,7 @@
         $logosImages = get_field('logos_images');
         if( $logosImages ): ?>
           <?php foreach( $logosImages as $logosImage ): ?>
-            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-2">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-2 align-items-center">
               <?php $logo_url = wp_get_attachment_image_url( $logosImage, 'full' ); ?>
               <a href="<?php echo esc_url( $logo_url ); ?>" data-fancybox="logos">
                 <?php echo wp_get_attachment_image( $logosImage, 'media-corner-logos-thumb' ); ?>
