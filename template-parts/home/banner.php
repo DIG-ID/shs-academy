@@ -7,7 +7,7 @@ $banner = get_field( 'home_page_settings' );
 if ( $banner ) : ?>
 	<section id="section-banner" class="section section-banner" >
 		<img src="<?php echo esc_url( get_field( 'home_page_settings_banner_background_image' ) ); ?>" alt="" class="rellax" data-rellax-speed="-3" data-rellax-percentage="0.5">
-		<div class="section-banner__content rellax" data-rellax-speed="3" data-rellax-percentage="0.5">
+		<div class="section-banner__content rellax" data-rellax-speed="2" data-rellax-percentage="0.5">
 			<div class="container">
 				<div class="row align-items-center">
 					<div class="col-12 col-sm-12 col-md-11 col-lg-8">
