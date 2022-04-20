@@ -7,8 +7,6 @@
 			$speaker_query_args = array(
 				'post_type' => 'speakers',
 				'nopaging'  => true,
-				'order'     => 'ASC',
-				'orderby'   => 'date',
 			);
 			$speaker_query = new WP_Query( $speaker_query_args );
 			if ( $speaker_query->have_posts() ) :
