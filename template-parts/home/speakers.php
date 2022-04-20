@@ -22,18 +22,20 @@
 					if ( $speaker_showon_front ) :
 						?>
 						<div class="col-12 col-sm-12 col-md-8 col-lg-4">
-							<figure class="speaker-card">
-								<?php echo get_the_post_thumbnail( $speaker_post->ID, 'full' ); ?>
-								<figcaption class="speaker-card__content">
-									<?php
-									if ( $speaker_is_mod ) :
-										echo '<span class="speaker-card__is-mod">' . esc_html__( 'Moderator', 'shs-a' ) . '</span>';
-									endif;
-									?>
-									<p class="speaker-card__title"><?php echo $speaker_title; ?></p>
-									<p class="speaker-card__position"><?php echo $speaker_position; ?></p>
-								</figcaption>
-							</figure>
+							<a href="/speakers/">
+								<figure class="speaker-card">
+									<?php echo get_the_post_thumbnail( $speaker_post->ID, 'full' ); ?>
+									<figcaption class="speaker-card__content">
+										<?php
+										if ( $speaker_is_mod ) :
+											echo '<span class="speaker-card__is-mod">' . esc_html__( 'Moderator', 'shs-a' ) . '</span>';
+										endif;
+										?>
+										<p class="speaker-card__title"><?php echo $speaker_title; ?></p>
+										<p class="speaker-card__position"><?php echo $speaker_position; ?></p>
+									</figcaption>
+								</figure>
+							</a>
 						</div>
 						<?php
 					endif;
