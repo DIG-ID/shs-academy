@@ -6,7 +6,21 @@
 $banner = get_field( 'home_page_settings' );
 if ( $banner ) : ?>
 	<section id="section-banner" class="section section-banner" >
-		<img src="<?php echo esc_url( get_field( 'home_page_settings_banner_background_image' ) ); ?>" alt="" class="rellax" data-rellax-speed="-3" data-rellax-percentage="0.5">
+		<?php
+		if ( get_field( 'home_page_settings_banner_background_video' ) ) :
+			?>
+			<div class="section-banner__video-wrapper rellax" data-rellax-speed="-3" data-rellax-percentage="0.5">
+				<video class="section-banner__video" playsinline="playsinline" loop="" autoplay="autoplay" muted="muted">
+					<source src="<?php the_field( 'home_page_settings_banner_background_video' ); ?>" type="video/mp4">
+				</video>
+			</div>
+			<?php
+		else :
+			?>
+			<img src="<?php echo esc_url( get_field( 'home_page_settings_banner_background_image' ) ); ?>" alt="" class="rellax" data-rellax-speed="-3" data-rellax-percentage="0.5">
+			<?php
+		endif;
+		?>
 		<div class="section-banner__content rellax" data-rellax-speed="2" data-rellax-percentage="0.5">
 			<div class="container">
 				<div class="row align-items-center">
