@@ -8,4 +8,5 @@
 get_header();
 	get_template_part( 'template-parts/aboutus/aboutus-intro' );
 	get_template_part( 'template-parts/aboutus/aboutus-sidteam' );
+	get_template_part( 'template-parts/aboutus/aboutus-bottom-section' );
 get_footer();
