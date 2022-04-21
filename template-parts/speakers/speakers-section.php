@@ -13,11 +13,11 @@
 				while ( $speaker_query->have_posts() ) :
 					$speaker_query->the_post();
 
-					$speaker_title        = get_the_title();
-					$speaker_content      = get_the_content();
-					$speaker_position     = get_field( 'speaker_position' );
-					$speaker_logo         = get_field( 'speaker_logo' );
-					$speaker_is_mod       = get_field( 'speaker_is_moderator' );
+					$speaker_title    = get_the_title();
+					$speaker_content  = get_the_content();
+					$speaker_position = get_field( 'speaker_position' );
+					$speaker_logo     = get_field( 'speaker_logo' );
+					$speaker_is_mod   = get_field( 'speaker_is_moderator' );
 						?>
 						<div class="col-sm-12 col-md-4 col-lg-4">
 							<a type="button" id="speakerTrigger" data-bs-toggle="modal" data-bs-target="#speakerDetails<?php echo $i; ?>">
@@ -42,7 +42,7 @@
 										<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
 											<span aria-hidden="true">&times;</span>
 										</button>
-										<a class="speakersModal__social-logo" href="<?php echo get_sub_field('team_member_link'); ?>"><img src="/wp-content/uploads/In-Blue-72.png"></a>
+										<a class="speakersModal__social-logo" href="<?php echo get_sub_field( 'linkedin_link' ); ?>"><img src="/wp-content/uploads/In-Blue-72.png"></a>
 									</div>
 									<div class="modal-body">
 										<div class="container-fluid">
