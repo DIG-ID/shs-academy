@@ -42,7 +42,7 @@
 										<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
 											<span aria-hidden="true">&times;</span>
 										</button>
-										<a class="speakersModal__social-logo" href="<?php echo get_sub_field( 'linkedin_link' ); ?>"><img src="/wp-content/uploads/In-Blue-72.png"></a>
+										<a class="speakersModal__social-logo" href="<?php the_field( 'linkedin_link' ); ?>"><img src="/wp-content/uploads/In-Blue-72.png"></a>
 									</div>
 									<div class="modal-body">
 										<div class="container-fluid">
