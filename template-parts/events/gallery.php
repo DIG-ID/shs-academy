@@ -13,23 +13,16 @@ if ( $gallery ) :
 		</div>
 		<div class="container">
 			<div class="row">
-				<div class="swiper gallerySwiper">
-					<div class="swiper-wrapper">
-						<?php foreach( $gallery as $image_id ): ?>
-							<div class="swiper-slide">
-								<?php echo wp_get_attachment_image( $image_id, 'event-gallery-full' ); ?>
-							</div>
-						<?php endforeach; ?>
-					</div>
-					
-				</div><!-- .gallerySwiper -->
 				<div class="swiper-button-next gallery-swiper-button-next"></div>
 				<div class="swiper-button-prev gallery-swiper-button-prev"></div>
 				<div thumbsSlider="" class="swiper gallerySwiperThumbs">
 					<div class="swiper-wrapper">
 						<?php foreach( $gallery as $image_id ): ?>
 							<div class="swiper-slide">
-								<?php echo wp_get_attachment_image( $image_id, 'event-gallery-thumb' ); ?>
+								<?php $full_image_url = wp_get_attachment_image_url( $image_id, 'event-gallery-full' ); ?>
+								<a href="<?php echo esc_url( $full_image_url ); ?>" data-fancybox="gallery">
+									<?php echo wp_get_attachment_image( $image_id, 'event-gallery-thumb' ); ?>
+								</a>
 							</div>
 						<?php endforeach; ?>
 					</div>

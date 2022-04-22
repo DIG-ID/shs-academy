@@ -33,16 +33,10 @@ $(function() {
     slidesPerView: 4,
     freeMode: true,
     watchSlidesProgress: true,
-  });
-  const eventGallery = new Swiper(".gallerySwiper", {
-    loop: true,
-    spaceBetween: 10,
     navigation: {
       nextEl: ".gallery-swiper-button-next",
       prevEl: ".gallery-swiper-button-prev",
     },
-    thumbs: {
-      swiper: eventGalleryThumbs,
-    },
   });
+
 });
