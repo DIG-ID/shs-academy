@@ -26,6 +26,7 @@ if ( $banner ) : ?>
 				<div class="row align-items-center">
 					<div class="col-12 col-sm-12 col-md-11 col-lg-8">
 						<p class="section-banner__subtitle"><?php the_field( 'home_page_settings_banner_subtitle' ); ?></p>
+						<p class="section-banner__keywords"><?php the_field( 'home_page_settings_banner_keywords' ); ?></p>
 						<h1 class="section-banner__title "><?php the_field( 'home_page_settings_banner_title' ); ?></h1>
 						<div class="section-banner__description"><?php the_field( 'home_page_settings_banner_content' ); ?></div>
 						<a class="section-banner__link main-btn main-btn__red" href="<?php esc_url( the_field( 'home_page_settings_banner_button_1_link' ) ); ?>"><?php the_field( 'home_page_settings_banner_button_1_text' ); ?></a>
