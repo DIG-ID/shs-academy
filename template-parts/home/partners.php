@@ -2,7 +2,7 @@
 	<div class="container-fluid px-5">
 		<div class="row">
 			<div class="col-12 text-center">
-				<h2 class="section-partners__title"><?php esc_html_e( 'Die Partner', 'shs-a' ); ?></h2>
+				<h2 class="section-partners__title"><?php esc_html_e( 'Partner', 'shs-a' ); ?></h2>
 			</div>
 		</div>
 		<div class="row">

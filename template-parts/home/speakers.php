@@ -6,7 +6,7 @@
 	<div class="container container__inside">
 		<div class="row">
 			<div class="col-12 text-center">
-				<h2 class="section-speakers__title"><?php esc_html_e( 'Die Speaker', 'shs-a' ); ?></h2>
+				<h2 class="section-speakers__title"><?php esc_html_e( 'Speaker', 'shs-a' ); ?></h2>
 			</div>
 		</div>
 		<div class="row align-items-center justify-content-center">
