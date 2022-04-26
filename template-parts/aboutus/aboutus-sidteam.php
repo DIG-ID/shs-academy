@@ -6,7 +6,7 @@
         <p class="aboutus__text-intro"  style="display:none;">Von links nach rechts:</p>
       </div>
     </div>
-    <div class="row justify-content-center align-items-center">
+    <div class="row justify-content-center">
       <?php
         if( have_rows('team') ):
         while( have_rows('team') ) : the_row(); ?>

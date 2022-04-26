@@ -71,7 +71,22 @@ function shs_theme_enqueue_styles() {
 		wp_enqueue_script( 'incert-settings', get_stylesheet_directory_uri() . '/dist/incert.js', array( 'jquery' ), $theme_version, true );
 	endif;
 }
+
 add_action( 'wp_enqueue_scripts', 'shs_theme_enqueue_styles' );
+
+/**
+ * Get youtube video title
+ */
+function shs_get_youtube_title( $video_id ) {
+	$api_key     = 'AIzaSyACB4vCwaS_Z3yr3zO3P1vHPYcZgVw9weo';
+	$video_title = file_get_contents( "https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&id={$video_id}&key={$api_key}" );
+	if ( $video_title ) {
+		$json = json_decode( $video_title, true );
+		return $json['items'][0]['snippet']['title'];
+	} else {
+		return false;
+	}
+}
 
 // Theme otimizations.
 require get_template_directory() . '/inc/theme-optimizations.php';
