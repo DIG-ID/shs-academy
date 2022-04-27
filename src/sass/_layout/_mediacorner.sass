@@ -34,11 +34,97 @@
     position: relative
     overflow: hidden
     background-color: $bg-color-blue
+    .video-card
+      a
+        display: inline-block
+        position: relative
+        &::before
+          display: block
+          content: ''
+          position: absolute
+          top: 0
+          left: 0
+          right: 0
+          bottom: 0
+          background-color: rgba(54, 53, 58, 0.5)
+        img
+          width: 100%
+          max-width: 100%
+          height: auto
+          object-fit: cover
+
+      &__title
+        color: $primary-color
+        font-size: 20px
+        margin-top: 10px
+      &__play-button
+        width: 80px
+        height: 80px
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        border-radius: 50%
+        background-color: $color-red-dark
+        margin: auto
+        transform: scale(1, 1)
+        svg
+          fill: darken($bg-primary, 12%)
+          stroke: darken($bg-primary, 12%)
+          stroke-linejoin: round
+          stroke-width: 5
+          transition: all 0.3s
+          &:hover
+            cursor: pointer
+            fill: darken($bg-primary, 17%)
+            stroke: darken($bg-primary, 17%)
+            transform: scale(1.2, 1.2)
+
   &__pagepress
     padding: 160px 0
     position: relative
     overflow: hidden
     background-color: $bg-color-blue
+    .press-article
+      position: relative
+      background-color: transparentize(#161C2D, 0.95)
+      padding: 40px 50px
+      margin-bottom: 30px
+      min-height: 300px
+      .press-publisher,
+      .press-date
+        font-size: 17px
+        letter-spacing: 0px
+        color: #000
+        line-height: 1
+      .press-publisher
+        margin-bottom: 10px
+      
+      &__title
+        font-size: 30px
+        font-weight: 500
+        letter-spacing: -0.9px
+        color: #161C2D
+        line-height: 40px
+      &__btn
+        font-family: $primary-font
+        font-size: 15px
+        font-weight: bold
+        text-decoration: none
+        border: 1px solid transparent
+        display: inline-block
+        padding: 20px 30px
+        transition: all .3s ease-in-out
+        background-color: #fff
+        color: $color-red-dark
+        position: absolute
+        bottom: 40px
+        &:hover
+          background-color: $color-red-dark
+          border-color: $color-red-dark
+          color: #fff
+          
 
 .mediacorner
   &__title

@@ -15,12 +15,14 @@
 					<div class="col-12 col-md-6 col-lg-6 col-xl-4">
 						<article id="video" class="video-card">
 							<a data-fancybox data-small-btn="true" href="https://youtu.be/<?php echo esc_attr( $video_id ); ?>">
-								<img src="http://img.youtube.com/vi/<?php echo esc_html( $video_id ); ?>/maxresdefault.jpg" />
-								<i class="fas fa-play"></i>
-								<div class="video-card__content">
-									<h4 class="video-card__title"><?php echo shs_get_youtube_title( $video_id ); ?></h4>
-								</div>
+								<img src="http://img.youtube.com/vi/<?php echo esc_html( $video_id ); ?>/hqdefault.jpg" />
+								<span class="video-card__play-button">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+										<polygon points="40,30 65,50 40,70"></polygon>
+									</svg>
+								</span>
 							</a>
+							<!--<h2 class="video-card__title"><?php //echo shs_get_youtube_title( $video_id ); ?></h2> -->
 						</article>
 					</div>
 				<?php endwhile; ?>
