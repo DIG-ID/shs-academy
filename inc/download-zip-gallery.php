@@ -100,8 +100,6 @@ function shs_download_files( $field_name ) {
 
 				// Then link to the file you just created
 				echo '<a href="' . esc_url( home_url( '/' ) ) . $destination . '" class="main-btn main-btn__red download-link" download>' . esc_html__( 'Alle Logos herunterladen', 'shs-a' ) . '</a>';
-			else :
-				echo 'no files found';
 			endif;
 
 		endif;
