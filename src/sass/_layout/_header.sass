@@ -91,6 +91,17 @@
   .navbar-collapse
     justify-content: flex-end
 
+.navbar-main.sticky
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+
+.navbar-main.sticky ~ .navbar-main-bumper
+  height: 127px
+
+@include media-breakpoint-down(xl)
+
 
 #opener
   &__menu

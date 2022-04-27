@@ -96,3 +96,6 @@ require get_template_directory() . '/inc/theme-template-tags.php';
 
 // Theme customizer options.
 require get_template_directory() . '/inc/customizer.php';
+
+// Create .zip files funcytion.
+require get_template_directory() . '/inc/download-zip-gallery.php';
