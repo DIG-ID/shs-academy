@@ -13,7 +13,7 @@
 							<!-- <p class="press-publisher"><?php the_field( 'press_publisher' ); ?></p> -->
 							<!-- <p class="press-date"><?php //the_date( 'j F Y' ); ?></p> -->
 							<h2 class="press-article__title"><?php echo esc_html( get_sub_field( 'press_article_title' ) ); ?></h2>
-							<a href="<?php echo esc_url( get_sub_field( 'press_article_file' ) ); ?>" target="blank" class="press-article__btn" data-fancybox data-type="iframe"><?php esc_html_e( 'Mehr erfahren', 'shs-academy' ); ?></a>
+							<a href="<?php echo esc_url( get_sub_field( 'press_article_file' ) ); ?>" target="blank" class="press-article__btn" data-fancybox ><?php esc_html_e( 'Mehr erfahren', 'shs-academy' ); ?></a>
 						</article>
 					</div>
 				<?php endwhile; ?>
