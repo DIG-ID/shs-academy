@@ -57,6 +57,19 @@
       border-color: $color-red-dark
       color: #fff
 
+.download-link
+  display: flex
+  justify-content: center
+  align-items: center
+  svg
+    width: 20px
+    fill: #fff
+    margin-right: 10px
+    transition: all .3s ease-in-out
+  &:hover
+    svg
+      fill: $color-red-dark
+
 @media (max-width: $md)
   .main-btn
     &__mob-centered
