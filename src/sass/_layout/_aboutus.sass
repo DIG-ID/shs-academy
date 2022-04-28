@@ -18,17 +18,30 @@
   .aboutus-bottom
     &__title
       font-family: $primary-font
-      font-size: 55px
-      font-weight: 600
-      letter-spacing: -0.30px
+      font-size: 50px
+      font-weight: normal
+      line-height: 60px
+      letter-spacing: -3px
       color: $secondary-color
-      margin-bottom: 0
+      margin-bottom: 30px
     &__subtitle
       font-family: $primary-font
-      font-size: 55px
-      font-weight: 300
-      letter-spacing: -0.30px
-      color: $color-red-dark
+      font-size: 16px
+      font-weight: bold
+      line-height: 30px
+      color: $color-red-light
+      position: relative
+      display: inline-block
+      &::after
+        position: absolute
+        display: inline-block
+        top: 50%
+        transform: translateY(-50%)
+        content: ''
+        width: 70px
+        height: 2px
+        background-color: $color-red-light
+        margin-left: 15px
     &_description
       font-family: $primary-font
       font-size: 16px
