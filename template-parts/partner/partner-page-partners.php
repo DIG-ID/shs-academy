@@ -1,6 +1,11 @@
 <section id="page-partners-section" class="section section__partners">
 	<div class="container container__inside">
-		<p class="partners__topsection-title">Partners</p>
+		<div class="row align-items-center justify-content-center">
+			<div class="col">
+				<p class="partners__topsection-title">Partners</p>
+				<p class="text-center text-info-details">Änderungen vorbehaltenbr<br>Diese Angaben  können bis zum Event ändern.</p>
+			</div>
+		</div>
 		<div class="row">
 			<p class="partners__catTitle">Institutional Partner</p>
 			<div class="col-md-12 col-sm-12 px-15 partners__column">

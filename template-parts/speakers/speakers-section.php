@@ -2,6 +2,11 @@
 	<span class="section-about-us__bg-img-2 rellax" data-rellax-speed="-4" data-rellax-percentage="0.5"></span>
 	<div class="container container__inside">
 		<div class="row align-items-center justify-content-center">
+			<div class="col">
+				<p class="text-center text-info-details">Änderungen vorbehaltenbr<br>Diese Angaben  können bis zum Event ändern.</p>
+			</div>
+		</div>
+		<div class="row align-items-center justify-content-center">
 			<?php $i = 1; ?>
 			<?php
 			$speaker_query_args = array(
