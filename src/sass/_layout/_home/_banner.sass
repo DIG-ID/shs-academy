@@ -73,12 +73,24 @@
     text-decoration: none
     width: 26px
 
-@media (max-width: $md)
+@include media-breakpoint-down(xxl)
+  .section-banner
+    &__title
+      font-size: 80px
+      line-height:90px
+
+@include media-breakpoint-down(xl)
+  .section-banner
+    &__title
+      font-size: 66px
+      line-height:88px
+
+@include media-breakpoint-down(md)
   .section-banner
     min-height: 560px
     max-height: 560px
     &__title
-      font-size: 60px
+      font-size: 56px
       letter-spacing: -3px
       line-height: 62px
     &__subtitle
@@ -86,7 +98,7 @@
     &__description
       font-size: 19px
 
-@media (max-width: $sm)
+@include media-breakpoint-down(sm)
   .section-banner
     min-height: 575px
     max-height: 575px
