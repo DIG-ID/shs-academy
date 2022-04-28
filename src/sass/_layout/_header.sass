@@ -97,10 +97,19 @@
   left: 0
   width: 100%
 
+.admin-bar .navbar-main.sticky
+  top: 32px
+
 .navbar-main.sticky ~ .navbar-main-bumper
   height: 127px
 
 @include media-breakpoint-down(xl)
+  .navbar-main.sticky ~ .navbar-main-bumper
+    height: 125px
+
+@include media-breakpoint-down(md)
+  .admin-bar .navbar-main.sticky
+    top: 46px
 
 
 #opener
