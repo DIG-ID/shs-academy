@@ -23,19 +23,19 @@ $current_event_query = new WP_Query( $current_event_query_args );
 $_SESSION['page_template_id'] = get_the_ID();
 
 if ( $current_event_query->have_posts() ) :
-while ( $current_event_query->have_posts() ) :
-	$current_event_query->the_post();
+	while ( $current_event_query->have_posts() ) :
+		$current_event_query->the_post();
 
-	$_SESSION['event-status'] = get_field( 'event_status' );
+		$event_status = get_field( 'event_status' );
 
-	if ( 'before' === $_SESSION['event-status'] ) :
-		get_template_part( 'template-parts/speakers/speakers-section' );
-	elseif ( 'during' === $_SESSION['event-status'] ) :
-		get_template_part( 'template-parts/speakers/speakers-section' );
-	else :
-		get_template_part( 'template-parts/speakers/speakers-section' );
-	endif;
-endwhile;
+		if ( 'before' === $event_status ) :
+			get_template_part( 'template-parts/speakers/speakers-section' );
+		elseif ( 'during' === $event_status ) :
+			get_template_part( 'template-parts/speakers/speakers-section' );
+		else :
+			get_template_part( 'template-parts/speakers/speakers-section' );
+		endif;
+	endwhile;
 endif;
 
 get_footer();
