@@ -59,6 +59,7 @@
     a
       color: $color-red-dark
   &-main
+    position: relative
     .menu-item
       &:nth-last-child(2)
         a
@@ -117,8 +118,9 @@
     display: none
   &__eventsmenu
     display: block!important
-    position: absolute
+    position: fixed
     z-index: 999
+    top: 187px
     background-color: $primary-color
     width: 100%
     padding: 50px 140px
@@ -127,6 +129,15 @@
     transform: scaleY(0)
   &__eventsmenu.open
     transform: scale(1)
+
+#opener__eventsmenu.sticky
+  top: 127px
+
+.admin-bar #opener__eventsmenu.sticky
+  top: 127px + 32px
+
+.admin-bar #opener__eventsmenu
+  top: 187px + 32px
 
 .menu
   &__event-container

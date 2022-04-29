@@ -24,7 +24,8 @@ $(function() {
   });
 
   /*Open Menu Events*/
-  $( ".opener__events" ).on('click',function() {
+  $( ".opener__events" ).on('click',function(e) {
+    e.preventDefault();
     var x = document.getElementById("opener__eventsmenu");
     if (x.style.display === "block") {
       x.style.display = "none";

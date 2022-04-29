@@ -1,11 +1,17 @@
 <section id="speakers-section" class="section section__speakers">
 	<span class="section-about-us__bg-img-2 rellax" data-rellax-speed="-4" data-rellax-percentage="0.5"></span>
 	<div class="container container__inside">
-		<div class="row align-items-center justify-content-center">
-			<div class="col">
-				<p class="text-center text-info-details">Änderungen vorbehaltenbr<br>Diese Angaben  können bis zum Event ändern.</p>
+		<?php
+		if ( get_field( 'display_info_message_speaker' ) ) :
+			?>
+			<div class="row align-items-center justify-content-center">
+				<div class="col">
+					<p class="text-center text-info-details"><?php the_field( 'info_message_speakers' ); ?></p>
+				</div>
 			</div>
-		</div>
+			<?php
+		endif;
+		?>
 		<div class="row align-items-center justify-content-center">
 			<?php $i = 1; ?>
 			<?php

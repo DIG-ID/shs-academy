@@ -5,8 +5,10 @@ $(function() {
     $(window).on( 'scroll', function(){
       if($(this).scrollTop() > 60 ){
         $('.navbar-main').addClass('sticky');
+        $('#opener__eventsmenu').addClass('sticky');
       } else{
         $('.navbar-main').removeClass('sticky');
+        $('#opener__eventsmenu').removeClass('sticky');
       }
     });
   } else {
