@@ -1,6 +1,7 @@
 <section id="programs-section" class="section section__programs">
   <span class="section-about-us__bg-img-2 rellax" data-rellax-speed="-4" data-rellax-percentage="0.5"></span>
   <div class="container container__programs">
+    
     <div class="row align-items-center justify-content-center">
       <div class="col-sm-12 col-md-12 col-lg-12">
         <?php
@@ -91,5 +92,16 @@
       ?>
       </div>
     </div>
+    <?php
+		if ( get_field( 'display_info_message_programm', $_SESSION['page_template_id'] ) ) :
+			?>
+			<div class="row align-items-center justify-content-center py-5">
+				<div class="col">
+					<p class="text-center text-info-details m-0"><?php the_field( 'info_message_programm', $_SESSION['page_template_id'] ); ?></p>
+				</div>
+			</div>
+			<?php
+		endif;
+		?>
   </div>
 </section>

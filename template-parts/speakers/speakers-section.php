@@ -1,17 +1,7 @@
 <section id="speakers-section" class="section section__speakers">
 	<span class="section-about-us__bg-img-2 rellax" data-rellax-speed="-4" data-rellax-percentage="0.5"></span>
 	<div class="container container__inside">
-		<?php
-		if ( get_field( 'display_info_message_speaker', $_SESSION['page_template_id'] ) ) :
-			?>
-			<div class="row align-items-center justify-content-center">
-				<div class="col">
-					<p class="text-center text-info-details"><?php the_field( 'info_message_speakers', $_SESSION['page_template_id'] ); ?></p>
-				</div>
-			</div>
-			<?php
-		endif;
-		?>
+		
 		<div class="row align-items-center justify-content-center">
 			<?php $i = 1; ?>
 			<?php
@@ -101,5 +91,16 @@
 			endif;
 			wp_reset_postdata(); ?>
 		</div>
+		<?php
+		if ( get_field( 'display_info_message_speaker', $_SESSION['page_template_id'] ) ) :
+			?>
+			<div class="row align-items-center justify-content-center">
+				<div class="col">
+					<p class="text-center text-info-details"><?php the_field( 'info_message_speakers', $_SESSION['page_template_id'] ); ?></p>
+				</div>
+			</div>
+			<?php
+		endif;
+		?>
 	</div>
 </section>
