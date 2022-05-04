@@ -3,9 +3,6 @@
 		<div class="row align-items-center justify-content-center">
 			<div class="col">
 				<p class="partners__topsection-title">Partners</p>
-				<?php if ( get_field( 'display_info_message_partner' ) ) :
-					?><p class="text-center text-info-details"><?php the_field( 'info_message_partner' ); ?></p><?php
-				endif;?>
 			</div>
 		</div>
 		<div class="row">
