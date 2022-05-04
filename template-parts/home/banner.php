@@ -12,6 +12,7 @@ if ( $banner ) : ?>
 			<div class="section-banner__video-wrapper rellax" data-rellax-speed="-3" data-rellax-percentage="0.5">
 				<video class="section-banner__video" playsinline="playsinline" loop="" autoplay="autoplay" muted="muted">
 					<source src="<?php the_field( 'home_page_settings_banner_background_video' ); ?>" type="video/mp4">
+					<img src="<?php echo wp_upload_dir()['url'] . '/Header-Fallback.jpg' ?>" title="Your browser does not support the <video> tag">
 				</video>
 			</div>
 			<?php
