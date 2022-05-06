@@ -12,7 +12,13 @@ $(function() {
     },
   });
   const testimonialsSwiper = new Swiper('.testimonials-swiper', {
-    slidesPerView: 2,
+    breakpoints: {
+      1200: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+      },
+    },
+    slidesPerView: 1,
     spaceBetween: 30,
     loop: true,
     //effect: 'fade',
@@ -28,9 +34,27 @@ $(function() {
   });
 
   const eventGalleryThumbs = new Swiper(".gallerySwiperThumbs", {
+    breakpoints: {
+      576: {
+        slidesPerView: 1,
+        spaceBetween: 30,
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+      },
+      992: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      },
+      1200: {
+        slidesPerView: 4,
+        spaceBetween: 30,
+      },
+    },
     loop: true,
     spaceBetween: 30,
-    slidesPerView: 4,
+    slidesPerView: 1,
     freeMode: true,
     watchSlidesProgress: true,
     navigation: {

@@ -133,3 +133,28 @@
   &__events-links
     z-index: 2
     position: relative
+
+@media (max-width: $lg)
+  #events-section
+    .event-background.rellax
+      display: none
+    .events-links
+      display: block
+      &__link-wrapper
+        margin-right: 0
+
+  .type-events
+    padding: 50px 0 0 0
+    .event-title
+      font-size: 65px
+      line-height: 60px
+      .event-subtitle
+        font-size: 45px     
+
+@media (max-width: $xxl)
+  .type-events
+    .section-event-gallery
+      .gallery-swiper-button-next
+        display: none
+      .gallery-swiper-button-prev
+        display: none

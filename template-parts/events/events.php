@@ -37,7 +37,7 @@ $events_query = new WP_Query( $events_query_args );
 		<article id="<?php echo esc_html( date_i18n( 'Y', $unixtimestamp ) ); ?>" <?php post_class(); ?> itemscope itemtype="https://schema.org/Event">
 			<header class="container container__inside">
 				<div class="row">
-					<div class="col-10 col-lg-8">
+					<div class="col-md-12 col-lg-8 col-xl-8">
 						<h2 itemprop="name" class="event-title"><?php the_title(); ?><br><span class="event-subtitle"><?php the_field( 'event_subtitle' ); ?></span></h2>
 						<div itemprop="description" class="event-description"><?php the_content(); ?></div>
 						<meta itemprop="startDate" content="<?php echo $event_start_date; ?>">

@@ -14,7 +14,7 @@
 		<div class="row row__logos">
 			<?php if ( get_field( 'logos_images' ) ) : ?>
 				<?php foreach ( get_field( 'logos_images' ) as $logo ) : ?>
-					<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-2 d-flex align-items-center">
+					<div class="col-sm-12 col-md-6 col-lg-6 col-xl-2 d-flex align-items-center justify-content-center">
 						<?php $logo_url = wp_get_attachment_image_url( $logo, 'full' ); ?>
 						<a href="<?php echo esc_url( $logo_url ); ?>" data-fancybox="logos">
 							<?php echo wp_get_attachment_image( $logo, 'media-corner-logos-thumb' ); ?>

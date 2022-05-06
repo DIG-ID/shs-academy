@@ -15,7 +15,7 @@
 				$photosImages = get_field( 'photos' );
 				if( $photosImages ): ?>
 					<?php foreach( $photosImages as $photoImage ): ?>
-						<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3 d-flex align-items-center">
+						<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3 d-flex align-items-center justify-content-center">
 							<?php $photo_url = wp_get_attachment_image_url( $photoImage, 'full' ); ?>
 							<a href="<?php echo esc_url($photo_url); ?>" data-fancybox="photos">
 								<?php echo wp_get_attachment_image( $photoImage, 'media-corner-photos-thumb' ); ?>
