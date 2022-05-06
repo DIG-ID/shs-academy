@@ -2,7 +2,25 @@ import Swiper from 'swiper/bundle';
 
 $(function() {
   const partnersSwiper = new Swiper('.partners-swiper', {
-    slidesPerView: 7,
+    breakpoints: {
+      576: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+      },
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      },
+      992: {
+        slidesPerView: 5,
+        spaceBetween: 30,
+      },
+      1200: {
+        slidesPerView: 7,
+        spaceBetween: 30,
+      },
+    },
+    slidesPerView: 1,
     spaceBetween: 30,
     loop: true,
     speed: 600,
