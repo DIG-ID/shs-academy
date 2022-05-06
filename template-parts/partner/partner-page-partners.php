@@ -1,7 +1,7 @@
 <section id="page-partners-section" class="section section__partners">
 	<div class="container container__inside">
 		<div class="row align-items-center justify-content-center">
-			<div class="col">
+			<div class="col-md-12 col-sm-12 px-15">
 				<p class="partners__topsection-title">Partners</p>
 			</div>
 		</div>
