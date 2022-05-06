@@ -176,13 +176,33 @@
 
 /*Responsive*/
 @media (max-width: $lg)
+  #page-partners-section
+    .partners
+      &__topsection-title
+        margin: 30px 0 50px 0 !important
+
   #page-intro-section
     padding: 0
     img
-      width: 100%
+      width: 150%
+      margin-left: -25%
       height: auto
 
   .partners
     &__catTitle
       font-size: 45px
       line-height: 60px
+    &__topsection-text
+      padding: 0 20px
+
+  .section
+    &__partner-become
+      margin-top: 0
+      padding: 0
+    &__pageintro
+      .accordion-button
+        &:after
+         left: 44%
+    &__partners
+      .row
+        padding: 0
