@@ -80,3 +80,17 @@
     color: $primary-color
     text-align: center
     padding: 70px 0 30px 0
+
+@media (max-width: $lg)
+  #programs
+    &__tab
+      button
+        min-width: 100%
+      li
+        width: 100%
+        &:first-child
+          margin-right: 0
+
+  .section
+    &__programs
+      padding: 40px 0
