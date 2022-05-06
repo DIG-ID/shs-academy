@@ -195,6 +195,9 @@
 
 /*Responsive*/
 @media (max-width: $lg)
+  #mega-menu ul
+    display: none
+
   .opener__events
     display: none
 
@@ -205,7 +208,7 @@
       padding: 11px 18px
       border: none
       &__menu
-        min-height: calc(99vh - 60px)
+        height: calc(99vh - 60px)
         flex-basis: 100%
         flex-grow: 1
         align-items: center
@@ -214,6 +217,8 @@
         top: 80px
         z-index: 999
         width: 100%
+        padding-bottom: 50px
+        overflow-y: scroll
 
   .page
     &__title
@@ -248,8 +253,11 @@
     &-toparea
       display: none
 
-  #navbar-mobile
+  #navbar-mobile.mega-navbar
     padding: 30px 30px 0
+
+  #navbar-mobile
+    padding: 0 30px
     .menu-item
       border-bottom: 1px solid $color-red-dark
       a

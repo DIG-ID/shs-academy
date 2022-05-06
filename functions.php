@@ -8,6 +8,7 @@ function shs_theme_setup() {
 	register_nav_menus(
 		array(
 			'primary'   => __( 'Primary Menu', 'shs-a' ),
+			'megamenu'   => __( 'Mega Menu', 'shs-a' ),
 			'toparea'   => __( 'Top Area Menu', 'shs-a' ),
 			'copyright' => __( 'Copyright Menu', 'shs-a' ),
 		)

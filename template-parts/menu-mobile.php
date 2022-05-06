@@ -2,6 +2,20 @@
 	<?php
 		wp_nav_menu(
 			array(
+				'theme_location'  => 'megamenu',
+				'container_class' => 'container navbar-collapse mega-navbar',
+				'container_id'    => 'navbar-mobile',
+				'menu_class'      => 'navbar-nav ml-auto',
+				'fallback_cb'     => '',
+				'menu_id'         => 'mega-menu',
+				'depth'           => 2,
+				'walker'          => '',
+			)
+		);
+	?>
+	<?php
+		wp_nav_menu(
+			array(
 				'theme_location'  => 'primary',
 				'container_class' => 'container navbar-collapse',
 				'container_id'    => 'navbar-mobile',
