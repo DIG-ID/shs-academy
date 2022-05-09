@@ -17,7 +17,7 @@
 					$speaker_logo     = get_field( 'speaker_logo' );
 					$speaker_is_mod   = get_field( 'speaker_is_moderator' );
 					?>
-					<div class="col-sm-12 col-md-4 col-lg-4">
+					<div class="col-sm-12 col-md-6 col-lg-4">
 						<a type="button" id="speakerTrigger" data-bs-toggle="modal" data-bs-target="#speakerDetails<?php echo $i; ?>">
 							<figure class="speaker-card">
 								<?php echo get_the_post_thumbnail( get_the_ID(), 'full' ); ?>
