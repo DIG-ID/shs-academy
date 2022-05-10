@@ -2,7 +2,7 @@
 	<div class="container container__inside">
 		<div class="row">
 			<div class="col-12 col-sm-12 col-md-6 col-lg-12 col-xl-6 px-15">
-				<p class="mediacorner__title"><?php the_field( 'videos_title' ); ?></p>
+				<h2 class="mediacorner__title"><?php the_field( 'videos_title' ); ?></h2>
 			</div>
 		</div>
 		<div class="row row__videos">

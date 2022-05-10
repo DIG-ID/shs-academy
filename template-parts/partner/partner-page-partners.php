@@ -6,7 +6,7 @@
 			</div>
 		</div>
 		<div class="row">
-			<p class="partners__catTitle">Institutional Partner</p>
+			<h2 class="partners__catTitle">Institutional Partner</h2>
 			<div class="col-md-12 col-sm-12 px-15 partners__column">
 				<?php
 				$institutional_query_args = array(
@@ -28,7 +28,7 @@
 			</div>
 		</div><!-- .row institutional partners -->
 		<div class="row">
-			<p class="partners__catTitle">Presenting Partner</p>
+			<h2 class="partners__catTitle">Presenting Partner</h2>
 			<div class="col-md-12 col-sm-12 px-15 partners__column">
 				<?php
 				$presenting_query_args = array(
@@ -50,7 +50,7 @@
 			</div>
 		</div><!-- .row presenting partners -->
 		<div class="row">
-			<p class="partners__catTitle">Innovation Partner</p>
+			<h2 class="partners__catTitle">Innovation Partner</h2>
 			<div class="col-md-12 col-sm-12 px-15 partners__column">
 				<?php
 				$innovation_query_args = array(
@@ -72,7 +72,7 @@
 			</div>
 		</div><!-- .row innovation partners -->
 		<div class="row">
-			<p class="partners__catTitle">Networking Partner</p>
+			<h2 class="partners__catTitle">Networking Partner</h2>
 			<div class="col-md-12 col-sm-12 px-15 partners__column">
 				<?php
 				$networking_query_args = array(

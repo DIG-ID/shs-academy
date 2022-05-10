@@ -9,13 +9,13 @@
         } ?>
       </div>
       <div class="col-md-6 col-sm-12 px-15 location__blocktext">
-        <p class="location__title"><?php echo the_field('location_top_block_title'); ?></p>
+        <h2 class="location__title"><?php echo the_field('location_top_block_title'); ?></h2>
         <?php echo the_field('location_top_block_description'); ?>
       </div>
     </div>
     <div class="row location__row">
       <div class="col-md-6 col-sm-12 px-15 location__blocktext--sec">
-        <p class="location__title"><?php echo the_field('location_bottom_block_title'); ?></p>
+        <h2 class="location__title"><?php echo the_field('location_bottom_block_title'); ?></h2>
         <?php echo the_field('location_bottom_block_description'); ?>
       </div>
       <div class="col-md-6 col-sm-12 px-15">

@@ -8,8 +8,8 @@
         <img class="w-100" src="<?php echo $aboutus_introSection['about_us_section_image']; ?>">
       </div>
       <div class="col-md-6 col-sm-12 col-lg-6 aboutus__leftCol">
-        <p class="aboutus__title-intro"><?php echo $aboutus_introSection['about_us_section_title']; ?></p>
-        <p class="aboutus__subtitle-intro"><?php echo $aboutus_introSection['about_us_section_tsubtitle']; ?></p>
+        <h2 class="aboutus__title-intro"><?php echo $aboutus_introSection['about_us_section_title']; ?></h2>
+        <h3 class="aboutus__subtitle-intro"><?php echo $aboutus_introSection['about_us_section_tsubtitle']; ?></h3>
         <p class="aboutus__text-intro"><?php echo $aboutus_introSection['about_us_section_description']; ?></p>
       </div>
       <?php endif; ?>
