@@ -10,6 +10,7 @@
         <?php $formDetails = get_field('form_details');
         if( $formDetails ): ?>
           <p class="getintouch__title"><?php echo $formDetails['contact_form_title']; ?></p>
+          <p class="aboutus__text-intro"><?php echo $formDetails['contact_form_subtitle']; ?></p>
         <?php endif; ?>
         <?php echo do_shortcode( '[contact-form-7 id="452" title="Contact Page Form"]' ); ?>
       </div>
