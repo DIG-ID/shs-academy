@@ -195,11 +195,8 @@
 
 /*Responsive*/
 @media (max-width: $lg)
-  #mega-menu ul
-    display: none
-
   .opener__events
-    display: none
+    display: none !important
 
   #opener
       outline: 0
@@ -217,8 +214,12 @@
         top: 80px
         z-index: 999
         width: 100%
+        padding-top: 20px
         padding-bottom: 50px
         overflow-y: scroll
+
+  .navbar
+    background-color: $primary-color
 
   .page
     &__title
@@ -231,7 +232,7 @@
       margin: 0
       padding: 0 20px 0 15px
       a
-        color: #000
+        color: #fff
         font-family: $primary-font
         font-size: 28px
         font-weight: 400
@@ -252,6 +253,13 @@
         background-color: $color-red-dark
     &-toparea
       display: none
+    &-nav
+      width: 100%
+
+  #mega-menu
+    .dropdown-menu
+      background-color: #27273B
+      border: 0
 
   #navbar-mobile.mega-navbar
     padding: 30px 30px 0
@@ -268,6 +276,7 @@
         text-decoration: none
     &-toparea
       .menu-item
+        padding: 0
         a
           font-family: $primary-font
           font-size: 16px
@@ -275,6 +284,8 @@
           text-transform: uppercase
           color: #FFFFFF
           text-decoration: none
+          border: 0
+          padding: 0
 
   .custom-logo-link
     padding: 15px 0
