@@ -12,7 +12,7 @@
 					if ( $event_program ) :
 						$file = get_field( 'program_file', $event_program );
 						?>
-						<a class="main-btn main-btn__white btn disabled" href="<?php echo esc_url( $file ); ?>" target="_blank"><?php esc_html_e( 'Programm entdecken', 'shs-a' ); ?></a>
+						<a class="main-btn main-btn__white btn disabled disabled-button-home" href="<?php echo esc_url( $file ); ?>" target="_blank"><?php esc_html_e( 'Programm entdecken', 'shs-a' ); ?></a>
 						<?php
 					endif;
 					?>
