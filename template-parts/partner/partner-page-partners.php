@@ -2,11 +2,11 @@
 	<div class="container container__inside">
 		<div class="row align-items-center justify-content-center">
 			<div class="col-md-12 col-sm-12 px-15">
-				<p class="partners__topsection-title">Partners</p>
+				<p class="partners__topsection-title">Partner</p>
 			</div>
 		</div>
 		<div class="row">
-			<h2 class="partners__catTitle">Institutional Partner</h2>
+			<h2 class="partners__catTitle">Institutional</h2>
 			<div class="col-md-12 col-sm-12 px-15 partners__column">
 				<?php
 				$institutional_query_args = array(
@@ -50,7 +50,7 @@
 			</div>
 		</div><!-- .row presenting partners -->
 		<div class="row">
-			<h2 class="partners__catTitle">Innovation Partner</h2>
+			<h2 class="partners__catTitle">Innovation</h2>
 			<div class="col-md-12 col-sm-12 px-15 partners__column">
 				<?php
 				$innovation_query_args = array(
@@ -72,7 +72,7 @@
 			</div>
 		</div><!-- .row innovation partners -->
 		<div class="row">
-			<h2 class="partners__catTitle">Networking Partner</h2>
+			<h2 class="partners__catTitle">Networking</h2>
 			<div class="col-md-12 col-sm-12 px-15 partners__column">
 				<?php
 				$networking_query_args = array(
