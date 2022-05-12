@@ -9,6 +9,14 @@
 		<link rel="profile" href="https://gmpg.org/xfn/11">
 		<link rel="stylesheet" href="https://use.typekit.net/usk0vgb.css">
 		<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri() . '/src/images/favicon.ico' ?>" type="image/x-icon"/>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-143369410-1"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'UA-143369410-1');
+		</script>
 		<?php wp_head(); ?>
 
 	</head>
