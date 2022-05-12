@@ -7,3 +7,51 @@
 @import 'partners'
 @import 'past-events'
 @import 'testimonials'
+
+
+// Cookie Consent Bar
+#cookie-law-info-bar
+    max-width: 580px
+    margin-left: 20px
+    margin-bottom: 20px
+    padding: 0!important
+
+.cli-style-v2
+    display: block
+    font-size: 16px
+    line-height: 29px
+    padding: 40px
+    .cli-bar-message
+        width: 100%
+    .cli-bar-btn_container
+        margin-left: 0
+        .cli-plugin-button
+            transition: all 0.3s ease-in-out
+            padding: 21px 0 !important
+            width: 50%
+            margin-top: 40px !important
+            margin-bottom: 0 !important
+            background-color: #C50013 !important
+            border: 1px solid #C50013
+            color: #fff !important
+            &:hover
+                background-color: #FFFFFF !important
+                border-color: #C50013
+                color: #C50013 !important
+        
+.cli-tab-footer
+    .wt-cli-privacy-accept-btn
+        transition: all 0.3s ease-in-out
+        background-color: #C50013 !important
+        border: 1px solid #C50013
+        color: #fff !important
+        &:hover
+            background-color: #FFFFFF !important
+            border-color: #C50013
+            color: #C50013 !important
+
+@media (max-width: $sm)
+    .cli-style-v2
+        .cli-bar-btn_container
+            .cli-plugin-button
+                width: 100%
