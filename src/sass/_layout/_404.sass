@@ -1,0 +1,44 @@
+.error404
+    #wrapper-banner
+        display: none
+    .notfound-content
+        padding: 150px 0
+    #main-content
+        background: url('/wp-content/uploads/bg_404.jpg')
+
+.page404
+    &__title
+        font-family: $primary-font
+        font-size: 320px
+        font-weight: 700
+        letter-spacing: -0.3px
+        line-height: 320px
+        color: $secondary-color
+    &__subtitle
+        font-family: $primary-font
+        font-size: 85px
+        font-weight: 400
+        letter-spacing: -0.3px
+        line-height: 85px
+        color: #161C2D
+    &__text
+        font-family: $primary-font
+        font-size: 30px
+        font-weight: 400
+        letter-spacing: -0.3px
+        line-height: 85px
+        color: #161C2D
+
+@media (max-width: $md)
+    .page404
+        &__title
+            font-size: 136px
+            line-height: 185px
+        &__subtitle
+            font-size: 40px
+            line-height: 40px
+        &__text
+            font-size: 24px
+            line-height: 24px
+            padding: 20px 0
+        
