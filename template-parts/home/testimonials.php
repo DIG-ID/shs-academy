@@ -41,6 +41,11 @@
 			</div>
 			<!-- <a class="main-btn main-btn__red" href="/testimonials/"><?php esc_html_e( 'See all testimonials', 'shs-a' ); ?></a> -->
 		</div>
+		<div class="row">
+			<div class="col-12 text-center">
+				<h2 class="section-socialwall__title"><?php esc_html_e( '#SID2022', 'shs-a' ); ?></h2>
+			</div>
+		</div>
 		<div class="row"> 
 			<div class="col-12">
 				<div class="tagembed-container" style=" width:100%;height:100%;overflow: auto;"><div class="tagembed-socialwall" data-wall-id="41238" view-url="https://widget.tagembed.com/41238?view">  </div> <script src="//widget.tagembed.com/embed.min.js" type="text/javascript"></script></div>
