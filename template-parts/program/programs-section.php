@@ -36,19 +36,23 @@
           if( have_rows('days') ):
             while( have_rows('days') ) : the_row();
           ?>
-          <div class="tab-pane fade <?php if($e == 1){echo ' active show';} ?>" id="programs__acc-<?php echo $e; ?>" role="tabpanel">
-            <p class="timeofday__title"><?php esc_html_e( 'Block Title', 'shs-a' ); ?></p>
-            <div class="accordion accordion-flush" id="programs__accordion">
+          <div class="tab-pane fade <?php if($e == 1){echo ' active show';} ?>" id="programs__acc-<?php echo $e; ?>" role="tabpanel">            
+            <?php $u = 1;
+            if( have_rows('accordion_repeater') ):
+              while( have_rows('accordion_repeater') ) : the_row();
+            ?>
+            <p class="timeofday__title"><?php echo get_sub_field('block_title'); ?></p>
+            <div class="accordion accordion-flush" id="programs__accordion-<?php echo $e; ?>">
               <?php $c = 1;
-                  if( have_rows('day_morning') ): 
-                      while( have_rows('day_morning') ) : the_row(); ?>
+                  if( have_rows('block_repeater') ): 
+                      while( have_rows('block_repeater') ) : the_row(); ?>
                       <div class="accordion-item">
                         <h2 class="accordion-header" id="flush-heading-<?php echo $c; ?>">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-<?php echo $c; ?>" aria-expanded="false" aria-controls="flush-collapse-<?php echo $c; ?>">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-<?php echo $u;echo $c; ?>" aria-expanded="false" aria-controls="flush-collapse-<?php echo $u;echo $c; ?>">
                             <span class="programs__acc-time"><?php echo get_sub_field('day-morning-hour'); ?></span><span class="programs__acc-title"><?php echo get_sub_field('day_morning_title'); ?>
                           </button>
                         </h2>
-                        <div id="flush-collapse-<?php echo $c; ?>" class="accordion-collapse collapse" aria-labelledby="flush-heading-<?php echo $c; ?>" data-bs-parent="#programs__accordion">
+                        <div id="flush-collapse-<?php echo $u;echo $c; ?>" class="accordion-collapse collapse" aria-labelledby="flush-heading-<?php echo $c; ?>" data-bs-parent="#programs__accordion-<?php echo $u; ?>">
                           <div class="accordion-body programs__acc-desc"><?php echo get_sub_field('day_morning_description'); ?></div>
                         </div>
                       </div>
@@ -57,28 +61,10 @@
               endif;
               ?>
             </div>
-            <div class="accordion accordion-flush" id="programs__accordion-afternoon">
-              <p class="timeofday__title"><?php esc_html_e( 'Block Title', 'shs-a' ); ?></p>
-              <?php $d = 1;
-
-                  if( have_rows('day_afternoon') ):
-                      while( have_rows('day_afternoon') ) : the_row(); ?>
-                      <div class="accordion-item">
-                        <h2 class="accordion-header" id="flush-heading-after-<?php echo $d; ?>">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-after-<?php echo $d; ?>" aria-expanded="false" aria-controls="flush-collapse-after-<?php echo $d; ?>">
-                            <span class="programs__acc-time"><?php echo get_sub_field('day_afternoon_hour'); ?></span><span class="programs__acc-title"><?php echo get_sub_field('day_afternoon_title'); ?>
-                          </button>
-                        </h2>
-                        <div id="flush-collapse-after-<?php echo $d; ?>" class="accordion-collapse collapse" aria-labelledby="flush-heading-after-<?php echo $d; ?>" data-bs-parent="#programs__accordion-afternoon">
-                          <div class="accordion-body programs__acc-desc"><?php echo get_sub_field('day_afternoon_description'); ?></div>
-                        </div>
-                      </div>
-                      <?php $d++;
-
+            <?php $u++;
                 endwhile;
               endif;
               ?>
-            </div>
             <a class="main-btn main-btn__red programs__dl-btn" href="<?php echo get_field('program_file'); ?>"><?php esc_html_e( 'Download Program', 'shs-a' ); ?></a>
           </div>
           <?php $e++;
