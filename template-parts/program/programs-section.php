@@ -42,17 +42,17 @@
               while( have_rows('accordion_repeater') ) : the_row();
             ?>
             <p class="timeofday__title"><?php echo get_sub_field('block_title'); ?></p>
-            <div class="accordion accordion-flush" id="programs__accordion-<?php echo $e; ?>">
+            <div class="accordion accordion-flush" id="programs__accordion-<?php echo $e;echo $u; ?>">
               <?php $c = 1;
                   if( have_rows('block_repeater') ): 
                       while( have_rows('block_repeater') ) : the_row(); ?>
                       <div class="accordion-item">
-                        <h2 class="accordion-header" id="flush-heading-<?php echo $c; ?>">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-<?php echo $u;echo $c; ?>" aria-expanded="false" aria-controls="flush-collapse-<?php echo $u;echo $c; ?>">
+                        <h2 class="accordion-header" id="flush-heading-<?php echo $e;echo $c; ?>">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-<?php echo $e;echo $u;echo $c; ?>" aria-expanded="false" aria-controls="flush-collapse-<?php echo $e;echo $u;echo $c; ?>">
                             <span class="programs__acc-time"><?php echo get_sub_field('day-morning-hour'); ?></span><span class="programs__acc-title"><?php echo get_sub_field('day_morning_title'); ?>
                           </button>
                         </h2>
-                        <div id="flush-collapse-<?php echo $u;echo $c; ?>" class="accordion-collapse collapse" aria-labelledby="flush-heading-<?php echo $c; ?>" data-bs-parent="#programs__accordion-<?php echo $u; ?>">
+                        <div id="flush-collapse-<?php echo $e;echo $u;echo $c; ?>" class="accordion-collapse collapse" aria-labelledby="flush-heading-<?php echo $e;echo $c; ?>" data-bs-parent="#programs__accordion-<?php echo $e;echo $u; ?>">
                           <div class="accordion-body programs__acc-desc"><?php echo get_sub_field('day_morning_description'); ?></div>
                         </div>
                       </div>
