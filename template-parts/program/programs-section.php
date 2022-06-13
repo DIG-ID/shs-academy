@@ -52,9 +52,11 @@
                             <span class="programs__acc-time"><?php echo get_sub_field('day-morning-hour'); ?></span><span class="programs__acc-title"><?php echo get_sub_field('day_morning_title'); ?>
                           </button>
                         </h2>
+                        <?php if( get_sub_field('day_morning_description') ): ?>
                         <div id="flush-collapse-<?php echo $e;echo $u;echo $c; ?>" class="accordion-collapse collapse" aria-labelledby="flush-heading-<?php echo $e;echo $c; ?>" data-bs-parent="#programs__accordion-<?php echo $e;echo $u; ?>">
                           <div class="accordion-body programs__acc-desc"><?php echo get_sub_field('day_morning_description'); ?></div>
                         </div>
+                        <?php endif; ?>
                       </div>
                       <?php $c++;
                 endwhile;
