@@ -94,6 +94,28 @@
 			</div>
 		</div><!-- .row Networking partners -->
 		<div class="row">
+			<h2 class="partners__catTitle"><?php echo get_cat_name( $category_id = 9 );?></h2>
+			<div class="col-md-12 col-sm-12 px-15 partners__column">
+				<?php
+				$culinary_query_args = array(
+					'post_type'     => 'partners',
+					'nopaging'      => true,
+					'category_name' => 'culinary',
+				);
+				$culinary_query = new WP_Query( $culinary_query_args );
+				if ( $culinary_query->have_posts() ) :
+					while ( $culinary_query->have_posts() ) :
+						$culinary_query->the_post();
+						?>
+							<a href="<?php echo get_field('partner_link'); ?>" target="_blank"><?php the_post_thumbnail('full'); ?></a>
+						<?php
+						endwhile;
+					endif;
+					wp_reset_postdata();
+				?>
+			</div>
+		</div><!-- .row Culinary partners -->
+		<div class="row">
 			<h2 class="partners__catTitle"><?php echo get_cat_name( $category_id = 20 );?></h2>
 			<div class="col-md-12 col-sm-12 px-15 partners__column">
 				<?php
