@@ -40,6 +40,75 @@
       max-width: 570px
       height: auto
 
+.promo-code
+  &__container
+    max-width: 1088px !important
+  &__row
+    justify-content: center
+  &__top
+    margin-top: 100px
+    background-color: #D91818
+    padding: 50px 0
+  &__bottom
+    background-color: #27273B
+    padding: 100px 0
+  &__title
+    font-family: $primary-font
+    font-size: 34px
+    font-weight: 400
+    line-height: 40px
+    letter-spacing: -0.03px
+    color: #F5FAFF
+    text-transform: uppercase
+  &__desc
+    font-family: $primary-font
+    font-size: 16px
+    font-weight: 300
+    line-height: 22px
+    letter-spacing: 0px
+    color: #F5FAFF
+  &__current-code
+    font-family: $primary-font
+    font-size: 34px
+    font-weight: 400
+    line-height: 40px
+    letter-spacing: -0.03px
+    color: #F5FAFF
+    display: inline-block
+    background-color: #27273B
+    padding: 6px 24px
+    margin: 0
+  &__wrapper-hotels
+    background-color: #fff
+    padding: 25px
+  &__wrapper-cols
+    max-width: 536px
+    img
+      width: 100%
+  &__hotel-title
+    font-family: $primary-font
+    font-size: 34px
+    font-weight: 600
+    letter-spacing: -0.03px
+    color: #27273B
+  &__hotel-stars
+    font-family: $primary-font
+    font-size: 20px
+    line-height: 20px
+    margin-left: 15px
+    position: relative
+    top: -10px
+  &__hotel-desc
+    font-family: $primary-font
+    font-size: 24px
+    letter-spacing: 0px
+    margin-bottom: 20px
+    p
+      margin-bottom: 10px
+  &__button-website
+    padding: 15px 30px!important
+    width: auto!important
+
 /*Responsive*/
 @media (max-width: $lg)
   #location-section
@@ -58,3 +127,24 @@
       padding: 20px
     &__blocktext--sec
       padding: 20px
+  
+  .promo-code
+    &__top
+      margin-top: 0
+    &__bottom
+      margin-bottom: 0
+      padding: 60px 0 0 0
+    &__title
+      br
+        display: none
+    &__desc
+      br
+        display: none
+    &__wrapper-cols
+      margin-bottom: 70px
+
+@media (max-width: $lg) and (min-width: $md)
+  .promo-code
+    &__title-row
+      padding: 0 50px
+
