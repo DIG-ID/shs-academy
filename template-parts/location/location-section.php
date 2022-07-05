@@ -39,7 +39,7 @@
           <div class="promo-code__wrapper-hotels">
             <p class="promo-code__hotel-title"><?php echo the_sub_field('title'); ?><span class="promo-code__hotel-stars"><?php echo the_sub_field('stars'); ?></span></p>
             <div class="promo-code__hotel-desc"><?php echo the_sub_field('description'); ?></div>
-            <a href="<?php echo the_sub_field('website_link'); ?>" class="promo-code__button-website main-btn main-btn__red main-btn__mob-centered">Übernachtung buchen</a>
+            <a href="<?php echo the_sub_field('website_link'); ?>" target="_blank" class="promo-code__button-website main-btn main-btn__red main-btn__mob-centered">Übernachtung buchen</a>
           </div>
         </div>
         <?php 
