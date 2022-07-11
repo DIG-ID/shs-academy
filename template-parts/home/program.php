@@ -12,8 +12,8 @@
 					if ( $event_program ) :
 						$file = get_field( 'program_file', $event_program );
 						?>
-						<a class="main-btn main-btn__red btn" href="/program/"><?php esc_html_e( 'Programm entdecken', 'shs-a' ); ?></a>
-						<a class="main-btn main-btn__white btn" target="_blank" href="<?php echo $file; ?>"><?php esc_html_e( 'Download Program', 'shs-a' ); ?></a>
+						<a class="main-btn main-btn__red btn" href="/programm/"><?php esc_html_e( 'Programm entdecken', 'shs-a' ); ?></a>
+						<a class="main-btn main-btn__white btn" target="_blank" href="<?php echo $file; ?>"><?php esc_html_e( 'Programm downloaden', 'shs-a' ); ?></a>
 						<?php
 					endif;
 					?>
