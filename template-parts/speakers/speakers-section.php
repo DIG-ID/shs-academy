@@ -74,7 +74,7 @@
 												<?php
 												if ( have_rows('links') ) :
 													while( have_rows('links') ) : the_row(); ?>
-														<a class="speakersModal__links" href="<?php echo the_sub_field( 'speaker_links' ); ?>"><?php echo the_sub_field( 'speaker_links_title' ); ?></a><br>
+														<a class="speakersModal__links" href="<?php echo the_sub_field( 'speaker_links' ); ?>" target="_blank"><?php echo the_sub_field( 'speaker_links_title' ); ?></a><br>
 													<?php
 													endwhile;
 												endif;
