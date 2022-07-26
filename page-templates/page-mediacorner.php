@@ -6,6 +6,7 @@
  */
 
 get_header();
+	get_template_part( 'template-parts/mediacorner/mediacorner-banners' );
 	get_template_part( 'template-parts/mediacorner/mediacorner-logos' );
 	get_template_part( 'template-parts/mediacorner/mediacorner-photos' );
 	get_template_part( 'template-parts/mediacorner/mediacorner-videos' );
