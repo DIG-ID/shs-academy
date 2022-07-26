@@ -16,16 +16,21 @@
 			</div>
 		</div>
 		<div class="row row__banners">
-			<?php if ( get_field( 'banners_images' ) ) : ?>
-				<?php foreach ( get_field( 'banners_images' ) as $banner ) : ?>
-					<div class="col-sm-12 col-md-6 col-lg-6 col-xl-2 d-flex align-items-center justify-content-center">
-						<?php $banner_url = wp_get_attachment_image_url( $banner, 'full' ); ?>
-						<a href="<?php echo esc_url( $banner_url ); ?>" data-fancybox="banners">
-							<?php echo wp_get_attachment_image( $banner, 'media-corner-logos-thumb' ); ?>
-						</a>
-					</div>
-				<?php endforeach; ?>
-			<?php endif; ?>
+			<?php
+			$banners = get_field( 'banners_images' );
+			if ( $banners ) :
+				foreach ( $banners as $banner ) :
+					?>
+					<a href="<?php echo esc_url( $banner['url'] ); ?>" data-fancybox="banners" data-caption="<?php echo esc_html( $banner['caption'] ); ?>" class="col-sm-12 col-md-6 col-lg-6 col-xl-2 d-flex align-items-center justify-content-center banner-img-wrapper">
+						<figure>
+							<img src="<?php echo esc_url( $banner['sizes']['media-corner-logos-thumb'] ); ?>" alt="<?php echo esc_attr( $banner['alt'] ); ?>" />
+							<figcaption><?php echo esc_html( $banner['caption'] ); ?></figcaption>
+						</figure>
+					</a>
+					<?php
+				endforeach;
+			endif;
+			?>
 		</div>
 	</div>
 </section>

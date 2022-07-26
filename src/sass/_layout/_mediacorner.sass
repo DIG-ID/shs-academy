@@ -24,13 +24,24 @@
     .row
       &__banners
         a
-          display: flex
-          justify-content: center
-          align-items: center
-          background-color: #e5e5e5
-          padding: 20px
-          min-height: 210px
-          margin-bottom: 20px
+          display: block
+          text-decoration: none
+          figure
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            background-color: #e5e5e5
+            padding: 20px
+            min-height: 210px
+            margin-bottom: 20px
+            figcaption
+              color: $primary-color
+              margin-top: 10px
+              font-size: 12px
+              font-family: $primary-font
+              text-transform: uppercase
+              
           img
             max-width: 100%
             height: auto
