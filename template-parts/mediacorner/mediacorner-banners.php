@@ -21,9 +21,9 @@
 			if ( $banners ) :
 				foreach ( $banners as $banner ) :
 					?>
-					<a href="<?php echo esc_url( $banner['url'] ); ?>" data-fancybox="banners" data-caption="<?php echo esc_html( $banner['caption'] ); ?>" class="col-sm-12 col-md-6 col-lg-6 col-xl-2 d-flex align-items-center justify-content-center banner-img-wrapper">
+					<a href="<?php echo esc_url( $banner['url'] ); ?>" data-fancybox="banners" data-caption="<?php echo esc_html( $banner['caption'] ); ?>" class="col-sm-12 col-md-6 col-lg-6 col-xl-3 d-flex align-items-center justify-content-center banner-img-wrapper">
 						<figure>
-							<img src="<?php echo esc_url( $banner['sizes']['media-corner-logos-thumb'] ); ?>" alt="<?php echo esc_attr( $banner['alt'] ); ?>" />
+							<img src="<?php echo esc_url( $banner['sizes']['media-corner-banners-thumb'] ); ?>" alt="<?php echo esc_attr( $banner['alt'] ); ?>" />
 							<figcaption><?php echo esc_html( $banner['caption'] ); ?></figcaption>
 						</figure>
 					</a>

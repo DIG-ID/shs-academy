@@ -32,7 +32,7 @@ function shs_download_files( $field_name ) {
 		$download_btn_text = 'Alle Logos herunterladen';
 	elseif ( 'banners_images' === $field_name ) :
 		$zip_file_section_name = 'shs-media-banners';
-		$download_btn_text = 'Alle Banners herunterladen';
+		$download_btn_text = 'Alle Banner herunterladen';
 	elseif ( 'photos' === $field_name ) :
 		$zip_file_section_name = 'shs-media-photos';
 		$download_btn_text = 'Alle Fotos herunterladen';

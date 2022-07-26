@@ -32,6 +32,8 @@ function shs_theme_setup() {
 
 	add_image_size( 'media-corner-photos-thumb', 276, 276, array( 'center', 'center' ) );
 
+	add_image_size( 'media-corner-banners-thumb', 300, 300, array( 'center', 'center' ) );
+
 }
 
 add_action( 'after_setup_theme', 'shs_theme_setup' );
