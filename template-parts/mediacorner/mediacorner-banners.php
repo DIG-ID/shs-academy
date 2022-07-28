@@ -24,13 +24,18 @@
 					<a href="<?php echo esc_url( $banner['url'] ); ?>" data-fancybox="banners" data-caption="<?php echo esc_html( $banner['caption'] ); ?>" class="col-sm-12 col-md-6 col-lg-6 col-xl-3 d-flex align-items-center justify-content-center banner-img-wrapper">
 						<figure>
 							<img src="<?php echo esc_url( $banner['sizes']['media-corner-banners-thumb'] ); ?>" alt="<?php echo esc_attr( $banner['alt'] ); ?>" />
-							<figcaption><?php echo esc_html( $banner['caption'] ); ?></figcaption>
+							<figcaption><?php echo wp_kses_post( ( wpautop( $banner['caption'] ) ) ); ?></figcaption>
 						</figure>
 					</a>
 					<?php
 				endforeach;
 			endif;
 			?>
+		</div>
+		<div class="row">
+			<div class="col-12 py-3">
+				<?php the_field( 'banners_second_description' ); ?>
+			</div>
 		</div>
 	</div>
 </section>
