@@ -67,7 +67,7 @@
                 endwhile;
               endif;
               ?>
-            <a class="main-btn main-btn__red programs__dl-btn" href="<?php echo get_field('program_file'); ?>"><?php esc_html_e( 'Download Program', 'shs-a' ); ?></a>
+            <a class="main-btn main-btn__red programs__dl-btn" href="<?php echo get_field('program_file'); ?>"><?php esc_html_e( 'Programm downloaden', 'shs-a' ); ?></a>
           </div>
           <?php $e++;
           endwhile;
