@@ -107,8 +107,37 @@
 .disabled-menu-item
   text-align: left
   opacity: 1 !important
-  .menu__event-button
+  cursor: default
+  .menu__event-button, .menu__event-title, .menu__event-text
     opacity: 0.15
+
+.disabled-menu-button
+  a
+    background-color: #838383 !important
+    border-color: #838383 !important
+    color: #FFFFFF !important
+
+.tooltip
+  opacity: 1
+  .tooltiptext
+    visibility: hidden
+    width: 282px
+    background-color: $text-color-blue
+    color: $bg-color-blue
+    font-family: $primary-font
+    font-size: 16px
+    font-weight: 400
+    padding: 5px 10px
+    text-align: left
+    position: absolute
+    top: 70px
+    left: 50%
+    z-index: 1
+
+.tooltip:hover
+  .tooltiptext 
+    visibility: visible
+
 
 .grecaptcha-badge
   display: none
