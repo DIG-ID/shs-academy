@@ -30,7 +30,7 @@ if ( $banner ) : ?>
 						<p class="section-banner__keywords"><?php the_field( 'home_page_settings_banner_keywords' ); ?></p>
 						<h1 class="section-banner__title "><?php the_field( 'home_page_settings_banner_title' ); ?></h1>
 						<div class="section-banner__description"><?php the_field( 'home_page_settings_banner_content' ); ?></div>
-						<a class="section-banner__link main-btn main-btn__red" href="<?php esc_url( the_field( 'home_page_settings_banner_button_1_link' ) ); ?>"><?php the_field( 'home_page_settings_banner_button_1_text' ); ?></a>
+						<a class="section-banner__link main-btn main-btn__red" target="_blank" href="<?php esc_url( the_field( 'home_page_settings_banner_button_1_link' ) ); ?>"><?php the_field( 'home_page_settings_banner_button_1_text' ); ?></a>
 						<a class="section-banner__link  main-btn main-btn__white" href="<?php esc_url( the_field( 'home_page_settings_banner_button_2_link' ) ); ?>"><?php the_field( 'home_page_settings_banner_button_2_text' ); ?></a>
 					</div>
 				</div>
