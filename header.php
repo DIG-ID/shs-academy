@@ -72,6 +72,10 @@
 								)
 							);
 							?>
+							<div class="tooltiptext">
+								<img src="<?php echo wp_upload_dir()['url'] . '/Top__bar.svg' ?>" width="45" height="45">
+								<span>Präsentationen und Fotos des Swiss Innovation Day 2022 werden in Kürze hier verfügbar sein.</span>
+							</div>
 						</div>
 					</nav><!-- .site-navigation -->
 				</div><!-- #wrapper-navbar end -->

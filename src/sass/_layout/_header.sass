@@ -112,6 +112,9 @@
     opacity: 0.15
 
 .disabled-menu-button
+  background-color: #838383 !important
+  border-color: #838383 !important
+  color: #FFFFFF !important
   a
     background-color: #838383 !important
     border-color: #838383 !important
@@ -119,25 +122,70 @@
 
 .tooltip
   opacity: 1
-  .tooltiptext
-    visibility: hidden
-    width: 282px
-    background-color: $text-color-blue
-    color: $bg-color-blue
-    font-family: $primary-font
-    font-size: 16px
-    font-weight: 400
-    padding: 5px 10px
-    text-align: left
-    position: absolute
-    top: 70px
-    left: 50%
-    z-index: 1
+
+.tooltip-body
+  opacity: 1
+  position: relative
+  margin-right: 30px !important
+
+.tooltiptext
+  visibility: hidden
+  width: 282px
+  background-color: $text-color-blue
+  color: $bg-color-blue
+  font-family: $primary-font
+  font-size: 16px
+  font-weight: 400
+  padding: 10px
+  text-align: left
+  position: absolute
+  top: 105px
+  right: 50%
+  left: 81%
+  z-index: 1
+  display: flex
+  flex-direction: row
+  justify-content: center
+  align-items: center
+  span
+    width: 100%
+    margin-left: 15px
 
 .tooltip:hover
   .tooltiptext 
     visibility: visible
 
+.tooltiptext-body
+  visibility: hidden
+  width: 282px
+  background-color: $text-color-blue
+  color: $bg-color-blue
+  font-family: $primary-font
+  font-size: 16px
+  font-weight: 400
+  padding: 10px
+  text-align: left
+  position: absolute
+  top: 85px
+  right: 50%
+  left: 81%
+  z-index: 1
+  display: flex
+  flex-direction: row
+  justify-content: center
+  align-items: center
+  span
+    width: 100%
+    margin-left: 15px
+  img
+    position: relative !important
+    width: 45px !important
+    height: 45px !important
+  
+.tooltip-body:hover
+  cursor: default
+  .tooltiptext 
+    visibility: visible
 
 .grecaptcha-badge
   display: none
@@ -265,6 +313,18 @@
     opacity: 1 !important
     a
       color: #3E3E4A !important
+
+  .disabled-menu-button
+    background-color: #838383 !important
+    border-color: #838383 !important
+    color: #FFFFFF !important
+    a
+      background-color: #838383 !important
+      border-color: #838383 !important
+      color: #FFFFFF !important
+
+  .tooltiptext, .tooltiptext-body
+    display: none
 
   .navbar-mobile
     background-color: $primary-color

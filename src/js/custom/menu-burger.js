@@ -39,4 +39,22 @@ $(function() {
       $('.opener__events').addClass('current-menu-item');
     }
   });
+
+  /*Tooltip Menu Event*/
+  $(".tooltip-menu-button").on({
+    mouseenter: function () {
+      $('.tooltiptext').css('visibility', 'visible');
+    },
+    mouseleave: function () {
+      $('.tooltiptext').css('visibility', 'hidden');
+    }
+  });
+  $(".tooltip-body").on({
+    mouseenter: function () {
+      $('.tooltiptext-body').css('visibility', 'visible');
+    },
+    mouseleave: function () {
+      $('.tooltiptext-body').css('visibility', 'hidden');
+    }
+  });
 });
