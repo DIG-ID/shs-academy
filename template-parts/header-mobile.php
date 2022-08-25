@@ -1,5 +1,5 @@
 <div class="menu__rightside">
-	<a class="button__menured only__responsive disabled-menu-button" target="_blank" href="https://guide.shsacademy.ch/">Wrap Up</a>
+	<a class="button__menured only__responsive disabled-menu-button" target="_blank" href="#">Wrap Up</a>
 	<button id="opener" type="button" class="navbar-toggle only__responsive">
 		<span class="icon-bar"></span>
 		<span class="icon-bar"></span>
