@@ -15,7 +15,7 @@
 			<div class="row">
 				<article class="presentation-card col-12 col-sm-12 col-md-6 col-xl-4 col-xxl-4 px-15">
 					<header class="">
-						<img src="https://picsum.photos/370/370" alt="image">
+						<img src="<?php echo wp_upload_dir()['url'] . '/offers-placeholder.jpg' ?>" alt="image">
 						<span class="presentation-card__category">Category</span>
 						<h2 class="presentation-card__title">Person Name</h2>
 						<p class="presentation-card__position">Person Position</p>
@@ -33,7 +33,7 @@
 				</article>
 				<article class="presentation-card col-12 col-sm-12 col-md-6 col-xl-4 col-xxl-4 px-15">
 					<header class="">
-						<img src="https://picsum.photos/370/370" alt="image">
+						<img src="<?php echo wp_upload_dir()['url'] . '/offers-placeholder.jpg' ?>" alt="image">
 						<span class="presentation-card__category">Category</span>
 						<h2 class="presentation-card__title">Person Name</h2>
 						<p class="presentation-card__position">Person Position</p>
@@ -51,7 +51,7 @@
 				</article>
 				<article class="presentation-card col-12 col-sm-12 col-md-6 col-xl-4 col-xxl-4 px-15">
 					<header class="">
-						<img src="https://picsum.photos/370/370" alt="image">
+						<img src="<?php echo wp_upload_dir()['url'] . '/offers-placeholder.jpg' ?>" alt="image">
 						<span class="presentation-card__category">Category</span>
 						<h2 class="presentation-card__title">Person Name</h2>
 						<p class="presentation-card__position">Person Position</p>
@@ -69,7 +69,7 @@
 				</article>
 				<article class="presentation-card col-12 col-sm-12 col-md-6 col-xl-4 col-xxl-4 px-15">
 					<header class="">
-						<img src="https://picsum.photos/370/370" alt="image">
+						<img src="<?php echo wp_upload_dir()['url'] . '/offers-placeholder.jpg' ?>" alt="image">
 						<span class="presentation-card__category">Category</span>
 						<h2 class="presentation-card__title">Person Name</h2>
 						<p class="presentation-card__position">Person Position</p>
@@ -87,7 +87,7 @@
 				</article>
 				<article class="presentation-card col-12 col-sm-12 col-md-6 col-xl-4 col-xxl-4 px-15">
 					<header class="">
-						<img src="https://picsum.photos/370/370" alt="image">
+						<img src="<?php echo wp_upload_dir()['url'] . '/offers-placeholder.jpg' ?>" alt="image">
 						<span class="presentation-card__category">Category</span>
 						<h2 class="presentation-card__title">Person Name</h2>
 						<p class="presentation-card__position">Person Position</p>
@@ -105,7 +105,7 @@
 				</article>
 				<article class="presentation-card col-12 col-sm-12 col-md-6 col-xl-4 col-xxl-4 px-15">
 					<header class="">
-						<img src="https://picsum.photos/370/370" alt="image">
+						<img src="<?php echo wp_upload_dir()['url'] . '/offers-placeholder.jpg' ?>" alt="image">
 						<span class="presentation-card__category">Category</span>
 						<h2 class="presentation-card__title">Person Name</h2>
 						<p class="presentation-card__position">Person Position</p>
