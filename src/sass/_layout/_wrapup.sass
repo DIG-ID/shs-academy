@@ -37,3 +37,62 @@
         margin: 0 auto 50px auto
     &__button
         margin-bottom: 0 !important
+
+.section
+    &__pagephotos-wrapup
+        background-color: #ffffff
+    &__form-wrapup
+        background-color: $bg-color-blue
+        padding: 160px 0
+        position: relative
+
+.wrap-up
+    &__contact-form
+        .wpcf7
+            &-form-control-wrap
+                input[type=text], input[type=email]
+                    background-color: $bg-primary
+                    border: 1px solid #707070
+                    font-family: $primary-font
+                    font-size: 16px
+                    padding: 20px 30px
+                    color: $text-color-blue
+                    width: 94%
+                    margin-bottom: 20px
+                    &::placeholder
+                    color: $text-color-blue
+                    &:focus
+                    outline: 0
+                textarea
+                    background-color: $bg-primary
+                    border: 1px solid #707070
+                    font-family: $primary-font
+                    font-size: 16px
+                    padding: 20px 30px
+                    color: $text-color-blue
+                    width: 94%
+                    &::placeholder
+                    color: $text-color-blue
+                    &:focus
+                    outline: 0
+            &-submit
+                display: block
+                margin: 30px auto
+                background-color: $color-red-dark
+                border-color: $color-red-dark
+                color: #fff
+                font-family: $primary-font
+                font-size: 15px
+                font-weight: 600
+                text-decoration: none
+                width: 260px
+                border: 1px solid transparent
+                text-align: center
+                padding: 20px 0px
+                transition: all 0.3s ease-in-out
+                &:focus
+                    outline: 0
+                &:hover
+                    background: $bg-primary
+                    border-color: $color-red-dark
+                    color: $color-red-dark

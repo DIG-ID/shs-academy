@@ -3,9 +3,7 @@
 		<div class="container">
 			<div class="row justify-content-center align-content-center">
 				<div class="col-6 text-center">
-					<p class="page-intro__content">Here you will find the approved presentations
-	from the speakers, which you experienced live
-	on the Swiss Innovation Day 2021. </p>
+					<p class="page-intro__content"><?php the_field('page_intro_text'); ?></p>
 				</div>
 			</div>
 		</div>
@@ -13,114 +11,49 @@
 	<section class="presentation-cards">
 		<div class="container container__inside">
 			<div class="row">
-				<article class="presentation-card col-12 col-sm-12 col-md-6 col-xl-4 col-xxl-4 px-15">
-					<header class="">
-						<img src="<?php echo wp_upload_dir()['url'] . '/offers-placeholder.jpg' ?>" alt="image">
-						<span class="presentation-card__category">Category</span>
-						<h2 class="presentation-card__title">Person Name</h2>
-						<p class="presentation-card__position">Person Position</p>
-					</header>
-					<span class="presentation-card__separator"></span>
-					<p class="presentation-card__description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantiutotam rem aperiam eaque ipsa quae  inventore</p>
-					<ul class="presentation-card__links">
-						<li><a href="">link 1</a></li>
-						<li><a href="">link 2</a></li>
-						<li><a href="">link 3</a></li>
-					</ul>
-					<footer>
-						<a href="" target="_blank" class="presentation-card__pdf main-btn main-btn__red">Download PDF</a>
-					</footer>
-				</article>
-				<article class="presentation-card col-12 col-sm-12 col-md-6 col-xl-4 col-xxl-4 px-15">
-					<header class="">
-						<img src="<?php echo wp_upload_dir()['url'] . '/offers-placeholder.jpg' ?>" alt="image">
-						<span class="presentation-card__category">Category</span>
-						<h2 class="presentation-card__title">Person Name</h2>
-						<p class="presentation-card__position">Person Position</p>
-					</header>
-					<span class="presentation-card__separator"></span>
-					<p class="presentation-card__description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantiutotam rem aperiam eaque ipsa quae  inventore</p>
-					<ul class="presentation-card__links">
-						<li><a href="">link 1</a></li>
-						<li><a href="">link 2</a></li>
-						<li><a href="">link 3</a></li>
-					</ul>
-					<footer>
-						<a href="" target="_blank" class="presentation-card__pdf main-btn main-btn__red">Download PDF</a>
-					</footer>
-				</article>
-				<article class="presentation-card col-12 col-sm-12 col-md-6 col-xl-4 col-xxl-4 px-15">
-					<header class="">
-						<img src="<?php echo wp_upload_dir()['url'] . '/offers-placeholder.jpg' ?>" alt="image">
-						<span class="presentation-card__category">Category</span>
-						<h2 class="presentation-card__title">Person Name</h2>
-						<p class="presentation-card__position">Person Position</p>
-					</header>
-					<span class="presentation-card__separator"></span>
-					<p class="presentation-card__description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantiutotam rem aperiam eaque ipsa quae  inventore</p>
-					<ul class="presentation-card__links">
-						<li><a href="">link 1</a></li>
-						<li><a href="">link 2</a></li>
-						<li><a href="">link 3</a></li>
-					</ul>
-					<footer>
-						<a href="" target="_blank" class="presentation-card__pdf main-btn main-btn__red">Download PDF</a>
-					</footer>
-				</article>
-				<article class="presentation-card col-12 col-sm-12 col-md-6 col-xl-4 col-xxl-4 px-15">
-					<header class="">
-						<img src="<?php echo wp_upload_dir()['url'] . '/offers-placeholder.jpg' ?>" alt="image">
-						<span class="presentation-card__category">Category</span>
-						<h2 class="presentation-card__title">Person Name</h2>
-						<p class="presentation-card__position">Person Position</p>
-					</header>
-					<span class="presentation-card__separator"></span>
-					<p class="presentation-card__description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantiutotam rem aperiam eaque ipsa quae  inventore</p>
-					<ul class="presentation-card__links">
-						<li><a href="">link 1</a></li>
-						<li><a href="">link 2</a></li>
-						<li><a href="">link 3</a></li>
-					</ul>
-					<footer>
-						<a href="" target="_blank" class="presentation-card__pdf main-btn main-btn__red">Download PDF</a>
-					</footer>
-				</article>
-				<article class="presentation-card col-12 col-sm-12 col-md-6 col-xl-4 col-xxl-4 px-15">
-					<header class="">
-						<img src="<?php echo wp_upload_dir()['url'] . '/offers-placeholder.jpg' ?>" alt="image">
-						<span class="presentation-card__category">Category</span>
-						<h2 class="presentation-card__title">Person Name</h2>
-						<p class="presentation-card__position">Person Position</p>
-					</header>
-					<span class="presentation-card__separator"></span>
-					<p class="presentation-card__description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantiutotam rem aperiam eaque ipsa quae  inventore</p>
-					<ul class="presentation-card__links">
-						<li><a href="">link 1</a></li>
-						<li><a href="">link 2</a></li>
-						<li><a href="">link 3</a></li>
-					</ul>
-					<footer>
-						<a href="" target="_blank" class="presentation-card__pdf main-btn main-btn__red">Download PDF</a>
-					</footer>
-				</article>
-				<article class="presentation-card col-12 col-sm-12 col-md-6 col-xl-4 col-xxl-4 px-15">
-					<header class="">
-						<img src="<?php echo wp_upload_dir()['url'] . '/offers-placeholder.jpg' ?>" alt="image">
-						<span class="presentation-card__category">Category</span>
-						<h2 class="presentation-card__title">Person Name</h2>
-						<p class="presentation-card__position">Person Position</p>
-					</header>
-					<span class="presentation-card__separator"></span>
-					<p class="presentation-card__description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantiutotam rem aperiam eaque ipsa quae  inventore</p>
-					<ul class="presentation-card__links">
-						<li><a href="">link 1</a></li>
-						<li><a href="">link 2</a></li>
-						<li><a href="">link 3</a></li>
-					</ul>
-					<footer>
-						<a href="" target="_blank" class="presentation-card__pdf main-btn main-btn__red">Download PDF</a>
-					</footer>
-				</article>
+			<?php
+				$presentations_query_args = array(
+					'post_type' => 'presentations',
+					'nopaging'  => true,
+					'order'     => 'ASC',
+				);
+				$presentations_query = new WP_Query( $presentations_query_args );
+				if ( $presentations_query->have_posts() ) :
+					while ( $presentations_query->have_posts() ) :
+						$presentations_query->the_post();
+						?>
+							<article class="presentation-card col-12 col-sm-12 col-md-6 col-xl-4 col-xxl-4 px-15">
+							<header class="">
+							<?php 
+								if( get_field('preview_image') ) {
+									echo wp_get_attachment_image( get_field('preview_image'), 'full' );
+								} ?>
+								<span class="presentation-card__category"><?php the_field('category'); ?></span>
+								<h2 class="presentation-card__title"><?php the_title(); ?></h2>
+								<p class="presentation-card__position"><?php the_field('role'); ?></p>
+							</header>
+							<span class="presentation-card__separator"></span>
+							<p class="presentation-card__description"><?php the_field('small_description'); ?></p>
+							<ul class="presentation-card__links">
+							<?php
+							if( have_rows('links') ):
+							while( have_rows('links') ) : the_row(); ?>
+								<li><a href="<?php the_sub_field('link_url'); ?>"><?php the_sub_field('link_name'); ?></a></li>
+							<?php endwhile;endif; ?>
+							</ul>
+							<footer>
+								<?php if( get_field('pdf_file_link') ) : ?>
+								<a href="<?php the_field('pdf_file_link'); ?>" target="_blank" class="presentation-card__pdf main-btn main-btn__red">Präsentation downloaden</a>
+								<?php endif; ?>
+							</footer>
+						</article>
+						<?php
+						endwhile;
+					endif;
+					wp_reset_postdata();
+				?>
+				
+				
 			</div>
 		</div>
 	</section>
