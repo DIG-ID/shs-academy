@@ -36,6 +36,9 @@ function shs_download_files( $field_name ) {
 	elseif ( 'photos' === $field_name ) :
 		$zip_file_section_name = 'shs-media-photos';
 		$download_btn_text = 'Alle Fotos herunterladen';
+	elseif ( 'wrap_up_gallery' === $field_name ) :
+		$zip_file_section_name = 'shs-media-photos';
+		$download_btn_text = 'Alle Fotos herunterladen';
 	endif;
 
 	if ( $field_type ) :
