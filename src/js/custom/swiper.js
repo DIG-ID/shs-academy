@@ -81,4 +81,44 @@ $(function() {
     },
   });
 
+  const wrapupGalleryThumbs = new Swiper(".wrapupSwiperThumbs", {
+    breakpoints: {
+      576: {
+        slidesPerView: 1,
+        slidesPerColumn: 1,
+        slidesPerGroup :1,
+        spaceBetween: 10,
+      },
+      768: {
+        slidesPerView: 2,
+        slidesPerColumn: 2,
+        slidesPerGroup :2,
+        spaceBetween: 10,
+      },
+      992: {
+        slidesPerView: 3,
+        slidesPerColumn: 3,
+        slidesPerGroup :3,
+        spaceBetween: 10,
+      },
+      1200: {
+        slidesPerView: 4,
+        slidesPerColumn: 4,
+        slidesPerGroup :4,
+        spaceBetween: 10,
+      },
+    },
+    spaceBetween: 10,
+    slidesPerView: 1,
+    slidesPerColumn: 1,
+    slidesPerGroup :1,
+    grid: {
+      rows: 2,
+    },
+    navigation: {
+      nextEl: ".wrapup-swiper-button-next",
+      prevEl: ".wrapup-swiper-button-prev",
+    },
+  });
+
 });
