@@ -6,7 +6,7 @@
 			</div>
 			<div class="d-flex col-12 col-sm-12 col-md-6 col-lg-12 col-xl-6 px-15 justify-content-xl-end">
 				<p class="text-xl-left">
-					
+				<?php  shs_download_files( 'wrap_up_gallery' );  ?>
 				</p>
 			</div>
 		</div>

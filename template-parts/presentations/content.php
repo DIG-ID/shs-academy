@@ -30,20 +30,16 @@
 								} ?>
 								<span class="presentation-card__category"><?php the_field('category'); ?></span>
 								<h2 class="presentation-card__title"><?php the_title(); ?></h2>
+								<?php if( get_field('linkedin') ) : ?>
+								<a class="presentation-card__social-logo" href="<?php the_field('linkedin'); ?>"><img src="<?php echo wp_upload_dir()['url'] . '/In-Blue-72.png' ?>"></a>
+								<?php endif; ?>
 								<p class="presentation-card__position"><?php the_field('role'); ?></p>
 							</header>
 							<span class="presentation-card__separator"></span>
 							<p class="presentation-card__description"><?php the_field('small_description'); ?></p>
-							<ul class="presentation-card__links">
-							<?php
-							if( have_rows('links') ):
-							while( have_rows('links') ) : the_row(); ?>
-								<li><a href="<?php the_sub_field('link_url'); ?>"><?php the_sub_field('link_name'); ?></a></li>
-							<?php endwhile;endif; ?>
-							</ul>
 							<footer>
 								<?php if( get_field('pdf_file_link') ) : ?>
-								<a href="<?php the_field('pdf_file_link'); ?>" target="_blank" class="presentation-card__pdf main-btn main-btn__red">Präsentation downloaden</a>
+								<a href="<?php the_field('pdf_file_link'); ?>" target="_blank" class="presentation-card__pdf main-btn main-btn__red"><?php esc_html__( 'Präsentation downloaden', 'SHS' ); ?></a>
 								<?php endif; ?>
 							</footer>
 						</article>
