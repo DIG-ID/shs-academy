@@ -109,13 +109,13 @@ function my_custom_password_form() {
 
     // Custom logic for the message
     $password_form_message = 
-    __( '<p id="private-area-message">Pres...</p>' );
+    __( '<p id="private-area-message">Log in</p>' );
 
     // Put together the custom form using the dynamic message
     $label = 'pwbox-'.( empty( $post->ID ) ? rand() : $post->ID );
     $form = '<div class="container"><form class="protected-post-form" action="' . esc_url( site_url( 'wp-login.php?action=postpass', 'login_post' ) ) . '" method="post">
     ' . $password_form_message . '
-    <label id="password-label" for="' . $label . '">' . __( "" ) . ' </label><input name="post_password" id="' . $label . '" class="pw-window" type="password" size="20" /><input type="submit" class="btn btn-large" name="Submit" value="' . esc_attr__( "Submit" ) . '" />
+    <label id="password-label" for="' . $label . '">' . __( "" ) . ' </label><input name="post_password" id="' . $label . '" class="pw-window" type="password" size="20" /><input type="submit" class="btn btn-large" name="Submit" value="' . esc_attr__( "Senden" ) . '" />
     </form></div>
     ';
     return $form;
@@ -150,7 +150,7 @@ function wpse_71284_custom_post_password_msg( $form )
         return $form;
 
     // Translate and escape.
-    $msg = esc_html__( 'Sorry, your password is wrong.', 'your_text_domain' );
+    $msg = esc_html__( 'Das angegebene Passwort ist falsch. Bitte überprüfen Sie Ihre Angaben.', 'SHS' );
 
     // We have a cookie, but it doesn’t match the password.
     $msg = "<p class='custom-password-message'>$msg</p>";
