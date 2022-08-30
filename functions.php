@@ -91,6 +91,73 @@ function shs_get_youtube_title( $video_id ) {
 	}
 }
 
+/**
+ * Remove Protected Text from Password protected page
+ */
+function remove_protected_text() {
+    return '%s';
+}
+add_filter( 'protected_title_format', 'remove_protected_text' );
+
+/**
+ * Password Protected Message
+ */
+
+function my_custom_password_form() {
+  
+    global $post;
+
+    // Custom logic for the message
+    $password_form_message = 
+    __( '<p id="private-area-message">Pres...</p>' );
+
+    // Put together the custom form using the dynamic message
+    $label = 'pwbox-'.( empty( $post->ID ) ? rand() : $post->ID );
+    $form = '<div class="container"><form class="protected-post-form" action="' . esc_url( site_url( 'wp-login.php?action=postpass', 'login_post' ) ) . '" method="post">
+    ' . $password_form_message . '
+    <label id="password-label" for="' . $label . '">' . __( "" ) . ' </label><input name="post_password" id="' . $label . '" class="pw-window" type="password" size="20" /><input type="submit" class="btn btn-large" name="Submit" value="' . esc_attr__( "Submit" ) . '" />
+    </form></div>
+    ';
+    return $form;
+
+}
+add_filter( 'the_password_form', 'my_custom_password_form' );
+
+/*Placeholder in form*/
+
+function my_theme_password_placeholder($output) {
+    $placeholder = 'Password';
+    $search = 'type="password"';
+    return str_replace($search, $search . " placeholder=\"$placeholder\"", $output);
+}
+add_filter('the_password_form', 'my_theme_password_placeholder');
+
+/**
+ * Add a message to the password form.
+ *
+ * @wp-hook the_password_form
+ * @param   string $form
+ * @return  string
+ */
+function wpse_71284_custom_post_password_msg( $form )
+{
+    // No cookie, the user has not sent anything until now.
+    if ( ! isset ( $_COOKIE[ 'wp-postpass_' . COOKIEHASH ] ) )
+        return $form;
+
+    // The refresh came from a different page, the user has not sent anything until now.
+    if ( ! wp_get_raw_referer() == get_permalink() )
+        return $form;
+
+    // Translate and escape.
+    $msg = esc_html__( 'Sorry, your password is wrong.', 'your_text_domain' );
+
+    // We have a cookie, but it doesn’t match the password.
+    $msg = "<p class='custom-password-message'>$msg</p>";
+
+    return $msg . $form;
+}
+add_filter( 'the_password_form', 'wpse_71284_custom_post_password_msg' );
 
 // Theme otimizations.
 require get_template_directory() . '/inc/theme-optimizations.php';

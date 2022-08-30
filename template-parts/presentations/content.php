@@ -2,7 +2,7 @@
 	<section class="page-intro">
 		<div class="container">
 			<div class="row justify-content-center align-content-center">
-				<div class="col-6 text-center">
+				<div class="col-md-12 col-lg-10 col-xl-6 text-center">
 					<p class="page-intro__content"><?php the_field('page_intro_text'); ?></p>
 				</div>
 			</div>
@@ -52,8 +52,6 @@
 					endif;
 					wp_reset_postdata();
 				?>
-				
-				
 			</div>
 		</div>
 	</section>

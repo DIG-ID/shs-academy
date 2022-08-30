@@ -99,3 +99,61 @@
               color:$color-red-light
       &__pdf
         margin-top: 40px
+
+.protected-post-form
+  position: absolute
+  left: 50%
+  top: 50%
+  transform: translate(-50%, -50%)
+  width: 400px
+  background-color: $bg-color-blue
+  padding: 40px
+  input[type=submit]
+    background-color: $color-red-dark
+    border-color: $color-red-dark
+    color: #fff
+    font-family: $primary-font
+    font-size: 15px
+    font-weight: bold
+    text-decoration: none
+    width: 214px
+    border: 1px solid transparent
+    display: inline-block
+    text-align: center
+    padding: 20px 0px
+    transition: all 0.3s ease-in-out
+  .pw-window
+    background-color: #FFFFFF
+    border: 1px solid #707070
+    font-family: $primary-font
+    font-size: 16px
+    padding: 20px 30px
+    width: 94%
+    margin-bottom: 50px
+    color: $text-color-blue
+    outline: 0
+  #private-area-message
+    font-family: $primary-font
+    font-size: 55px
+    line-height: 56px
+    font-weight: 400
+    color: $primary-color
+
+.custom-password-message
+  position: absolute
+  top: 54%
+  left: 50%
+  transform: translate(-50%, -50%)
+  width: 400px
+  padding: 20px 40px
+  z-index: 99
+  background-color: transparent
+  color: $color-red-dark
+  font-family: $primary-font
+
+
+/*Responsive*/
+@media (max-width: $md)
+  .page-template-page-presentations
+    .page__title
+      font-size: 50px
