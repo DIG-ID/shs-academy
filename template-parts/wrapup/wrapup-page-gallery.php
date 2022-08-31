@@ -23,7 +23,7 @@
 								
 									<?php $photo_url = wp_get_attachment_image_url( $photoImage, 'full' ); ?>
 									<a href="<?php echo esc_url($photo_url); ?>" data-fancybox="photos">
-										<?php echo wp_get_attachment_image( $photoImage, 'full' ); ?>
+										<?php echo wp_get_attachment_image( $photoImage, 'media-corner-photos-thumb' ); ?>
 									</a>
 							</div>
 						<?php endforeach; ?>
