@@ -30,12 +30,12 @@ if ( $banner ) : ?>
 						<p class="section-banner__keywords"><?php the_field( 'home_page_settings_banner_keywords' ); ?></p>
 						<h1 class="section-banner__title "><?php the_field( 'home_page_settings_banner_title' ); ?></h1>
 						<div class="section-banner__description"><?php the_field( 'home_page_settings_banner_content' ); ?></div>
-						<div class="section-banner__link main-btn main-btn__red disabled-menu-button tooltip-body" target="_blank" href="<?php esc_url( the_field( 'home_page_settings_banner_button_1_link' ) ); ?>"><?php the_field( 'home_page_settings_banner_button_1_text' ); ?>
+						<a class="section-banner__link main-btn main-btn__red" target="_blank" href="<?php esc_url( the_field( 'home_page_settings_banner_button_1_link' ) ); ?>"><?php the_field( 'home_page_settings_banner_button_1_text' ); ?>
 							<div class="tooltiptext-body">
 								<img src="<?php echo wp_upload_dir()['url'] . '/Top__bar.svg' ?>" width="45" height="45">
 								<span>Präsentationen und Fotos des Swiss Innovation Day 2022 werden in Kürze hier verfügbar sein.</span>
 							</div>
-						</div>
+						</a>
 						<a class="section-banner__link  main-btn main-btn__white" href="<?php esc_url( the_field( 'home_page_settings_banner_button_2_link' ) ); ?>"><?php the_field( 'home_page_settings_banner_button_2_text' ); ?></a>
 					</div>
 				</div>
