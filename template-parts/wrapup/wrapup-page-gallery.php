@@ -1,4 +1,4 @@
-<section id="page-mediacorner-photos" class="section section__pagephotos section__pagephotos-wrapup">
+<section id="wrapup-mediacorner-photos" class="section section__pagephotos section__pagephotos-wrapup">
 	<div class="container container__inside">
 		<div class="row">
 			<div class="col-12 col-sm-12 col-md-6 col-lg-12 col-xl-6 px-15">
