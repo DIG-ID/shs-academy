@@ -176,12 +176,14 @@
 
 .wrapup-swiper-button-next
     top: 63.5%
-    right: 5%
+    right: 50%
+    transform: translateX(650px)
     &::after
         color: $secondary-color
 .wrapup-swiper-button-prev
     top: 63.5%
-    left: 5%
+    left: 50%
+    transform: translateX(-650px)
     &::after
         color: $secondary-color
 
@@ -216,6 +218,14 @@
 
     .download__col.d-flex
         justify-content: center
+
+    .wrapup-swiper-button-next
+        top: 63.5%
+        right: 5%
+
+    .wrapup-swiper-button-prev
+        top: 63.5%
+        left: 5%
 
 @media (max-width: $md)
     .wrapup-swiper-button-next,.wrapup-swiper-button-prev
