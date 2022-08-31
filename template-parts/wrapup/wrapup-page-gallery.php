@@ -12,6 +12,7 @@
 </section>
 
 <section id="wrapup-mediacorner-photos" class="section section__pagephotos section__pagephotos-wrapup">
+	<span class="section-about-us__bg-img-2 rellax" data-rellax-speed="-4" data-rellax-percentage="0.5"></span>
 	<div class="container container__inside">
 	<div class="row">
 			<h2 class="mediacorner__main-title">Impressionen</h2>
