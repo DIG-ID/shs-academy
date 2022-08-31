@@ -16,18 +16,25 @@
 			<div class="swiper wrapupSwiperThumbs">
 				<div class="swiper-wrapper">
 				<?php
-					$photosImages = get_field( 'wrap_up_gallery' );
-					if( $photosImages ): ?>
-						<?php foreach( $photosImages as $photoImage ): ?>
-							<div class="swiper-slide">
-								
-									<?php $photo_url = wp_get_attachment_image_url( $photoImage, 'full' ); ?>
-									<a href="<?php echo esc_url($photo_url); ?>" data-fancybox="photos">
-										<?php echo wp_get_attachment_image( $photoImage, 'media-corner-photos-thumb' ); ?>
-									</a>
-							</div>
-						<?php endforeach; ?>
+				$photosImages = get_field( 'wrap_up_gallery' );
+				if( $photosImages ): ?>
+					<?php foreach( $photosImages as $photoImage ): ?>
+						<div class="swiper-slide">
+							<?php $photo_url = wp_get_attachment_image_url( $photoImage, 'full' ); ?>
+							<a href="<?php echo esc_url($photo_url); ?>" data-fancybox="photos">
+								<?php echo wp_get_attachment_image( $photoImage, 'media-corner-photos-thumb' ); ?>
+							</a>
+						</div>
+					<?php endforeach; ?>
 				<?php endif; ?>
+				</div>
+			</div>
+		</div>
+		<div class="row row__video">
+			<div class="embed-container">
+				<?php the_field('video_link'); ?>
+			</div>
 		</div>
 	</div>
 </section>
+

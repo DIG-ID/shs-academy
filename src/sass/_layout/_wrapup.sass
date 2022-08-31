@@ -51,6 +51,8 @@
 
 #wrapup-mediacorner-photos
     padding: 160px 0 100px 0
+    .row__video
+        padding: 0 6px
 
 .section
     &__pagephotos-wrapup
@@ -160,6 +162,19 @@
     left: 5%
     &::after
         color: $secondary-color
+
+.embed-container
+    position: relative
+    padding-bottom: 56.25%
+    overflow: hidden
+    max-width: 100%
+    height: auto
+    iframe, object, embed
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
 
 /*Responsive*/
 @media (max-width: $xl)
