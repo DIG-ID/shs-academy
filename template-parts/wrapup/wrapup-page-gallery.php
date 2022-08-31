@@ -4,7 +4,7 @@
 			<div class="col-12 col-sm-12 col-md-6 col-lg-12 col-xl-6 px-15">
 				<h2 class="mediacorner__title">Impressionen</h2>
 			</div>
-			<div class="d-flex col-12 col-sm-12 col-md-6 col-lg-12 col-xl-6 px-15 justify-content-xl-end">
+			<div class="d-flex col-12 col-sm-12 col-md-6 col-lg-12 col-xl-6 px-15 justify-content-xl-end download__col">
 				<p class="text-xl-left">
 				<?php  shs_download_files( 'wrap_up_gallery' );  ?>
 				</p>
@@ -23,7 +23,7 @@
 								
 									<?php $photo_url = wp_get_attachment_image_url( $photoImage, 'full' ); ?>
 									<a href="<?php echo esc_url($photo_url); ?>" data-fancybox="photos">
-										<?php echo wp_get_attachment_image( $photoImage, 'media-corner-photos-thumb' ); ?>
+										<?php echo wp_get_attachment_image( $photoImage, 'full' ); ?>
 									</a>
 							</div>
 						<?php endforeach; ?>
