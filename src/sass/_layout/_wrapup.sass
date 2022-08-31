@@ -1,3 +1,14 @@
+.page-template-page-wrapup
+    #wrapper-banner
+        position: relative
+        background:
+            color: $primary-color
+            image: url('../../images/page_title_bg.png')
+            position: center center
+            siz: cover
+            repeat: no-repeat
+            attachment: fixed
+
 .wrapup-intro
     &__col
         img
@@ -152,6 +163,9 @@
 
 /*Responsive*/
 @media (max-width: $xl)
+    .mediacorner__title
+        text-align: center
+
     .wrapup-intro
         &__wrapper
             padding: 70px 30px
