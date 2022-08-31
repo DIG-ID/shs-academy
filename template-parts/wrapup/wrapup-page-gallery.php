@@ -1,8 +1,24 @@
-<section id="wrapup-mediacorner-photos" class="section section__pagephotos section__pagephotos-wrapup">
+<section id="section-aftermovie" class="section section-aftermovie">
 	<div class="container container__inside">
 		<div class="row">
+			<h2 class="aftermovie__title">SID 2022 Aftermovie</h2>
+		</div>
+		<div class="row row__video">
+			<div class="embed-container">
+				<?php the_field('video_link'); ?>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="wrapup-mediacorner-photos" class="section section__pagephotos section__pagephotos-wrapup">
+	<div class="container container__inside">
+	<div class="row">
+			<h2 class="mediacorner__main-title">Impressionen</h2>
+		</div>
+		<div class="row">
 			<div class="col-12 col-sm-12 col-md-6 col-lg-12 col-xl-6 px-15">
-				<h2 class="mediacorner__title">Impressionen</h2>
+				<h2 class="mediacorner__title">Fotos</h2>
 			</div>
 			<div class="d-flex col-12 col-sm-12 col-md-6 col-lg-12 col-xl-6 px-15 justify-content-xl-end download__col">
 				<p class="text-xl-left">
@@ -30,11 +46,5 @@
 				</div>
 			</div>
 		</div>
-		<div class="row row__video">
-			<div class="embed-container">
-				<?php the_field('video_link'); ?>
-			</div>
-		</div>
 	</div>
 </section>
-
