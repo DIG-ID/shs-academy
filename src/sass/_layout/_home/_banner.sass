@@ -72,18 +72,51 @@
   &__link
     text-decoration: none
     width: 26px
+  &__std
+    position: absolute
+    bottom: -160px
+    padding: 50px 0
+    width: 100%
+    background-color: $color-red-dark
+    z-index: 99
+    &-title
+      font-family: $primary-font
+      font-size: 112px
+      line-height: 140px
+      font-weight: 600
+      color: $primary-color
+      text-transform: uppercase     
+    &-subtitle
+      font-family: $primary-font
+      font-size: 44px
+      line-height: 46px
+      color: $bg-primary 
 
 @include media-breakpoint-down(xxl)
   .section-banner
     &__title
       font-size: 80px
       line-height:90px
+    &__std
+      bottom: -150px
+      &-title
+        font-size: 86px
+        line-height: 90px
+      &-subtitle
+        font-size: 34px
+        line-height: 36px
 
 @include media-breakpoint-down(xl)
   .section-banner
     &__title
       font-size: 66px
       line-height:88px
+    &__std
+      &-title
+        font-size: 72px
+      &-subtitle
+        font-size: 28px
+        line-height: 30px
 
 @include media-breakpoint-down(lg)
   .section-banner
@@ -91,6 +124,13 @@
       padding-top: 20px
     &__description
       line-height: 20px
+    &__std
+      &-title
+        font-size: 82px
+        line-height: 90px
+      &-subtitle
+        font-size: 38px
+        line-height: 40px
 
 
 @include media-breakpoint-down(md)
@@ -105,6 +145,15 @@
       font-size: 24px
     &__description
       font-size: 19px
+    &__std
+      padding: 30px 0
+      bottom: -130px
+      &-title
+        font-size: 46px
+        line-height: 60px
+      &-subtitle
+        font-size: 28px
+        line-height: 30px
 
 @include media-breakpoint-down(sm)
   .section-banner
