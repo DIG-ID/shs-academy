@@ -13,11 +13,11 @@
 			</a>
 		</div>
 		<div class="row">
-			<a class="col-6 col-md-6 col-sm-12 px-15 menu__event-link" href="<?php echo get_permalink( get_page_by_path( 'speakers' ) ) ?>">
+			<div class="col-6 col-md-6 col-sm-12 px-15 menu__event-link disabled-menu-item" href="<?php echo get_permalink( get_page_by_path( 'speakers' ) ) ?>">
 					<p class="menu__event-title"><?php  echo get_the_title( get_page_by_path( 'speakers' ) ); ?></p>
 					<p class="menu__event-text">Entdecke die hochkarätigen Speaker des persönlichen Schweizer Hospitality Events.</p>
 					<p class="menu__event-button">MEHR ERFAHREN</p>
-			</a>
+			</div>
 			<a class="col-6 col-md-6 col-sm-12 px-15 menu__event-link" href="<?php echo get_permalink( get_page_by_path( 'location' ) ) ?>">
 					<p class="menu__event-title"><?php  echo get_the_title( get_page_by_path( 'location' ) ); ?></p>
 					<p class="menu__event-text">Eine einzigartige und topmoderne Event Location ist der ideale Austragungsort für den Branchen-Event.</p>
