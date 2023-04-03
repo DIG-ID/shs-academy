@@ -27,7 +27,7 @@
 			<div id="wrapper-navbar" itemscope itemtype="http://schema.org/WebSite">
 					<nav class="navbar navbar-expand-lg navbar-light navbar-toparea">
 						<div class="container">
-							<a href="mailto:info@shsacademy.ch" class="custom-menu-link" rel="home" aria-current="page">info@shsacademy.ch</a>
+							<a href="mailto:info@shsacademy.ch" class="custom-menu-link" rel="home" aria-current="page"><?php esc_html_e('info@shsacademy.ch', 'shs' ); ?></a>
 							<?php
 							wp_nav_menu(
 								array(
@@ -74,7 +74,7 @@
 							?>
 							<div class="tooltiptext">
 								<img src="<?php echo wp_upload_dir()['url'] . '/Top__bar.svg' ?>" width="45" height="45">
-								<span>Präsentationen und Fotos des Swiss Innovation Day 2022 werden in Kürze hier verfügbar sein.</span>
+								<span><?php esc_html_e('Präsentationen und Fotos des Swiss Innovation Day 2022 werden in Kürze hier verfügbar sein.', 'shs' ) ?></span>
 							</div>
 						</div>
 					</nav><!-- .site-navigation -->
