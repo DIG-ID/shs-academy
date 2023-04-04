@@ -1,3 +1,5 @@
+<?php 
+if( get_field('event_status') == 'after' ) : ?>
 <div class="section-banner__std">
     <div class="container">
         <div class="row align-items-center">
@@ -10,3 +12,5 @@
         </div>
     </div>
 </div>
+<?php endif; ?>
+
