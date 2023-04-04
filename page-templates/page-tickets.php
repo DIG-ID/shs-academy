@@ -6,6 +6,7 @@
  */
 
 get_header();
-	get_template_part( 'template-parts/tickets/tickets-intro' );
+	get_template_part( 'template-parts/tickets/tickets-newintro' );
+	/*get_template_part( 'template-parts/tickets/tickets-intro' );*/
 	/*get_template_part( 'template-parts/tickets/tickets-offers' );*/
 get_footer();
