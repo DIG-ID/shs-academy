@@ -42,6 +42,6 @@ if ( $banner ) : ?>
 			</div>
 		</div>
 		<?php get_template_part( 'template-parts/home/std-banner' ); ?>
-		<?php get_template_part( 'template-parts/home/countdown' ); ?>
+		<?php //get_template_part( 'template-parts/home/countdown' ); ?>
 	</section>
 <?php endif;
