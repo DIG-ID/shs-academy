@@ -84,8 +84,10 @@
 												$u++;
 											endwhile;
 										endif;
+										if ( get_field( 'program_file_v2' ) ) :
+											echo '<a class="main-btn main-btn__red programs__dl-btn" href="' . get_field( 'program_file_v2' ) . '">' . esc_html__( 'Programm downloaden', 'shs-a' ) . '</a>';
+										endif;
 										?>
-										<a class="main-btn main-btn__red programs__dl-btn" href="<?php echo get_field( 'program_file_v2' ); ?>"><?php esc_html_e( 'Programm downloaden', 'shs-a' ); ?></a>
 									</div>
 									<?php
 									$e++;
