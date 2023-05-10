@@ -6,7 +6,8 @@
 			</div>
 			<div class="d-flex col-12 col-sm-12 col-md-6 col-lg-12 col-xl-6 px-15 justify-content-xl-end">
 				<p class="text-xl-left">
-					<?php shs_download_files( 'photos' ); ?>
+					<?php //shs_download_files( 'photos' ); ?>
+					<?php shs_create_zip_file_from_gallery( 'photos', 'shs-media-photos', 'Alle Fotos herunterladen' ); ?>
 				</p>
 			</div>
 		</div>
@@ -16,9 +17,9 @@
 				if( $photosImages ): ?>
 					<?php foreach( $photosImages as $photoImage ): ?>
 						<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3 d-flex align-items-center justify-content-center">
-							<?php $photo_url = wp_get_attachment_image_url( $photoImage, 'full' ); ?>
+							<?php $photo_url = wp_get_attachment_image_url( $photoImage['ID'], 'full' ); ?>
 							<a href="<?php echo esc_url($photo_url); ?>" data-fancybox="photos">
-								<?php echo wp_get_attachment_image( $photoImage, 'media-corner-photos-thumb' ); ?>
+								<?php echo wp_get_attachment_image( $photoImage['ID'], 'media-corner-photos-thumb' ); ?>
 							</a>
 						</div>
 					<?php endforeach; ?>

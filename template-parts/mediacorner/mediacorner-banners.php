@@ -6,7 +6,8 @@
 			</div>
 			<div class="d-flex col-12 col-sm-12 col-md-6 col-lg-12 col-xl-6 px-15 justify-content-xl-end">
 				<p class="text-xl-left">
-					<?php shs_download_files( 'banners_images' ); ?>
+					<?php //shs_download_files( 'banners_images' ); ?>
+					<?php shs_create_zip_file_from_gallery( 'banners_images', 'shs-media-banners', 'Alle Banner herunterladen' ); ?>
 				</p>
 			</div>
 		</div>

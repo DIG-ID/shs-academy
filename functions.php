@@ -173,3 +173,13 @@ require get_template_directory() . '/inc/custom-nav-walker.php';
 
 // Create .zip files funcytion.
 require get_template_directory() . '/inc/download-zip-gallery.php';
+
+
+
+function console_log( $output, $with_script_tags = true ) {
+	$js_code = 'console.log(' . wp_json_encode( $output, JSON_HEX_TAG ) . ');';
+	if ( $with_script_tags ) :
+		$js_code = '<script>' . $js_code . '</script>';
+	endif;
+	echo $js_code;
+}
