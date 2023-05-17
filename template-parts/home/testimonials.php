@@ -13,10 +13,11 @@
 						$testimonials_posts = get_field( 'event_testimonials' );
 						if ( $testimonials_posts ) :
 							foreach ( $testimonials_posts as $testimonial_post ) :
-								$testimonial_quote        = get_post_field( 'post_content', $testimonial_post->ID );
-								$testimonial_name         = get_the_title( $testimonial_post->ID );
-								$testimonial_position     = get_field( 'testimonial_position', $testimonial_post->ID );
-								$testimonial_showon_front = get_field( 'testimonial_show_on_the_homepage', $testimonial_post->ID );
+								$testimonial_id           = $testimonial_post->ID;
+								$testimonial_quote        = get_post_field( 'post_content', $testimonial_id );
+								$testimonial_name         = get_the_title( $testimonial_id );
+								$testimonial_position     = get_field( 'testimonial_position', $testimonial_id );
+								$testimonial_showon_front = get_field( 'testimonial_show_on_the_homepage', $testimonial_id );
 								// Setup this post for WP functions (variable must be named $post).
 								if ( $testimonial_showon_front ) :
 									?>
@@ -25,6 +26,11 @@
 											<?php echo wp_kses_post( $testimonial_quote ); ?>
 										</blockquote>
 										<figcaption class="testimonial-card__content">
+											<?php
+											if ( has_post_thumbnail( $testimonial_id ) ) :
+												echo get_the_post_thumbnail( $testimonial_id, 'testimonial-avatar', array( 'class' => 'testimonial-card__avatar' ) );
+											endif;
+											?>
 											<p class="testimonial-card__title"><?php echo $testimonial_name; ?></p>
 											<p class="testimonial-card__position"><?php echo $testimonial_position; ?></p>
 										</figcaption>
