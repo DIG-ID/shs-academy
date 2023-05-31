@@ -62,7 +62,7 @@
 																	</button>
 																</h2>
 																<?php
-																if ( get_sub_field( 'description' ) ) :
+																if ( get_sub_field( 'description' ) || get_sub_field( 'subtitle' ) ) :
 																	?>
 																	<div id="flush-collapse-<?php echo $e;echo $u;echo $c; ?>" class="accordion-collapse collapse" aria-labelledby="flush-heading-<?php echo $e;echo $c; ?>" data-bs-parent="#programs__accordion-<?php echo $e;echo $u; ?>">
 																		<div class="accordion-body programs__acc-desc">
