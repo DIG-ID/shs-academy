@@ -57,14 +57,14 @@
 															?>
 															<div class="accordion-item">
 																<h2 class="accordion-header" id="flush-heading-<?php echo $e;echo $c; ?>">
-																	<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-<?php echo $e;echo $u;echo $c; ?>" aria-expanded="true" aria-controls="flush-collapse-<?php echo $e;echo $u;echo $c; ?>">
+																	<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-<?php echo $e;echo $u;echo $c; ?>" aria-expanded="true" aria-controls="flush-collapse-<?php echo $e;echo $u;echo $c; ?>">
 																		<span class="programs__acc-title"><?php echo get_sub_field( 'title' ); ?>
 																	</button>
 																</h2>
 																<?php
 																if ( get_sub_field( 'description' ) ) :
 																	?>
-																	<div id="flush-collapse-<?php echo $e;echo $u;echo $c; ?>" class="accordion-collapse show" aria-labelledby="flush-heading-<?php echo $e;echo $c; ?>" data-bs-parent="#programs__accordion-<?php echo $e;echo $u; ?>">
+																	<div id="flush-collapse-<?php echo $e;echo $u;echo $c; ?>" class="accordion-collapse collapse" aria-labelledby="flush-heading-<?php echo $e;echo $c; ?>" data-bs-parent="#programs__accordion-<?php echo $e;echo $u; ?>">
 																		<div class="accordion-body programs__acc-desc">
 																			<h3 class="programs__acc-subtitle"><?php the_sub_field( 'subtitle' ); ?></h3>
 																			<?php the_sub_field( 'description' ); ?>
