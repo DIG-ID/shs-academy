@@ -32,14 +32,17 @@ if ( $event_query->have_posts() ) :
 					// Loop through the related partners.
 
 					$partner_category_ids = array();
-					foreach ($event_partners as $event_partner) {
-							$partner_categories = wp_get_post_terms($event_partner->ID, 'category', array(
-									'fields' => 'ids', // Retrieve only the term IDs
-							));
-							$partner_category_ids = array_merge($partner_category_ids, $partner_categories);
-					}
-					$partner_category_ids = array_unique($partner_category_ids);
-
+					foreach ( $event_partners as $event_partner ) :
+						$partner_categories   = wp_get_post_terms(
+							$event_partner->ID,
+							'category',
+							array(
+								'fields' => 'ids', // Retrieve only the term IDs.
+							)
+						);
+						$partner_category_ids = array_merge( $partner_category_ids, $partner_categories );
+					endforeach;
+					$partner_category_ids = array_unique( $partner_category_ids );
 
 					// Retrieve the ordered category objects.
 					$ordered_categories = get_terms(
