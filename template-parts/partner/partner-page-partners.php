@@ -47,7 +47,7 @@ if ( $event_query->have_posts() ) :
 							'taxonomy' => 'category', // Replace 'category' with the actual taxonomy name for the partner category.
 							'include'  => $partner_category_ids,
 							'orderby'  => 'term_order', // Order by the term_order field.
-							'order'    => 'DESC', // Order in ascending order.
+							'order'    => 'ASC', // Order in ascending order.
 						)
 					);
 
