@@ -10,16 +10,16 @@
 			<div class="col-md-12 col-sm-12 px-15 partners__column">
 				<?php
 				$institutional_query_args = array(
-					'post_type' => 'partners',
-					'nopaging'  => true,
-					'category_name'  => 'institutional',
+					'post_type'     => 'partners',
+					'nopaging'      => true,
+					'category_name' => 'institutional',
 				);
 				$institutional_query = new WP_Query( $institutional_query_args );
 				if ( $institutional_query->have_posts() ) :
 					while ( $institutional_query->have_posts() ) :
 						$institutional_query->the_post();
 						?>
-							<a href="<?php echo get_field('partner_link'); ?>" target="_blank" class="thumbnail__bigger"><?php the_post_thumbnail('full'); ?></a>
+							<a href="<?php the_field( 'partner_link' ) ; ?>" target="_blank" class="thumbnail__bigger"><?php the_post_thumbnail( 'full' ); ?></a>
 						<?php
 						endwhile;
 					endif;
@@ -41,7 +41,7 @@
 					while ( $presenting_query->have_posts() ) :
 						$presenting_query->the_post();
 						?>
-							<a href="<?php echo get_field('partner_link'); ?>" target="_blank"><?php the_post_thumbnail('full'); ?></a>
+							<a href="<?php the_field( 'partner_link' ); ?>" target="_blank"><?php the_post_thumbnail( 'full' ); ?></a>
 						<?php
 						endwhile;
 					endif;
@@ -63,7 +63,7 @@
 					while ( $innovation_query->have_posts() ) :
 						$innovation_query->the_post();
 						?>
-							<a href="<?php echo get_field('partner_link'); ?>" target="_blank"><?php the_post_thumbnail('full'); ?></a>
+							<a href="<?php the_field( 'partner_link' ); ?>" target="_blank"><?php the_post_thumbnail( 'full' ); ?></a>
 						<?php
 						endwhile;
 					endif;
@@ -85,7 +85,7 @@
 					while ( $networking_query->have_posts() ) :
 						$networking_query->the_post();
 						?>
-							<a href="<?php echo get_field('partner_link'); ?>" target="_blank"><?php the_post_thumbnail('full'); ?></a>
+							<a href="<?php the_field( 'partner_link' ); ?>" target="_blank"><?php the_post_thumbnail( 'full' ); ?></a>
 						<?php
 						endwhile;
 					endif;
@@ -107,7 +107,7 @@
 					while ( $culinary_query->have_posts() ) :
 						$culinary_query->the_post();
 						?>
-							<a href="<?php echo get_field('partner_link'); ?>" target="_blank"><?php the_post_thumbnail('full'); ?></a>
+							<a href="<?php the_field( 'partner_link' ); ?>" target="_blank"><?php the_post_thumbnail( 'full' ); ?></a>
 						<?php
 						endwhile;
 					endif;
@@ -129,7 +129,7 @@
 					while ( $mediaentertainment_query->have_posts() ) :
 						$mediaentertainment_query->the_post();
 						?>
-							<a href="<?php echo get_field('partner_link'); ?>" target="_blank"><?php the_post_thumbnail('full'); ?></a>
+							<a href="<?php the_field( 'partner_link' ); ?>" target="_blank"><?php the_post_thumbnail( 'full' ); ?></a>
 						<?php
 						endwhile;
 					endif;
