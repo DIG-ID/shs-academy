@@ -30,16 +30,31 @@ if ( $event_query->have_posts() ) :
 					</div>
 					<?php
 					// Loop through the related partners.
-					$categories = array();
-					foreach ( $event_partners as $event_partner ) :
-						$partner_categories = wp_get_post_terms( $event_partner->ID, 'category' );
-						// Loop through the partner categories.
-						foreach ( $partner_categories as $category ) :
-							$categories[ $category->term_id ] = $category->name;
-						endforeach;
-					endforeach;
+
+					$partner_category_ids = array();
+					foreach ($event_partners as $event_partner) {
+							$partner_categories = wp_get_post_terms($event_partner->ID, 'category', array(
+									'fields' => 'ids', // Retrieve only the term IDs
+							));
+							$partner_category_ids = array_merge($partner_category_ids, $partner_categories);
+					}
+					$partner_category_ids = array_unique($partner_category_ids);
+
+
+					// Retrieve the ordered category objects.
+					$ordered_categories = get_terms(
+						array(
+							'taxonomy' => 'category', // Replace 'category' with the actual taxonomy name for the partner category.
+							'include'  => $partner_category_ids,
+							'orderby'  => 'term_order', // Order by the term_order field.
+							'order'    => 'DESC', // Order in ascending order.
+						)
+					);
+
 					// Display a row for each category.
-					foreach ( $categories as $category_id => $category_name ) :
+					foreach ( $ordered_categories as $category ) :
+						$category_id   = $category->term_id;
+						$category_name = $category->name;
 						echo '<div class="row">';
 						echo '<h2 class="partners__catTitle">' . $category_name . '</h2>';
 						echo '<div class="col-md-12 col-sm-12 px-15 partners__column">';
