@@ -23,9 +23,9 @@ $(function() {
     slidesPerView: 1,
     spaceBetween: 30,
     loop: true,
-    speed: 600,
+    speed: 400,
     autoplay: {
-      delay: 2000,
+      delay: 1600,
       disableOnInteraction: false,
     },
   });
