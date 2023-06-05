@@ -20,12 +20,12 @@ $(function() {
         spaceBetween: 30,
       },
     },
-    slidesPerView: 1,
+    slidesPerView: 2,
     spaceBetween: 30,
     loop: true,
-    speed: 400,
+    speed: 350,
     autoplay: {
-      delay: 1600,
+      delay: 1400,
       disableOnInteraction: false,
     },
   });
