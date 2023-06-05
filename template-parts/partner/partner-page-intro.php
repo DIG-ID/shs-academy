@@ -1,8 +1,9 @@
+<?php $partnerTopSection = get_field('partners_top_section');
+if( $partnerTopSection['partners_top_section_title'] ): ?>
 <section id="page-intro-section" class="section section__pageintro">
 	<div class="container-fluid">
 		<div class="row">
-			<?php $partnerTopSection = get_field('partners_top_section');
-			if( $partnerTopSection ): ?>
+			
 			<div class="accordion accordion-flush" id="accordionFlushExample">
 				<div class="accordion-item">
 					<h2 class="accordion-header" id="flush-headingOne">
@@ -25,7 +26,7 @@
 					</div>
 				</div>
 			</div>
-			<?php endif; ?>
 		</div>
 	</div>
 </section>
+<?php endif; ?>
