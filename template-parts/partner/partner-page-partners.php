@@ -30,7 +30,6 @@ if ( $event_query->have_posts() ) :
 					</div>
 					<?php
 					// Loop through the related partners.
-
 					$partner_category_ids = array();
 					foreach ( $event_partners as $event_partner ) :
 						$partner_categories   = wp_get_post_terms(
@@ -43,7 +42,6 @@ if ( $event_query->have_posts() ) :
 						$partner_category_ids = array_merge( $partner_category_ids, $partner_categories );
 					endforeach;
 					$partner_category_ids = array_unique( $partner_category_ids );
-
 					// Retrieve the ordered category objects.
 					$ordered_categories = get_terms(
 						array(
@@ -53,7 +51,6 @@ if ( $event_query->have_posts() ) :
 							'order'    => 'ASC', // Order in ascending order.
 						)
 					);
-
 					// Display a row for each category.
 					foreach ( $ordered_categories as $category ) :
 						$category_id   = $category->term_id;

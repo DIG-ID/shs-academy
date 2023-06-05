@@ -25,7 +25,7 @@ $(function() {
     loop: true,
     speed: 600,
     autoplay: {
-      delay: 3000,
+      delay: 2000,
       disableOnInteraction: false,
     },
   });
