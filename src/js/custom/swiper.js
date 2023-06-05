@@ -23,7 +23,7 @@ $(function() {
     slidesPerView: 'auto',
     spaceBetween: 30,
     loop: true,
-    speed: 6000,
+    speed: 7000,
     autoplay: {
       delay: 1,
       disableOnInteraction: false,
