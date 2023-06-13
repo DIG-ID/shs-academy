@@ -80,4 +80,44 @@ function shs_theme_site_wrapper_close() {
 	<?php
 }
 
-add_action( 'site_wrapper_close', ' shs_theme_site_wrapper_close' );
+add_action( 'site_wrapper_close', 'shs_theme_site_wrapper_close' );
+
+
+/**
+ * Get the current event ID
+ */
+function shs_theme_get_current_event() {
+
+	$curr_event_id = '';
+
+	$current_event_args = array(
+		'post_type'      => 'events',
+		'posts_per_page' => -1,
+		'meta_query'     => array(
+			array(
+				'key'     => 'current_event',
+				'value'   => '1',
+				'compare' => '=',
+			),
+		),
+	);
+	$event_query = new WP_Query( $current_event_args );
+	if ( $event_query->have_posts() ) :
+		while ( $event_query->have_posts() ) :
+			$event_query->the_post();
+			$curr_event_id = get_the_ID();
+		endwhile;
+		wp_reset_postdata();
+	endif;
+
+	return $curr_event_id;
+}
+
+/**
+ * Get the current event ID
+ */
+function shs_theme_get_current_program() {
+	$curr_event_id = shs_theme_get_current_event();
+	$curr_program  = get_field( 'event_program', $curr_event_id );
+	return $curr_program;
+}

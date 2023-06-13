@@ -72,50 +72,6 @@
     .testimonials-button-next
       right: -50px
 
-  .section-event-gallery
-    position: relative
-    &__title
-      font-size: 55px
-      font-weight: bold
-      letter-spacing: -0.3px
-      line-height: 90px
-      color: $secondary-color
-      margin-bottom: 50px
-    .gallerySwiper
-      margin-bottom: 30px
-      .swiper-slide
-        img
-          max-width:100%
-          width: 100%
-          height: 890px
-          object-fit: cover
-          object-position: center
-    .gallery-swiper-button-next,
-    .gallery-swiper-button-prev
-      bottom: 155px
-      top: auto
-      &::after
-        color: $secondary-color
-    .gallery-swiper-button-next
-      right: 150px
-    .gallery-swiper-button-prev
-      left: 150px
-    .gallerySwiperThumbs
-      .swiper-slide
-        transition: all .3s ease-in-out
-        border: 5px solid transparent
-        &:hover
-          cursor: pointer
-        img
-          max-width:100%
-          width: 100%
-          height: 350px
-          object-fit: cover
-          object-position: center
-      .swiper-slide-thumb-active
-        border-color: $color-red-dark
-
-
   .event-background
     display: block
     z-index: 2
@@ -127,6 +83,50 @@
     background-image: url('../../images/event-background.svg')
     background-repeat: no-repeat
     background-size: cover
+
+
+.section-event-gallery
+  position: relative
+  &__title
+    font-size: 55px
+    font-weight: bold
+    letter-spacing: -0.3px
+    line-height: 90px
+    color: $secondary-color
+    margin-bottom: 50px
+  .gallerySwiper
+    margin-bottom: 30px
+    .swiper-slide
+      img
+        max-width:100%
+        width: 100%
+        height: 890px
+        object-fit: cover
+        object-position: center
+  .gallery-swiper-button-next,
+  .gallery-swiper-button-prev
+    bottom: 155px
+    top: auto
+    &::after
+      color: $secondary-color
+  .gallery-swiper-button-next
+    right: 150px
+  .gallery-swiper-button-prev
+    left: 150px
+  .gallerySwiperThumbs
+    .swiper-slide
+      transition: all .3s ease-in-out
+      border: 5px solid transparent
+      &:hover
+        cursor: pointer
+      img
+        max-width:100%
+        width: 100%
+        height: 350px
+        object-fit: cover
+        object-position: center
+    .swiper-slide-thumb-active
+      border-color: $color-red-dark
 
 
 .container
@@ -157,16 +157,15 @@
       .event-subtitle
         font-size: 40px
         line-height: 40px
-    .section-event-gallery
-      position: relative
-      &__title
-        font-size: 45px
-        margin-bottom: 0px
+  .section-event-gallery
+    position: relative
+    &__title
+      font-size: 45px
+      margin-bottom: 0px
 
 @media (max-width: $xxl)
-  .type-events
-    .section-event-gallery
-      .gallery-swiper-button-next
-        display: none
-      .gallery-swiper-button-prev
-        display: none
+  .section-event-gallery
+    .gallery-swiper-button-next
+      display: none
+    .gallery-swiper-button-prev
+      display: none
