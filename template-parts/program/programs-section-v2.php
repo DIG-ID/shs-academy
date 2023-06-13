@@ -60,7 +60,12 @@
 														<div class="accordion-item">
 															<h2 class="accordion-header" id="flush-heading-<?php echo $e;echo $c; ?>">
 																<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-<?php echo $e;echo $u;echo $c; ?>" aria-expanded="true" aria-controls="flush-collapse-<?php echo $e;echo $u;echo $c; ?>">
-																	<span class="programs__acc-hour"><?php the_sub_field( 'hour' ); ?></span> <span class="programs__acc-title"><?php the_sub_field( 'title' ); ?></span>
+																	<?php
+																	if ( get_sub_field( 'hour' ) ) :
+																		?><span class="programs__acc-hour"><?php the_sub_field( 'hour' ); ?></span><?php
+																	endif;
+																	?>
+																	<span class="programs__acc-title"><?php the_sub_field( 'title' ); ?></span>
 																</button>
 															</h2>
 															<?php
