@@ -38,8 +38,24 @@
 							<span class="presentation-card__separator"></span>
 							<p class="presentation-card__description"><?php the_field('small_description'); ?></p>
 							<footer>
-								<?php if( get_field('pdf_file_link') ) : ?>
-								<a href="<?php the_field('pdf_file_link'); ?>" target="_blank" class="presentation-card__pdf main-btn main-btn__red"><?php echo esc_html__( 'Präsentation downloaden', 'SHS' ); ?></a>
+								<?php if( get_field('pdf_file_link_extra') ) : ?>
+									<?php if( get_field('pdf_file_link') ) : ?>
+									<a href="<?php the_field('pdf_file_link'); ?>" target="_blank" class="presentation-card__pdf main-btn main-btn__red float-start" style="width: 48%;margin-right: 2%;">
+										<span><?php echo esc_html__( 'Präsentation', 'SHS' ); ?></span>
+										<svg class="dnl-icon ms-4" fill="#FFFFFF" width="20px" height="20px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M7.293,13.707a1,1,0,1,1,1.414-1.414L11,14.586V3a1,1,0,0,1,2,0V14.586l2.293-2.293a1,1,0,0,1,1.414,1.414l-4,4a1,1,0,0,1-.325.216.986.986,0,0,1-.764,0,1,1,0,0,1-.325-.216ZM22,12a1,1,0,0,0-1,1v7H3V13a1,1,0,0,0-2,0v8a1,1,0,0,0,1,1H22a1,1,0,0,0,1-1V13A1,1,0,0,0,22,12Z"/></svg>
+									</a>
+									<?php endif; ?>
+									<a href="<?php the_field('pdf_file_link_extra'); ?>" target="_blank" class="presentation-card__pdf main-btn main-btn__red w-50 float-end" style="width: 48%;">
+										<span><?php echo esc_html__( 'Präsentation', 'SHS' ); ?></span>
+										<svg class="dnl-icon ms-4" fill="#FFFFFF" width="20px" height="20px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M7.293,13.707a1,1,0,1,1,1.414-1.414L11,14.586V3a1,1,0,0,1,2,0V14.586l2.293-2.293a1,1,0,0,1,1.414,1.414l-4,4a1,1,0,0,1-.325.216.986.986,0,0,1-.764,0,1,1,0,0,1-.325-.216ZM22,12a1,1,0,0,0-1,1v7H3V13a1,1,0,0,0-2,0v8a1,1,0,0,0,1,1H22a1,1,0,0,0,1-1V13A1,1,0,0,0,22,12Z"/></svg>
+									</a>
+								<?php else : ?>
+									<?php if( get_field('pdf_file_link') ) : ?>
+									<a href="<?php the_field('pdf_file_link'); ?>" target="_blank" class="presentation-card__pdf main-btn main-btn__red">
+										<span><?php echo esc_html__( 'Präsentation', 'SHS' ); ?></span>
+										<svg class="dnl-icon ms-4" fill="#FFFFFF" width="20px" height="20px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M7.293,13.707a1,1,0,1,1,1.414-1.414L11,14.586V3a1,1,0,0,1,2,0V14.586l2.293-2.293a1,1,0,0,1,1.414,1.414l-4,4a1,1,0,0,1-.325.216.986.986,0,0,1-.764,0,1,1,0,0,1-.325-.216ZM22,12a1,1,0,0,0-1,1v7H3V13a1,1,0,0,0-2,0v8a1,1,0,0,0,1,1H22a1,1,0,0,0,1-1V13A1,1,0,0,0,22,12Z"/></svg>
+									</a>
+									<?php endif; ?>
 								<?php endif; ?>
 							</footer>
 						</article>
