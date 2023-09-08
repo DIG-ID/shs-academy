@@ -51,7 +51,7 @@
 									</a>
 									<?php endif; ?>
 									<a href="<?php the_field('pdf_file_link_extra'); ?>" target="_blank" class="presentation-card__pdf main-btn main-btn__red w-50 float-end" style="width: 48%;">
-										<span><?php echo esc_html__( 'Präsentation', 'SHS' ); ?></span>
+										<span><?php echo esc_html__( 'Seminar', 'SHS' ); ?></span>
 										<svg class="dnl-icon ms-4" width="20px" height="20px" viewBox="0 -0.5 21 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 										<g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
 										<g id="Dribbble-Light-Preview" transform="translate(-139.000000, -480.000000)" fill="#FFFFFF">

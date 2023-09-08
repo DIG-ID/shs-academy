@@ -1,7 +1,7 @@
 <section id="section-aftermovie" class="section section-aftermovie">
 	<div class="container container__inside">
 		<div class="row">
-			<h2 class="aftermovie__title">#SID22 Aftermovie</h2>
+			<h2 class="aftermovie__title">#SID23 Aftermovie</h2>
 		</div>
 		<div class="row row__video">
 			<div class="embed-container">
