@@ -25,7 +25,7 @@ if ( $banner ) : ?>
 		<div class="section-banner__content rellax" data-rellax-speed="2" data-rellax-percentage="0.5">
 			<div class="container">
 				<div class="row align-items-center">
-					<div class="col-12 col-sm-12 col-md-11 col-lg-8">
+					<div class="col-12 col-sm-12 col-md-11 col-lg-12">
 						<p class="section-banner__subtitle"><?php the_field( 'home_page_settings_banner_subtitle' ); ?></p>
 						<p class="section-banner__keywords"><?php the_field( 'home_page_settings_banner_keywords' ); ?></p>
 						<h1 class="section-banner__title "><?php the_field( 'home_page_settings_banner_title' ); ?></h1>

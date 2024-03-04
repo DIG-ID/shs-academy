@@ -28,7 +28,7 @@ if ( $current_event_query->have_posts() ) :
 		if ( 'before' === $event_status ) :
 			get_template_part( 'template-parts/home/banner' );
 			get_template_part( 'template-parts/home/about-us' );
-			get_template_part( 'template-parts/home/program' );
+			//get_template_part( 'template-parts/home/program' );
 			//get_template_part( 'template-parts/home/speakers' );
 			get_template_part( 'template-parts/home/partners' );
 			get_template_part( 'template-parts/home/past-events' );
@@ -36,7 +36,7 @@ if ( $current_event_query->have_posts() ) :
 		elseif ( 'during' === $event_status ) :
 			get_template_part( 'template-parts/home/banner' );
 			get_template_part( 'template-parts/home/about-us' );
-			get_template_part( 'template-parts/home/program' );
+			//get_template_part( 'template-parts/home/program' );
 			get_template_part( 'template-parts/home/speakers' );
 			get_template_part( 'template-parts/home/partners' );
 			get_template_part( 'template-parts/home/past-events' );
